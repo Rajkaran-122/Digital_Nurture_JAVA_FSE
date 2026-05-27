@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Exercises 1-10 - All in One</title>
+    <!-- We use Bootstrap only for grid structural consistency; the UI is heavily brutally styled via custom.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <style>
+        .highlight {
+            background-color: #000;
+            color: #fff;
+            padding: 0 4px;
+            font-weight: bold;
+        }
+        .gallery-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid #000;
+            box-shadow: 4px 4px 0 #ccc;
+            transition: all 0.2s;
+        }
+        .gallery-img:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 #000;
+        }
+    </style>
+
+            <style>
+                main > section, main > div.row > div { display: none !important; }
+            main > section:nth-of-type(1), main > div.row > div:nth-child(1) { display: block !important; }
+</style>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <div class="container mt-4 back-btn">
+        <a href="../index.html" class="btn btn-light shadow-sm px-4">
+            <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+        </a>
+    </div>
+
+    <!-- Navigation Area (Exercise 2) -->
+    <nav class="container mt-3 mb-5 reveal">
+        <div class="card p-3 d-flex flex-row justify-content-between align-items-center">
+            <h2 class="h4 mb-0 fw-bold">Community Portal</h2>
+            <div>
+                <a href="#welcome" class="btn btn-outline-dark me-2">Home</a>
+                <a href="#events" class="btn btn-outline-dark me-2">Events</a>
+                <a href="#registration" class="btn btn-outline-dark me-2">Register</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="btn btn-dark">Help (MDN)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        
+        <!-- Exercise 1 & 3: Welcome Message and Styling -->
+        <section id="welcome" class="mb-5 reveal">
+            <h3 class="display-6 text-primary">Exercises 1-3: Template & Welcome</h3>
+            <div class="card p-5 bg-light">
+                <!-- Internal CSS applied via inline style for demonstration, though class overrides work better -->
+                <div id="welcomeBanner" style="background-color: #000; color: #fff; padding: 2rem; border: 4px solid #333; text-align: center;">
+                    <h2 class="fw-bold mb-3">Welcome to the Local Community Event Portal!</h2>
+                    <p class="fs-5 mb-0">Join our upcoming events and connect with neighbors.</p>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="fs-4">Special Offer: <span style="color: #000; font-weight: 800; border-bottom: 4px solid #000; padding-bottom: 2px;">Register early and get VIP access!</span></p>
+                    <p>Don't miss our <span class="highlight">Summer Festival</span> happening this weekend.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 4: Image Gallery -->
+        <section id="events" class="mb-5 reveal">
+            <h3 class="display-6 text-primary">Exercise 4: Image Gallery</h3>
+            <div class="card p-4">
+                <table class="table table-borderless m-0">
+                    <tbody>
+                        <tr>
+                            <td class="p-2">
+                                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500" alt="Tech Meetup" title="Annual Tech Meetup" class="gallery-img">
+                                <div class="text-center mt-2 fw-bold">Tech Meetup</div>
+                            </td>
+                            <td class="p-2">
+                                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500" alt="Gaming Expo" title="Local Gaming Expo" class="gallery-img">
+                                <div class="text-center mt-2 fw-bold">Gaming Expo</div>
+                            </td>
+                            <td class="p-2">
+                                <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=500" alt="Music Concert" title="Summer Music Fest" class="gallery-img">
+                                <div class="text-center mt-2 fw-bold">Music Concert</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-2">
+                                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=500" alt="Food Truck" title="Weekend Food Fest" class="gallery-img">
+                                <div class="text-center mt-2 fw-bold">Food Fest</div>
+                            </td>
+                            <td class="p-2">
+                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500" alt="Yoga Class" title="Morning Yoga" class="gallery-img">
+                                <div class="text-center mt-2 fw-bold">Yoga Class</div>
+                            </td>
+                            <td class="p-2">
+                                <img src="https://images.unsplash.com/photo-1472653431158-6364773b4a86?w=500" alt="Art Workshop" title="Community Art Workshop" class="gallery-img">
+                                <div class="text-center mt-2 fw-bold">Art Workshop</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Exercises 5 & 6: Forms & Events -->
+        <section id="registration" class="mb-5 reveal">
+            <h3 class="display-6 text-primary">Exercises 5 & 6: Registration & Feedback</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card p-4 h-100">
+                        <h4 class="mb-4 fw-bold">Register for Event</h4>
+                        <!-- Uses onsubmit to demonstrate event prevention and output update -->
+                        <form id="regForm" onsubmit="event.preventDefault(); document.getElementById('regOutput').textContent = 'Registration Confirmed for ' + this.name.value + '!';">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Full Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="John Doe" required autofocus>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Email</label>
+                                <input type="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Phone (OnBlur Demo)</label>
+                                <input type="tel" class="form-control" placeholder="123-456-7890" onblur="if(this.value.length < 10) alert('Please enter a valid phone number.')">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Event Type (OnChange Demo)</label>
+                                <select class="form-select" onchange="document.getElementById('feeDisplay').textContent = this.value === 'vip' ? 'Fee: $50' : 'Fee: Free';">
+                                    <option value="standard">Standard Event</option>
+                                    <option value="vip">VIP Access</option>
+                                </select>
+                                <div id="feeDisplay" class="mt-2 fw-bold">Fee: Free</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mb-3">Register Now</button>
+                            <output id="regOutput" class="fw-bold fs-5 text-success d-block text-center"></output>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4 h-100">
+                        <h4 class="mb-4 fw-bold">Interactive Feedback</h4>
+                        <div class="mb-4 text-center">
+                            <p class="mb-2 fw-bold">Double Click Image to Enlarge (OnDblClick)</p>
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=300" class="gallery-img w-50" ondblclick="this.classList.toggle('w-100');" alt="Clickable Event">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Feedback (KeyDown Demo)</label>
+                            <textarea class="form-control" rows="4" placeholder="Type here..." onkeyup="document.getElementById('charCount').textContent = this.value.length + ' chars';"></textarea>
+                            <div class="mt-2 text-end fw-bold" id="charCount">0 chars</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercises 7, 8, 9: Video, LocalStorage, Geolocation -->
+        <section class="mb-5 reveal">
+            <h3 class="display-6 text-primary">Exercises 7, 8 & 9: APIs</h3>
+            <div class="row g-4">
+                <!-- Video -->
+                <div class="col-md-4">
+                    <div class="card p-4 h-100">
+                        <h4 class="mb-3 fw-bold">Promo Video</h4>
+                        <video width="100%" controls class="border border-dark border-2 mb-2" oncanplay="document.getElementById('vidStatus').textContent = 'Video ready to play!';">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                        <p id="vidStatus" class="fw-bold mb-0 text-muted">Loading video...</p>
+                    </div>
+                </div>
+                <!-- Preferences -->
+                <div class="col-md-4">
+                    <div class="card p-4 h-100">
+                        <h4 class="mb-3 fw-bold">User Preferences</h4>
+                        <select id="prefSelect" class="form-select mb-3">
+                            <option value="">Select Favorite Category...</option>
+                            <option value="tech">Technology</option>
+                            <option value="music">Music</option>
+                            <option value="art">Art</option>
+                        </select>
+                        <button class="btn btn-dark w-100 mb-2" onclick="savePref()">Save Preference</button>
+                        <button class="btn btn-outline-dark w-100" onclick="clearPref()">Clear</button>
+                        <p id="prefStatus" class="mt-3 fw-bold mb-0"></p>
+                    </div>
+                </div>
+                <!-- Geolocation -->
+                <div class="col-md-4">
+                    <div class="card p-4 h-100 text-center">
+                        <h4 class="mb-3 fw-bold">Nearest Event</h4>
+                        <i class="bi bi-geo-alt fs-1 mb-3 d-block"></i>
+                        <button class="btn btn-primary w-100 mb-3" onclick="getLocation()">Find Nearby Events</button>
+                        <p id="geoOutput" class="fw-bold mb-0 small">Waiting for location...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Exercise 10: Debugging Note -->
+        <section class="mb-5 reveal">
+            <div class="demo-box p-4">
+                <h4 class="fw-bold mb-3"><i class="bi bi-bug me-2"></i>Exercise 10: Debugging</h4>
+                <p class="mb-0">Open Chrome DevTools (F12). Use the <strong>Elements</strong> tab to inspect the styles of this box. Check the <strong>Console</strong> to see logs generated by the buttons above!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-header mt-5 py-4 text-center reveal">
+        <p class="mb-0 fw-bold">HTML5 Exercises Completed</p>
+    </footer>
+
+    <!-- Interactive Scripts for Exercises 8 & 9 -->
+    <script>
+        // Exercise 8: Preferences
+        const prefSelect = document.getElementById('prefSelect');
+        const prefStatus = document.getElementById('prefStatus');
+
+        // Load on start
+        if(localStorage.getItem('favEvent')) {
+            prefSelect.value = localStorage.getItem('favEvent');
+            prefStatus.textContent = 'Loaded: ' + localStorage.getItem('favEvent');
+        }
+
+        function savePref() {
+            if(prefSelect.value) {
+                localStorage.setItem('favEvent', prefSelect.value);
+                sessionStorage.setItem('lastAction', 'Saved Pref');
+                prefStatus.textContent = 'Saved!';
+                console.log('Saved to LocalStorage:', prefSelect.value);
+            }
+        }
+
+        function clearPref() {
+            localStorage.removeItem('favEvent');
+            sessionStorage.clear();
+            prefSelect.value = '';
+            prefStatus.textContent = 'Cleared!';
+        }
+
+        // Exercise 9: Geolocation
+        function getLocation() {
+            const out = document.getElementById('geoOutput');
+            out.textContent = "Locating...";
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        out.textContent = `Lat: ${position.coords.latitude.toFixed(4)}, Lon: ${position.coords.longitude.toFixed(4)}`;
+                        console.log('Location accessed successfully.');
+                    },
+                    (error) => {
+                        out.textContent = `Error: ${error.message}`;
+                        console.warn('Geolocation error:', error);
+                    },
+                    { enableHighAccuracy: true, timeout: 5000 }
+                );
+            } else {
+                out.textContent = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        // Window unload warning
+        window.addEventListener('beforeunload', (e) => {
+            const formName = document.querySelector('input[name="name"]').value;
+            if(formName && formName.length > 0 && !document.getElementById('regOutput').textContent) {
+                e.preventDefault();
+                e.returnValue = ''; // Trigger warning
+            }
+        });
+
+        // Scroll Reveal Initialization
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToReveal = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('active');
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+            elementsToReveal.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

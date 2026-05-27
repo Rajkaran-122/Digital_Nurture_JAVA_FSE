@@ -1,0 +1,213 @@
+/* CSS3 Exercise - styles.css */
+/* Objective: Master CSS methods, syntax, selectors, typography, box model, columns, media queries */
+
+/* ========================================= */
+/* 2. CSS Syntax and Comments                */
+/* ========================================= */
+
+/* Style for main CTA button */
+.cta-button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ========================================= */
+/* 3. Selectors Playground                   */
+/* ========================================= */
+
+/* Universal selector to reset margin/padding inside our demo container */
+.demo-container * {
+    /* We don't want to break the whole page, so just targeting elements inside demo */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element selector for all h2 inside demo */
+.demo-container h2 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* ID selector for banner */
+#mainHeader {
+    text-align: center;
+    padding: 20px;
+    border: 3px solid #000000;
+    margin-bottom: 20px;
+}
+
+/* Class selector */
+.eventCard {
+    background: #ffffff;
+    /* 8. Box Model Properties */
+    margin: 15px 0;
+    padding: 20px;
+    border: 2px solid #000000;
+}
+
+/* Grouping selector */
+.demo-container h3, .demo-container p {
+    line-height: 1.6;
+}
+
+/* ========================================= */
+/* 4. Color & Background Styling             */
+/* ========================================= */
+
+/* Hex and RGBA */
+.color-box {
+    background-color: #000000; /* HEX */
+    color: rgba(255, 255, 255, 0.9); /* RGBA */
+    padding: 10px;
+}
+
+/* Background image with fallback */
+.bg-image-demo {
+    background: #fafafa url('https://images.unsplash.com/photo-1557683316-973673baf926?w=400') center/cover no-repeat;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 0px #000;
+}
+
+/* Gradient background */
+.gradient-header {
+    background: linear-gradient(135deg, #333333, #000000);
+    color: white;
+    padding: 10px;
+}
+
+/* ========================================= */
+/* 5. Typography: Fonts and Text             */
+/* ========================================= */
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+.typography-demo {
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+/* ========================================= */
+/* 6. Link and List Styling                  */
+/* ========================================= */
+
+.custom-link:link { color: #555555; text-decoration: none; }
+.custom-link:visited { color: #777777; }
+.custom-link:hover { color: #000000; text-decoration: underline; font-weight: bold; }
+.custom-link:active { color: #ff0000; }
+
+.custom-list {
+    list-style-type: square;
+    list-style-position: inside;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px dashed #ccc;
+}
+
+.custom-list li {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+/* ========================================= */
+/* 7. Table Styling                          */
+/* ========================================= */
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.styled-table table, .styled-table th, .styled-table td {
+    border: 2px solid #000000;
+    padding: 12px;
+}
+
+.styled-table th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Zebra striping */
+.styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* ========================================= */
+/* 8. Box Model & Layout Control             */
+/* ========================================= */
+
+/* Outline on selected fields */
+.form-outline:focus {
+    outline: 3px dashed #000000;
+    outline-offset: 4px;
+}
+
+/* Visibility vs Display */
+.hidden-visibility {
+    visibility: hidden; /* Takes up space */
+}
+.none-display {
+    display: none; /* Does not take up space */
+}
+
+/* ========================================= */
+/* 9. Multiple Columns in Text               */
+/* ========================================= */
+
+.newspaper-text {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 2px solid #000000;
+    text-align: justify;
+}
+
+/* ========================================= */
+/* 10. Responsive Web Design (Media Queries) */
+/* ========================================= */
+
+/* Mobile First Base (Stacks nav links) */
+.responsive-nav {
+    display: flex;
+    flex-direction: column; /* Stacks vertically on small screens */
+    gap: 10px;
+}
+.responsive-nav a {
+    width: 100%;
+    text-align: center;
+}
+
+.responsive-img {
+    width: 100%; /* Flexible layout using % */
+    height: auto;
+}
+
+/* Desktop override */
+@media (min-width: 768px) {
+    .responsive-nav {
+        flex-direction: row; /* Horizontal on larger screens */
+    }
+    .responsive-nav a {
+        width: auto;
+    }
+    .demo-container h2 {
+        font-size: 2.5vw; /* Viewport width sizing */
+    }
+}

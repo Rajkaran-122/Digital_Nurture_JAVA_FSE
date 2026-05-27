@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Exercises - All in One</title>
+    <!-- Bootstrap grid for high level structure only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Brutalist Shared Theme -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <!-- EXERCISE 1: External Stylesheet Link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- EXERCISE 1: Embedded Style (Internal CSS) -->
+    <style>
+        /* This background targets the demo wrapper to avoid overriding our global theme */
+        .internal-style-demo {
+            background-color: #eaeaea; 
+            padding: 20px;
+            border: 4px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <div class="container mt-4 back-btn">
+        <a href="index.html" class="btn btn-light shadow-sm px-4">
+            <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+        </a>
+    </div>
+
+    <main class="container mt-4 mb-5">
+        
+        <div class="card p-4 mb-5 reveal bg-light text-center border-3 border-dark">
+            <h1 class="fw-bold mb-0 text-uppercase">Local Community Event Portal</h1>
+            <p class="mb-0 text-muted">CSS3 Masterclass Exercises 1-11</p>
+        </div>
+
+        <div class="demo-container">
+            
+            <!-- EXERCISE 1: Inline Styles -->
+            <section class="mb-5 reveal card p-4">
+                <h3 class="display-6 text-primary">Exercise 1 & 2: CSS Methods & Syntax</h3>
+                <h4 style="color: red; text-decoration: underline;">This heading is styled using Inline CSS</h4>
+                <div class="internal-style-demo mt-3">
+                    This box uses Internal CSS defined in the <code>&lt;head&gt;</code> block.
+                </div>
+                <div class="mt-3">
+                    <button class="cta-button">External CSS CTA Button (Ex 2)</button>
+                </div>
+            </section>
+
+            <!-- EXERCISE 3 & 8: Selectors Playground & Box Model -->
+            <section class="mb-5 reveal card p-4">
+                <h3 class="display-6 text-primary">Exercise 3 & 8: Selectors & Box Model</h3>
+                <div id="mainHeader">#mainHeader (ID Selector)</div>
+                <h2>h2 Element (Element Selector)</h2>
+                
+                <div class="eventCard shadow-none">
+                    <h3>Event Card Heading (Grouping)</h3>
+                    <p>This is a paragraph inside the .eventCard. The event card uses margin, padding, and border for Box Model practice (Ex 8).</p>
+                    <input type="text" class="form-control form-outline mt-2" placeholder="Focus me for Outline (Ex 8)">
+                </div>
+
+                <div class="mt-3 border p-3 border-dark">
+                    <strong>Visibility test:</strong> 
+                    <span class="hidden-visibility bg-dark text-white p-1">Hidden Element</span> (Takes space) | 
+                    <span class="none-display bg-dark text-white p-1">Display None</span> (Takes NO space)
+                </div>
+            </section>
+
+            <!-- EXERCISE 4 & 5: Colors, Backgrounds, Typography -->
+            <section class="mb-5 reveal card p-4">
+                <h3 class="display-6 text-primary">Exercise 4 & 5: Colors & Typography</h3>
+                
+                <div class="color-box mb-3 fw-bold text-center border border-dark">
+                    HEX Background, RGBA Text (White 90%)
+                </div>
+
+                <div class="bg-image-demo border border-dark mb-3">
+                    Background Image with Text Shadow
+                </div>
+
+                <div class="gradient-header text-center mb-3 fw-bold border border-dark">
+                    Linear Gradient Header
+                </div>
+
+                <div class="typography-demo border border-dark p-3">
+                    Typography Demo: Imported Google Font (Courier Prime), Uppercase, Letter Spacing, Italic.
+                </div>
+            </section>
+
+            <!-- EXERCISE 6 & 7: Links, Lists, Tables -->
+            <section class="mb-5 reveal card p-4">
+                <h3 class="display-6 text-primary">Exercise 6 & 7: Links, Lists, Tables</h3>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h4>Links & Lists</h4>
+                        <a href="#" class="custom-link fw-bold d-block mb-3">Hover me! (Link Pseudo-classes)</a>
+                        <ul class="custom-list">
+                            <li>List Item 1 (Square bullets)</li>
+                            <li>List Item 2 (Inside position)</li>
+                            <li>List Item 3</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Styled Table (Zebra Striping)</h4>
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                    <th>Event</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Yoga</td><td>Monday</td><td>Open</td></tr>
+                                <tr><td>Music Fest</td><td>Friday</td><td>Full</td></tr>
+                                <tr><td>Art Walk</td><td>Sunday</td><td>Open</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXERCISE 9 & 10: Multi-column & Responsive -->
+            <section class="mb-5 reveal card p-4">
+                <h3 class="display-6 text-primary">Exercise 9 & 10: Columns & Responsive</h3>
+                
+                <div class="newspaper-text mb-4">
+                    <strong>Multi-Column Text:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                </div>
+
+                <h4>Responsive Flexbox Nav (Ex 10)</h4>
+                <div class="responsive-nav bg-light border border-dark p-2 mb-3">
+                    <a href="#" class="btn btn-dark">Home</a>
+                    <a href="#" class="btn btn-dark">Events</a>
+                    <a href="#" class="btn btn-dark">Contact</a>
+                </div>
+
+                <h4>Responsive Image</h4>
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800" class="responsive-img border border-dark" alt="Responsive Event Image">
+            </section>
+            
+            <!-- EXERCISE 11: Debugging Note -->
+            <section class="mb-5 reveal">
+                <div class="card p-4 bg-dark text-white border-0 shadow-lg">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-bug me-2"></i>Exercise 11: Debugging</h4>
+                    <p class="mb-0">Press <strong>F12</strong> to open Chrome DevTools. Use the Device Toolbar (Ctrl+Shift+M) to simulate mobile screens and watch the flexbox nav stack vertically! Check the Network tab to ensure <code>styles.css</code> loaded.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-header mt-5 py-4 text-center reveal">
+        <p class="mb-0 fw-bold">CSS3 Exercises Completed</p>
+    </footer>
+
+    <!-- Scroll Reveal Initialization -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToReveal = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('active');
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+            elementsToReveal.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

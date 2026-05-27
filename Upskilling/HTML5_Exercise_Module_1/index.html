@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Masterclass - Dashboard</title>
+    <!-- Bootstrap 5 CSS CDN (Used purely for layout/grid, heavily overridden by our Brutalist theme) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Brutalist CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <header class="hero-section text-center px-4 reveal">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">HTML5 Masterclass</h1>
+            <p class="lead mb-0">Local Community Event Portal - All 10 Exercises</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row mb-4 reveal">
+            <div class="col-12 text-center">
+                <a href="all_in_one.html" class="btn btn-primary btn-lg px-5 py-3 fs-4">
+                    <i class="bi bi-play-circle-fill me-2"></i>View All HTML5 Exercises
+                </a>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+            <!-- Feature Cards -->
+            <div class="col-md-4 reveal">
+                <div class="card p-4 text-center h-100">
+                    <div class="card-icon mx-auto"><i class="bi bi-filetype-html"></i></div>
+                    <h3 class="h4">Semantic HTML5</h3>
+                    <p class="text-muted">Master building well-structured, accessible documents using the latest standard tags.</p>
+                </div>
+            </div>
+            <div class="col-md-4 reveal">
+                <div class="card p-4 text-center h-100">
+                    <div class="card-icon mx-auto"><i class="bi bi-ui-radios"></i></div>
+                    <h3 class="h4">Advanced Forms</h3>
+                    <p class="text-muted">Implement robust registration forms with built-in validation, local storage, and input tracking.</p>
+                </div>
+            </div>
+            <div class="col-md-4 reveal">
+                <div class="card p-4 text-center h-100">
+                    <div class="card-icon mx-auto"><i class="bi bi-geo-alt"></i></div>
+                    <h3 class="h4">Web APIs</h3>
+                    <p class="text-muted">Utilize Geolocation, LocalStorage, and multimedia tags like Video and Audio seamlessly.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToReveal = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('active');
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+            elementsToReveal.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

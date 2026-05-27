@@ -1,0 +1,65 @@
+// 1. Include any default variable overrides here
+// Override primary color to absolute black
+$primary: #000000; 
+$success: #000000;
+$info: #000000;
+$warning: #000000;
+$danger: #000000;
+
+// Brutalist sharp corners
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+$border-radius-pill: 0;
+
+// Change body background color
+$body-bg: #f4f4f4;
+
+// 2. Include Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// 3. Add any custom CSS rules below
+.custom-header {
+  padding: 4rem 0;
+  background: #000000;
+  color: white;
+  margin-bottom: 3rem;
+  border-bottom: 6px solid #e5e5e5;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(45deg, #000000, #000000 10px, #111111 10px, #111111 20px);
+    z-index: -1;
+  }
+}
+
+/* Brutalist Button Shadows & Hovers */
+.btn {
+  border: 2px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  transition: all 0.2s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000000;
+}
+.btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000000;
+}
+.card {
+  border: 3px solid #000000;
+  box-shadow: 8px 8px 0px #000000;
+  transition: all 0.2s ease;
+}
+.card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px #000000;
+}

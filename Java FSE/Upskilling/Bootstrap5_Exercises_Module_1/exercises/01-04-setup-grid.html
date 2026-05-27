@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises 1-4: Setup & Grid - Bootstrap 5 Masterclass</title>
+    <!-- 
+      Exercise 1.1: Link Bootstrap 5 via CDN 
+      This is the standard, fastest way to include Bootstrap in a project.
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    
+    
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <!-- Back Navigation -->
+    <div class="container mt-4 back-btn">
+        <a href="../index.html" class="btn btn-light shadow-sm rounded-pill px-4">
+            <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+        </a>
+    </div>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-primary">Setup & Grid System</h1>
+            <p class="lead text-muted">Exercises 1 to 4</p>
+        </div>
+
+        <!-- ==========================================
+             SECTION 1: SETTING UP BOOTSTRAP 5 
+        =========================================== -->
+        <section class="card shadow-sm border-0 rounded-4 mb-5">
+            <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4">
+                <h2 class="h4 fw-bold text-dark mb-0">1. Setting Up Bootstrap 5</h2>
+            </div>
+            <div class="card-body p-4">
+                
+                <h3 class="h6 fw-bold text-primary mb-3">Exercise 1.1: Basic HTML & CDN</h3>
+                <p>The CSS and JS bundles for Bootstrap 5 have been included in this page via the jsDelivr CDN. You can find the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> and the <code>&lt;script&gt;</code> tag at the bottom of the <code>&lt;body&gt;</code>.</p>
+                
+                <h3 class="h6 fw-bold text-primary mt-4 mb-3">Exercise 1.2: NPM or Download Setup</h3>
+                <div class="alert alert-info rounded-3 border-0 shadow-sm">
+                    <strong>NPM Setup:</strong> To set up via npm, you run <code>npm install bootstrap</code> in your terminal. This downloads the source Sass files and compiled CSS/JS into the <code>node_modules/bootstrap</code> directory. (See Exercise 19 for a full demonstration of this).<br><br>
+                    <strong>Download Setup:</strong> Alternatively, downloading the compiled zip provides you with ready-to-use <code>css/</code> and <code>js/</code> folders which you can link locally like <code>&lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;</code>.
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 2: BOOTSTRAP STRUCTURE 
+        =========================================== -->
+        <section class="card shadow-sm border-0 rounded-4 mb-5">
+            <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4">
+                <h2 class="h4 fw-bold text-dark mb-0">2. Bootstrap Structure and Files</h2>
+            </div>
+            <div class="card-body p-4">
+                
+                <h3 class="h6 fw-bold text-primary mb-3">Exercise 2.1: Directory Structure</h3>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="p-3 bg-light rounded-3 h-100">
+                            <h4 class="h6 fw-bold"><i class="bi bi-folder-fill text-warning me-2"></i>CSS Folder</h4>
+                            <p class="small text-muted mb-0">Contains compiled CSS files (e.g., <code>bootstrap.min.css</code>). It includes all styling rules for grid, typography, components, and utilities.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 bg-light rounded-3 h-100">
+                            <h4 class="h6 fw-bold"><i class="bi bi-folder-fill text-warning me-2"></i>JS Folder</h4>
+                            <p class="small text-muted mb-0">Contains compiled JavaScript (e.g., <code>bootstrap.bundle.min.js</code>). The "bundle" version is recommended because it includes Popper.js, which is required for dropdowns, tooltips, and popovers.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 bg-light rounded-3 h-100">
+                            <h4 class="h6 fw-bold"><i class="bi bi-star-fill text-warning me-2"></i>Icons</h4>
+                            <p class="small text-muted mb-0">Bootstrap Icons is a separate library. It can be included via CDN or installed via npm. It provides SVGs or web fonts for scalable iconography.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="h6 fw-bold text-primary mt-4 mb-3">Exercise 2.2: Include JS Plugins</h3>
+                <p>The <code>bootstrap.bundle.min.js</code> is included at the bottom of this page. This allows interactive components (like modals in Exercise 18) to function without needing jQuery, as Bootstrap 5 uses vanilla JavaScript.</p>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 3: RESPONSIVE GRID LAYOUT 
+        =========================================== -->
+        <section class="card shadow-sm border-0 rounded-4 mb-5">
+            <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4">
+                <h2 class="h4 fw-bold text-dark mb-0">3. Fundamentals of Responsive Grid Layout</h2>
+            </div>
+            <div class="card-body p-4">
+                
+                <h3 class="h6 fw-bold text-primary mb-3">Exercise 3.1 & 3.2: Container, Row, and Col classes</h3>
+                <p class="text-muted small mb-4">
+                    <strong>Behavior:</strong> Stacks vertically on mobile (default <code>col-12</code> behavior), shows 2 columns on tablets (<code>col-md-6</code>), and 3 columns on desktops (<code>col-lg-4</code>).
+                </p>
+
+                <!-- Grid Demonstration -->
+                <!-- .row creates a flex container, and .g-3 adds a gutter (gap) between columns -->
+                <div class="row g-3">
+                    <!-- .col-12 applies to mobile (<768px), .col-md-6 applies to tablets (≥768px), .col-lg-4 applies to desktops (≥992px) -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="demo-col shadow-sm">Column 1</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="demo-col shadow-sm">Column 2</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="demo-col shadow-sm">Column 3</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 4: COLUMN LAYOUTS 
+        =========================================== -->
+        <section class="card shadow-sm border-0 rounded-4 mb-5">
+            <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4">
+                <h2 class="h4 fw-bold text-dark mb-0">4. Column Layouts and Grid Classes</h2>
+            </div>
+            <div class="card-body p-4">
+                
+                <h3 class="h6 fw-bold text-primary mb-3">Exercise 4.1: Two-Column Layout (Sidebar & Content)</h3>
+                <p class="text-muted small mb-3">Using <code>col-md-3</code> for sidebar and <code>col-md-9</code> for content. They will stack on mobile devices.</p>
+                
+                <div class="row mb-5 g-3">
+                    <!-- Sidebar takes up 3 out of 12 grid spaces on md screens and up -->
+                    <div class="col-md-3">
+                        <div class="demo-col h-100 mb-0 d-flex align-items-center justify-content-center bg-light border-secondary text-secondary shadow-sm">
+                            Sidebar (col-md-3)
+                        </div>
+                    </div>
+                    <!-- Content takes up 9 out of 12 grid spaces on md screens and up -->
+                    <div class="col-md-9">
+                        <div class="demo-col h-100 mb-0 d-flex align-items-center justify-content-center shadow-sm" style="min-height: 120px;">
+                            Main Content Area (col-md-9)
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="h6 fw-bold text-primary mb-3">Exercise 4.2: Four-Column Equal Width</h3>
+                <p class="text-muted small mb-3">Using <code>col-sm-3</code> to create 4 equal columns (3 * 4 = 12). They will stack only on extra small screens (&lt;576px).</p>
+                
+                <div class="row g-3">
+                    <div class="col-sm-3"><div class="demo-col shadow-sm mb-0">col-sm-3</div></div>
+                    <div class="col-sm-3"><div class="demo-col shadow-sm mb-0">col-sm-3</div></div>
+                    <div class="col-sm-3"><div class="demo-col shadow-sm mb-0">col-sm-3</div></div>
+                    <div class="col-sm-3"><div class="demo-col shadow-sm mb-0">col-sm-3</div></div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 
+      Exercise 1.1 / 2.2: Include Bootstrap JS Bundle
+      This includes Popper.js and Bootstrap's JavaScript plugins.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll Reveal Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToReveal = document.querySelectorAll('section, .text-center.mb-5, .card');
+            elementsToReveal.forEach(el => el.classList.add('reveal'));
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+            elementsToReveal.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

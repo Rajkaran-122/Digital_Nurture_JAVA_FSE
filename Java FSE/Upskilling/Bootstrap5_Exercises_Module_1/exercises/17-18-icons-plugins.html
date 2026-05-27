@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises 17-18: Icons & Plugins - Bootstrap 5 Masterclass</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- 
+      Exercise 17.1: Install and use Bootstrap Icons 
+      Included via CDN for immediate use. 
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+    <div class="noise-overlay"></div>
+
+    <!-- Back Navigation -->
+    <div class="container mt-4 back-btn flex-shrink-0">
+        <a href="../index.html" class="btn btn-light shadow-sm rounded-pill px-4">
+            <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+        </a>
+    </div>
+
+    <main class="container my-5 flex-grow-1">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-primary">Icons & JS Plugins</h1>
+            <p class="lead text-muted">Exercises 17 to 18</p>
+        </div>
+
+        <!-- ==========================================
+             SECTION 17: ICONS WITH BOOTSTRAP ICONS
+        =========================================== -->
+        <section class="card shadow-sm border-0 rounded-4 mb-5">
+            <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4">
+                <h2 class="h4 fw-bold text-dark mb-0">17. Icons with Bootstrap Icons</h2>
+            </div>
+            <div class="card-body p-4">
+                
+                <h3 class="h6 fw-bold text-primary mb-3">Exercise 17.2: Icon-only Buttons</h3>
+                <p class="text-muted small mb-4">Using Bootstrap Icons inside buttons. <code>aria-label</code> is added for accessibility since there is no text.</p>
+                
+                <div class="d-flex gap-3 flex-wrap">
+                    <!-- Primary Icon Button -->
+                    <button type="button" class="btn btn-primary rounded-circle shadow-sm p-3" aria-label="Add item">
+                        <i class="bi bi-plus-lg fs-5"></i>
+                    </button>
+                    <!-- Success Icon Button -->
+                    <button type="button" class="btn btn-success rounded-circle shadow-sm p-3" aria-label="Confirm">
+                        <i class="bi bi-check2 fs-5"></i>
+                    </button>
+                    <!-- Danger Icon Button -->
+                    <button type="button" class="btn btn-danger rounded-circle shadow-sm p-3" aria-label="Delete">
+                        <i class="bi bi-trash3 fs-5"></i>
+                    </button>
+                    <!-- Outline Icon Button -->
+                    <button type="button" class="btn btn-outline-dark rounded-circle shadow-sm p-3" aria-label="Settings">
+                        <i class="bi bi-gear fs-5"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 18: BOOTSTRAP 5 JS PLUGINS
+        =========================================== -->
+        <section class="card shadow-sm border-0 rounded-4 mb-5">
+            <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4">
+                <h2 class="h4 fw-bold text-dark mb-0">18. Bootstrap 5 JavaScript Plugins</h2>
+            </div>
+            <div class="card-body p-4">
+                
+                <div class="row g-5">
+                    
+                    <!-- Exercise 18.1: Modal Popup -->
+                    <div class="col-md-6">
+                        <h3 class="h6 fw-bold text-primary mb-3">Exercise 18.1: Modal Popup</h3>
+                        <p class="text-muted small">Modals require the Bootstrap JS bundle to function.</p>
+                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary rounded-pill px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content border-0 shadow rounded-4">
+                                    <div class="modal-header border-bottom-0">
+                                        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Welcome Aboard!</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-muted">
+                                        This is a fully functional Bootstrap 5 modal. It leverages vanilla JavaScript and doesn't require jQuery! You can place any content in here.
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary rounded-pill px-4">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exercise 18.2: Collapsible Accordion -->
+                    <div class="col-md-6">
+                        <h3 class="h6 fw-bold text-primary mb-3">Exercise 18.2: Collapsible Accordion</h3>
+                        <p class="text-muted small">Accordions are great for FAQs and condensing information.</p>
+                        
+                        <div class="accordion shadow-sm" id="accordionExample">
+                            <div class="accordion-item border-0 border-bottom">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is Bootstrap 5?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted small">
+                                        Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 border-bottom">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Do I need jQuery?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted small">
+                                        No! One of the biggest changes in Bootstrap 5 is the complete removal of jQuery. It now uses pure Vanilla JavaScript.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Is it mobile first?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted small">
+                                        Yes, Bootstrap is designed to be mobile-first. You start by styling for smaller screens and then add complexity using media queries as the screen size increases.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+      Exercise 17.1: Social Media Icons in Footer 
+    -->
+    <footer class="bg-dark text-white py-5 mt-auto flex-shrink-0">
+        <div class="container text-center">
+            <h4 class="fw-bold mb-4">Connect With Us</h4>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <!-- Social Icons -->
+                <a href="#" class="text-white text-decoration-none fs-4 hover-primary transition"><i class="bi bi-twitter-x"></i><span class="visually-hidden">Twitter</span></a>
+                <a href="#" class="text-white text-decoration-none fs-4 hover-primary transition"><i class="bi bi-facebook"></i><span class="visually-hidden">Facebook</span></a>
+                <a href="#" class="text-white text-decoration-none fs-4 hover-primary transition"><i class="bi bi-instagram"></i><span class="visually-hidden">Instagram</span></a>
+                <a href="#" class="text-white text-decoration-none fs-4 hover-primary transition"><i class="bi bi-linkedin"></i><span class="visually-hidden">LinkedIn</span></a>
+                <a href="#" class="text-white text-decoration-none fs-4 hover-primary transition"><i class="bi bi-github"></i><span class="visually-hidden">GitHub</span></a>
+            </div>
+            <p class="text-white-50 small mb-0">&copy; 2026 Bootstrap 5 Masterclass.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+
+    <!-- Scroll Reveal Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToReveal = document.querySelectorAll('section, .text-center.mb-5, .card, footer');
+            elementsToReveal.forEach(el => el.classList.add('reveal'));
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+            elementsToReveal.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

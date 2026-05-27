@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises 9-12: Components - Bootstrap 5 Masterclass</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+<body class="bg-light">
+    <div class="noise-overlay"></div>
+
+    <!-- Back Navigation -->
+    <div class="container mt-4 back-btn">
+        <a href="../index.html" class="btn btn-light shadow-sm rounded-pill px-4">
+            <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+        </a>
+    </div>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-primary">Buttons, Navbars & Components</h1>
+            <p class="lead text-muted">Exercises 9 to 12</p>
+        </div>
+
+        <!-- ==========================================
+             SECTION 9: BUTTONS 
+        =========================================== -->
+        <section class="card shadow-sm border-0 rounded-4 mb-5">
+            <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4">
+                <h2 class="h4 fw-bold text-dark mb-0">9. Buttons</h2>
+            </div>
+            <div class="card-body p-4">
+                
+                <h3 class="h6 fw-bold text-primary mb-3">Exercise 9.1: Contextual and Outline Buttons</h3>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <button type="button" class="btn btn-primary shadow-sm">Primary</button>
+                    <button type="button" class="btn btn-secondary shadow-sm">Secondary</button>
+                    <button type="button" class="btn btn-success shadow-sm">Success</button>
+                    <button type="button" class="btn btn-danger shadow-sm">Danger</button>
+                    <button type="button" class="btn btn-warning shadow-sm">Warning</button>
+                    <button type="button" class="btn btn-info text-white shadow-sm">Info</button>
+                    <button type="button" class="btn btn-dark shadow-sm">Dark</button>
+                </div>
+                
+                <div class="d-flex flex-wrap gap-2 mb-5">
+                    <button type="button" class="btn btn-outline-primary">Primary Outline</button>
+                    <button type="button" class="btn btn-outline-success">Success Outline</button>
+                    <button type="button" class="btn btn-outline-danger">Danger Outline</button>
+                </div>
+
+                <h3 class="h6 fw-bold text-primary mb-3">Exercise 9.2: Button Groups & Toggle Buttons</h3>
+                
+                <!-- Basic Button Group -->
+                <div class="btn-group mb-4 shadow-sm" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-dark">Left</button>
+                    <button type="button" class="btn btn-dark">Middle</button>
+                    <button type="button" class="btn btn-dark">Right</button>
+                </div>
+
+                <br>
+
+                <!-- Checkbox Toggle Buttons -->
+                <div class="btn-group shadow-sm" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck1">Option 1</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck2">Option 2</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck3">Option 3</label>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 10: NAVBARS AND NAVIGATION
+        =========================================== -->
+        <section class="card shadow-sm border-0 rounded-4 mb-5 overflow-hidden">
+            <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4">
+                <h2 class="h4 fw-bold text-dark mb-0">10. Navbars and Navigation</h2>
+            </div>
+            <div class="card-body p-0 mt-3">
+                
+                <!-- Exercise 10.1: Responsive Navbar -->
+                <div class="p-4 bg-light border-bottom">
+                    <h3 class="h6 fw-bold text-primary mb-3">Exercise 10.1: Responsive Navbar</h3>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-3 shadow">
+                        <div class="container-fluid">
+                            <a class="navbar-brand fw-bold" href="#">
+                                <i class="bi bi-bootstrap-fill text-primary me-2"></i>Brand
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2 rounded-pill bg-dark text-white border-secondary" type="search" placeholder="Search..." aria-label="Search">
+                                    <button class="btn btn-primary rounded-pill px-4" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Exercise 10.2: Navigation Tabs & Pills -->
+                <div class="p-4">
+                    <h3 class="h6 fw-bold text-primary mb-3">Exercise 10.2: Tabs and Pills</h3>
+                    
+                    <div class="row g-5">
+                        <div class="col-md-6">
+                            <!-- Nav Tabs -->
+                            <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content text-muted small" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">This is the home tab content. Tabs are great for toggling between related content views.</div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">This is the profile tab content.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <!-- Nav Pills -->
+                            <ul class="nav nav-pills mb-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active rounded-pill px-4" aria-current="page" href="#">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link rounded-pill px-4" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled rounded-pill px-4" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                            <p class="text-muted small">Pills are an alternative navigation styling that look like buttons.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 11: CARDS AND MEDIA OBJECTS
+        =========================================== -->
+        <section class="card shadow-sm border-0 rounded-4 mb-5">
+            <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4">
+                <h2 class="h4 fw-bold text-dark mb-0">11. Cards and Media Objects</h2>
+            </div>
+            <div class="card-body p-4">
+                <div class="row g-4">
+                    
+                    <!-- Exercise 11.1: Professional Profile Card -->
+                    <div class="col-md-5 col-lg-4">
+                        <h3 class="h6 fw-bold text-primary mb-3">Exercise 11.1: Profile Card</h3>
+                        <div class="card shadow border-0 rounded-4 overflow-hidden">
+                            <!-- Using a gradient placeholder instead of an actual image -->
+                            <div style="height: 120px; background: linear-gradient(135deg, var(--primary-color), #7C3AED);"></div>
+                            <div class="card-body text-center position-relative pt-0">
+                                <!-- Profile avatar overlapping the header -->
+                                <img src="https://ui-avatars.com/api/?name=John+Doe&background=fff&color=4F46E5&size=128" alt="Profile" class="rounded-circle border border-4 border-white shadow-sm mb-3" style="width: 80px; height: 80px; margin-top: -40px; background: white;">
+                                <h5 class="card-title fw-bold mb-1">John Doe</h5>
+                                <p class="text-muted small mb-3">Senior Frontend Developer</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <button class="btn btn-primary btn-sm rounded-pill px-3">Follow</button>
+                                    <button class="btn btn-outline-secondary btn-sm rounded-pill px-3">Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exercise 11.2: Media Object Layout -->
+                    <div class="col-md-7 col-lg-8">
+                        <h3 class="h6 fw-bold text-primary mb-3">Exercise 11.2: Media Object (Flexbox)</h3>
+                        <p class="text-muted small mb-4">Bootstrap 5 dropped the <code>.media</code> object in favor of flex utilities. Here is a media object built with flex classes.</p>
+                        
+                        <div class="d-flex bg-white p-3 border rounded-3 shadow-sm align-items-start mb-3">
+                            <div class="flex-shrink-0">
+                                <img src="https://ui-avatars.com/api/?name=User+One&background=e0e7ff&color=4F46E5" alt="..." class="rounded-3 shadow-sm">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-1 fw-bold fs-6">Media Heading</h5>
+                                <p class="mb-0 text-muted small">This is some content from a media component. You can replace this with any content and adjust it as needed. It uses flexbox for perfect alignment.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex bg-white p-3 border rounded-3 shadow-sm align-items-center">
+                            <div class="flex-shrink-0">
+                                <i class="bi bi-bell-fill fs-2 text-warning p-3 bg-warning bg-opacity-10 rounded-circle"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-4">
+                                <h5 class="mb-1 fw-bold fs-6">Centered Media Object</h5>
+                                <p class="mb-0 text-muted small">By using <code>align-items-center</code>, the image (or icon) and the content perfectly center align vertically.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION 12: SPACING UTILITIES
+        =========================================== -->
+        <section class="card shadow-sm border-0 rounded-4 mb-5">
+            <div class="card-header bg-white border-bottom-0 pt-4 pb-0 px-4">
+                <h2 class="h4 fw-bold text-dark mb-0">12. Spacing Utilities</h2>
+            </div>
+            <div class="card-body p-4">
+                
+                <h3 class="h6 fw-bold text-primary mb-3">Exercise 12.1: Margin and Padding</h3>
+                <div class="bg-light border border-dashed rounded-3">
+                    <!-- m-4 adds margin on all sides, p-5 adds padding on all sides -->
+                    <div class="bg-primary text-white m-4 p-5 rounded-3 shadow text-center">
+                        <h4 class="mb-3">Spacing Demo</h4>
+                        <p class="mb-0">This box has <code>m-4</code> (margin) outside and <code>p-5</code> (padding) inside.</p>
+                    </div>
+                </div>
+
+                <h3 class="h6 fw-bold text-primary mt-5 mb-4">Exercise 12.2: Pricing Section using Spacing</h3>
+                
+                <div class="row g-4 justify-content-center px-lg-5">
+                    <!-- Pricing Card 1 -->
+                    <div class="col-md-6">
+                        <!-- py-5 px-4 adds vertical/horizontal padding for readability -->
+                        <div class="card border-0 shadow-sm text-center py-5 px-4 h-100 rounded-4 transition-hover">
+                            <h5 class="text-muted text-uppercase fw-bold mb-3">Basic</h5>
+                            <h2 class="display-5 fw-bold mb-4">$9<span class="fs-6 text-muted fw-normal">/mo</span></h2>
+                            <ul class="list-unstyled mb-5">
+                                <li class="mb-3 text-muted"><i class="bi bi-check-circle-fill text-success me-2"></i>1 User</li>
+                                <li class="mb-3 text-muted"><i class="bi bi-check-circle-fill text-success me-2"></i>5GB Storage</li>
+                                <li class="text-muted"><i class="bi bi-x-circle text-danger me-2"></i>Priority Support</li>
+                            </ul>
+                            <!-- mt-auto pushes button to bottom if heights differ -->
+                            <button class="btn btn-outline-primary rounded-pill py-2 px-4 mt-auto fw-bold">Get Started</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Pricing Card 2 -->
+                    <div class="col-md-6">
+                        <div class="card border-primary border-2 shadow text-center py-5 px-4 h-100 rounded-4 position-relative">
+                            <!-- Absolute positioned badge using spacing and positioning -->
+                            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-3 py-2">Most Popular</span>
+                            
+                            <h5 class="text-primary text-uppercase fw-bold mb-3">Pro</h5>
+                            <h2 class="display-5 fw-bold mb-4">$29<span class="fs-6 text-muted fw-normal">/mo</span></h2>
+                            <ul class="list-unstyled mb-5">
+                                <li class="mb-3 fw-medium"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited Users</li>
+                                <li class="mb-3 fw-medium"><i class="bi bi-check-circle-fill text-success me-2"></i>100GB Storage</li>
+                                <li class="fw-medium"><i class="bi bi-check-circle-fill text-success me-2"></i>Priority Support</li>
+                            </ul>
+                            <button class="btn btn-primary rounded-pill py-2 px-4 mt-auto fw-bold shadow-sm">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll Reveal Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToReveal = document.querySelectorAll('section, .text-center.mb-5, .card, .row.g-4 > div');
+            elementsToReveal.forEach(el => el.classList.add('reveal'));
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+            elementsToReveal.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

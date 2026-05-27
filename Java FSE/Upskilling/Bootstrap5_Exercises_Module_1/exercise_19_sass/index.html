@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 19: Sass Customization - Bootstrap 5 Masterclass</title>
+    <!-- Link to our locally compiled customized Bootstrap CSS -->
+    <link rel="stylesheet" href="css/custom-bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        /* Noise Overlay */
+        .noise-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.04;
+            background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+        }
+        /* Scroll Reveal */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        body { cursor: crosshair; }
+        a, button, .btn { cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <!-- Back Navigation -->
+    <div class="container mt-4 mb-3">
+        <a href="../index.html" class="btn btn-light shadow-sm px-4">
+            <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+        </a>
+    </div>
+
+    <!-- Custom Header using our Sass compiled styles -->
+    <header class="custom-header text-center px-3">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Bootstrap Customized</h1>
+            <p class="lead">Built with NPM and customized using Sass variables</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                
+                <div class="card shadow border-0 mb-4">
+                    <div class="card-body p-5">
+                        <h2 class="h3 fw-bold mb-4">Exercise 19: Sass Setup & Customization</h2>
+                        
+                        <h4 class="h5 fw-bold text-primary">1. Npm Setup</h4>
+                        <p class="text-muted">This project was set up by running <code>npm init -y</code>, then <code>npm install bootstrap sass</code>. The source code is in the <code>node_modules</code> folder.</p>
+                        
+                        <h4 class="h5 fw-bold text-primary mt-4">2. Variable Overrides</h4>
+                        <p class="text-muted">In our <code>scss/custom.scss</code>, we changed the <code>$primary</code> color to purple and increased the <code>$border-radius</code> to 1rem.</p>
+                        
+                        <hr class="my-4">
+
+                        <h4 class="h5 fw-bold mb-4">Demonstration of Customized Components</h4>
+                        
+                        <!-- Buttons -->
+                        <div class="mb-4">
+                            <button class="btn btn-primary btn-lg shadow-sm">Primary Button (Customized)</button>
+                            <button class="btn btn-outline-primary btn-lg ms-2">Outline</button>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="card border-primary mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary fw-bold">Highly Rounded Card</h5>
+                                <p class="card-text">Look at the heavily rounded corners of these elements, applied globally through the <code>$border-radius</code> Sass variable.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Alert -->
+                        <div class="alert alert-primary" role="alert">
+                            <h4 class="alert-heading fw-bold">Success!</h4>
+                            <p class="mb-0">The Sass compilation worked perfectly, altering the entire Bootstrap theme dynamically.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-warning border-warning border-2 d-flex align-items-center">
+                    <i class="bi bi-exclamation-triangle-fill fs-3 me-3 text-warning"></i>
+                    <div>
+                        <strong>Note:</strong> To recompile the CSS, you must run <code>npm run css-compile</code> in the <code>exercise_19_sass</code> directory.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bootstrap 5 JS Bundle (loaded from node_modules locally) -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll Reveal Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToReveal = document.querySelectorAll('header, .card, .alert, .btn');
+            elementsToReveal.forEach(el => el.classList.add('reveal'));
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+            elementsToReveal.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

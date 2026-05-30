@@ -40,8 +40,6 @@
                 <configuration>
                     <source>21</source>
                     <target>21</target>
-                    <!-- Enable preview features if needed for pattern matching switch -->
-                    <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
         </plugins>

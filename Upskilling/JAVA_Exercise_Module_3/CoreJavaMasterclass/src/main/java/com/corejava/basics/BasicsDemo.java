@@ -11,8 +11,8 @@ public class BasicsDemo {
         
         // Ex 5: Loop
         System.out.println("Multiplication table of 5:");
-        for(int i=1; i<=10; i++) System.out.println("5 x " + i + " = " + (5*i));
-        
-        System.out.println("Basics module executed successfully. (Input prompts skipped for automated execution)");
+        for(int i = 1; i <= 10; i++) {
+            System.out.println("5 x " + i + " = " + (5 * i));
+        }
     }
 }

@@ -19,7 +19,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("==================================================");
-        System.out.println("   Enterprise Core Java Masterclass Simulator");
+        System.out.println("   Core Java Module Execution Utility");
         System.out.println("==================================================");
         
         while (true) {

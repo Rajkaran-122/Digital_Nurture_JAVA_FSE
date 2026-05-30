@@ -1,18 +1,19 @@
 package com.corejava;
 
+import com.corejava.basics.BasicsDemo;
+import com.corejava.methods.MethodsDemo;
+import com.corejava.arrays.ArraysDemo;
+import com.corejava.oop.OOPDemo;
+import com.corejava.exceptions.ExceptionsDemo;
+import com.corejava.io.IODemo;
+import com.corejava.collections.CollectionsDemo;
+import com.corejava.advanced.AdvancedDemo;
 import com.corejava.concurrency.VirtualThreadsDemo;
 import com.corejava.network.TCPServerDemo;
 import com.corejava.jdbc.TransactionDemo;
 
 import java.util.Scanner;
 
-/**
- * Enterprise Core Java Masterclass - Central CLI Menu
- * Architecture: Facade Pattern acting as an entry point for 41 exercises.
- * 
- * @author Senior Java Architect
- * @version 1.0
- */
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
@@ -22,41 +23,38 @@ public class Main {
         System.out.println("==================================================");
         
         while (true) {
-            System.out.println("\nSelect an Advanced Exercise Module to execute:");
-            System.out.println("1. [Ex 40] Virtual Threads (Java 21 Scalability Test)");
-            System.out.println("2. [Ex 35] TCP Socket Server (Chat Application)");
-            System.out.println("3. [Ex 33] JDBC Transactions (Money Transfer System)");
+            System.out.println("\nSelect a Module to execute:");
+            System.out.println("1. Basics (Ex 1-11)");
+            System.out.println("2. Methods & Recursion (Ex 12-13)");
+            System.out.println("3. Arrays & Strings (Ex 14-16)");
+            System.out.println("4. OOP Principles (Ex 17-19)");
+            System.out.println("5. Exceptions (Ex 20-21)");
+            System.out.println("6. File I/O (Ex 22-23)");
+            System.out.println("7. Collections (Ex 24-25)");
+            System.out.println("8. Advanced (Java 21 Streams, Records, Lambdas) (Ex 27-30)");
+            System.out.println("9. Virtual Threads (Java 21 Scalability Test) (Ex 40-41)");
+            System.out.println("10. TCP Socket Server (Chat Application) (Ex 35)");
+            System.out.println("11. JDBC Transactions (Money Transfer) (Ex 31-33)");
             System.out.println("0. Exit");
             System.out.print("Enter choice: ");
             
             String choice = scanner.nextLine();
             
             switch (choice) {
-                case "1" -> runVirtualThreadsDemo();
-                case "2" -> runTCPServerDemo();
-                case "3" -> runJdbcTransactionDemo();
-                case "0" -> {
-                    System.out.println("Shutting down gracefully...");
-                    System.exit(0);
-                }
+                case "1" -> BasicsDemo.execute();
+                case "2" -> MethodsDemo.execute();
+                case "3" -> ArraysDemo.execute();
+                case "4" -> OOPDemo.execute();
+                case "5" -> ExceptionsDemo.execute();
+                case "6" -> IODemo.execute();
+                case "7" -> CollectionsDemo.execute();
+                case "8" -> AdvancedDemo.execute();
+                case "9" -> VirtualThreadsDemo.execute();
+                case "10" -> TCPServerDemo.startServer(8080);
+                case "11" -> TransactionDemo.executeTransaction();
+                case "0" -> { System.out.println("Shutting down gracefully..."); System.exit(0); }
                 default -> System.out.println("Invalid selection. Please try again.");
             }
         }
-    }
-
-    private static void runVirtualThreadsDemo() {
-        System.out.println("\n--- Initializing Virtual Threads Demo ---");
-        VirtualThreadsDemo.execute();
-    }
-
-    private static void runTCPServerDemo() {
-        System.out.println("\n--- Initializing TCP Socket Server ---");
-        System.out.println("Note: This will block the current thread. Use Ctrl+C to terminate the server.");
-        TCPServerDemo.startServer(8080);
-    }
-
-    private static void runJdbcTransactionDemo() {
-        System.out.println("\n--- Initializing JDBC Transaction Demo ---");
-        TransactionDemo.executeTransaction();
     }
 }

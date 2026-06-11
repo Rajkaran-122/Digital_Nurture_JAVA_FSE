@@ -1,0 +1,13 @@
+package design_patterns.exercise11;
+
+public class CustomerService {
+    private CustomerRepository customerRepository;
+
+    public CustomerService(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
+
+    public String getCustomerName(String id) {
+        return customerRepository.findCustomerById(id);
+    }
+}

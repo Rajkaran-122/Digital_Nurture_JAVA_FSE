@@ -1,5 +1,0 @@
-package design_patterns.exercise4;
-
-public interface PaymentProcessor {
-    void processPayment(double amount);
-}

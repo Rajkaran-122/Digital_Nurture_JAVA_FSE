@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Upskilling Exercises Screenshots
 
 ![HTML5 Exercises 1-10 - 1](<HTML5 Exercises 1-10 - All in One - Google Chrome 21-06-2026 11_00_44.png>)
@@ -7,3 +8,6 @@
 ![Bootstrap 5 Masterclass 1](<Bootstrap 5 Masterclass - Exercises - Google Chrome 21-06-2026 10_56_31.png>)
 ![Bootstrap 5 Masterclass 2](<Bootstrap 5 Masterclass - Exercises - Google Chrome 21-06-2026 10_56_02.png>)
 ![Bootstrap 5 Masterclass 3](<Bootstrap 5 Masterclass - Exercises - Google Chrome 21-06-2026 10_55_13.png>)
+=======
+![Uploading Bootstrap 5 Masterclass - Exercises - Google Chrome 21-06-2026 10_55_13.png…]()
+>>>>>>> 44e73cf6c438eb8f66f808508f146fe464cab3c3

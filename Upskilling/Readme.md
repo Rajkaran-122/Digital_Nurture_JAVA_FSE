@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Upskilling Exercises Screenshots
 
 ![HTML5 Exercises 1-10 - 1](<HTML5 Exercises 1-10 - All in One - Google Chrome 21-06-2026 11_00_44.png>)

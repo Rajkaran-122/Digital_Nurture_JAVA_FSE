@@ -64,3 +64,27 @@ Below are screenshots demonstrating the running H2 Console and successful querie
 ![H2 Console Connected](images/H2%20Console%20-%20Google%20Chrome%2024-06-2026%2002_49_36.png)
 
 ![H2 Console Query Results](images/H2%20Console%20-%20Google%20Chrome%2024-06-2026%2002_51_00.png)
+
+## Employee Management System API Documentation
+
+![Swagger UI 1](images/Swagger%20UI%20-%20Google%20Chrome%2024-06-2026%2019_43_35.png)
+
+![Swagger UI 2](images/Swagger%20UI%20-%20Google%20Chrome%2024-06-2026%2019_43_55.png)
+
+## Exercise Execution Outputs
+
+![Exercise 1](images/exercise_1_output.png)
+
+![Exercise 2](images/exercise_2_output.png)
+
+![Exercise 3](images/exercise_3_output.png)
+
+![Exercise 4](images/exercise_4_output.png)
+
+![Exercise 5](images/exercise_5_output.png)
+
+![Exercise 6](images/exercise_6_output.png)
+
+![Exercise 7](images/exercise_7_output.png)
+
+![Exercise 8](images/exercise_8_output.png)

@@ -1,0 +1,13 @@
+insert into country (co_code, co_name) values ('IN', 'India');
+insert into country (co_code, co_name) values ('US', 'United States of America');
+insert into country (co_code, co_name) values ('BV', 'Bouvet Island');
+insert into country (co_code, co_name) values ('DJ', 'Djibouti');
+insert into country (co_code, co_name) values ('GP', 'Guadeloupe');
+insert into country (co_code, co_name) values ('GS', 'South Georgia and the South Sandwich Islands');
+insert into country (co_code, co_name) values ('LU', 'Luxembourg');
+insert into country (co_code, co_name) values ('SS', 'South Sudan');
+insert into country (co_code, co_name) values ('TF', 'French Southern Territories');
+insert into country (co_code, co_name) values ('UM', 'United States Minor Outlying Islands');
+insert into country (co_code, co_name) values ('ZA', 'South Africa');
+insert into country (co_code, co_name) values ('ZM', 'Zambia');
+insert into country (co_code, co_name) values ('ZW', 'Zimbabwe');

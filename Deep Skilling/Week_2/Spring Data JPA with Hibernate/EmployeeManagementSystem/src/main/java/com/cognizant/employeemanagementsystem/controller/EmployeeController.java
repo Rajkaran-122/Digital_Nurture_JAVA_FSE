@@ -1,80 +1,100 @@
 package com.cognizant.employeemanagementsystem.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.cognizant.employeemanagementsystem.dto.EmployeeRequest;
+import com.cognizant.employeemanagementsystem.dto.EmployeeSummary;
+import com.cognizant.employeemanagementsystem.entity.Employee;
+import com.cognizant.employeemanagementsystem.projection.EmployeeView;
+import com.cognizant.employeemanagementsystem.service.EmployeeService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import jakarta.validation.Valid;
-
-import com.cognizant.employeemanagementsystem.model.Employee;
-import com.cognizant.employeemanagementsystem.projection.EmployeeProjection;
-import com.cognizant.employeemanagementsystem.repository.EmployeeRepository;
 
 import java.util.List;
-import java.util.Optional;
 
-import org.springframework.cache.annotation.Cacheable;
-
+@Slf4j
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/api/employees")
 public class EmployeeController {
 
-    @Autowired
-    private EmployeeRepository employeeRepository;
+    private final EmployeeService employeeService;
 
-    @GetMapping
-    @Cacheable("employees")
-    public Page<Employee> getAllEmployees(
-            @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "10") int size,
-            @RequestParam(defaultValue = "id") String sortBy) {
-        Pageable pageable = PageRequest.of(page, size, Sort.by(sortBy));
-        return employeeRepository.findAll(pageable);
+    @PostMapping
+    public Employee create(@RequestBody EmployeeRequest request) {
+        log.info("POST /api/employees");
+        return employeeService.create(request);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id) {
-        Optional<Employee> employee = employeeRepository.findById(id);
-        return employee.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    public Employee get(@PathVariable Long id) {
+        log.info("GET /api/employees/{}", id);
+        return employeeService.get(id);
     }
 
-    @PostMapping
-    public Employee createEmployee(@Valid @RequestBody Employee employee) {
-        return employeeRepository.save(employee);
+    @GetMapping
+    public Page<Employee> findAll(@RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size,
+            @RequestParam(defaultValue = "id") String sortBy,
+            @RequestParam(defaultValue = "asc") String direction) {
+        Sort sort = direction.equalsIgnoreCase("desc") ? Sort.by(sortBy).descending() : Sort.by(sortBy).ascending();
+        log.info("GET /api/employees");
+        return employeeService.findAll(PageRequest.of(page, size, sort));
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<Employee> updateEmployee(@PathVariable Long id, @Valid @RequestBody Employee employeeDetails) {
-        Optional<Employee> employeeOpt = employeeRepository.findById(id);
-        if (employeeOpt.isPresent()) {
-            Employee employee = employeeOpt.get();
-            employee.setName(employeeDetails.getName());
-            employee.setEmail(employeeDetails.getEmail());
-            employee.setDepartment(employeeDetails.getDepartment());
-            return ResponseEntity.ok(employeeRepository.save(employee));
-        }
-        return ResponseEntity.notFound().build();
+    @GetMapping("/name")
+    public List<Employee> findByName(@RequestParam String name) {
+        log.info("GET /api/employees/name");
+        return employeeService.findByNameContaining(name);
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteEmployee(@PathVariable Long id) {
-        if (employeeRepository.existsById(id)) {
-            employeeRepository.deleteById(id);
-            return ResponseEntity.ok().build();
-        }
-        return ResponseEntity.notFound().build();
+    @GetMapping("/department")
+    public List<Employee> findByDepartment(@RequestParam String name) {
+        log.info("GET /api/employees/department");
+        return employeeService.findByDepartmentName(name);
     }
 
     @GetMapping("/search")
-    public List<Employee> searchEmployees(@RequestParam String name) {
-        return employeeRepository.findByNameContainingIgnoreCase(name);
+    public List<Employee> search(@RequestParam String keyword) {
+        log.info("GET /api/employees/search");
+        return employeeService.searchByNameOrEmail(keyword);
     }
 
-    @GetMapping("/projections")
-    public List<EmployeeProjection> getEmployeeProjections() {
-        return employeeRepository.findProjectedBy();
+    @GetMapping("/permanent")
+    public List<Employee> permanentEmployees() {
+        log.info("GET /api/employees/permanent");
+        return employeeService.findPermanentEmployees();
+    }
+
+    @GetMapping("/average-salary")
+    public Double averageSalary() {
+        log.info("GET /api/employees/average-salary");
+        return employeeService.findAverageSalary();
+    }
+
+    @GetMapping("/projection/interface")
+    public List<EmployeeView> interfaceProjection() {
+        log.info("GET /api/employees/projection/interface");
+        return employeeService.findEmployeeViews();
+    }
+
+    @GetMapping("/projection/class")
+    public List<EmployeeSummary> classProjection() {
+        log.info("GET /api/employees/projection/class");
+        return employeeService.findEmployeeSummaries();
+    }
+
+    @PutMapping("/{id}")
+    public Employee update(@PathVariable Long id, @RequestBody EmployeeRequest request) {
+        log.info("PUT /api/employees/{}", id);
+        return employeeService.update(id, request);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        log.info("DELETE /api/employees/{}", id);
+        employeeService.delete(id);
     }
 }

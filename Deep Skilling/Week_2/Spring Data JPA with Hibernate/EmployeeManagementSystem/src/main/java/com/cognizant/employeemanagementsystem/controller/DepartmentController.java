@@ -1,59 +1,54 @@
 package com.cognizant.employeemanagementsystem.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
+import com.cognizant.employeemanagementsystem.entity.Department;
+import com.cognizant.employeemanagementsystem.service.DepartmentService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import jakarta.validation.Valid;
-
-import com.cognizant.employeemanagementsystem.model.Department;
-import com.cognizant.employeemanagementsystem.repository.DepartmentRepository;
 
 import java.util.List;
-import java.util.Optional;
 
-import org.springframework.cache.annotation.Cacheable;
-
+@Slf4j
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/api/departments")
 public class DepartmentController {
 
-    @Autowired
-    private DepartmentRepository departmentRepository;
+    private final DepartmentService departmentService;
 
-    @GetMapping
-    @Cacheable("departments")
-    public List<Department> getAllDepartments() {
-        return departmentRepository.findAll();
+    @PostMapping
+    public Department create(@RequestBody Department department) {
+        log.info("POST /api/departments");
+        return departmentService.create(department);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Department> getDepartmentById(@PathVariable Long id) {
-        Optional<Department> department = departmentRepository.findById(id);
-        return department.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    public Department get(@PathVariable Long id) {
+        log.info("GET /api/departments/{}", id);
+        return departmentService.get(id);
     }
 
-    @PostMapping
-    public Department createDepartment(@Valid @RequestBody Department department) {
-        return departmentRepository.save(department);
+    @GetMapping
+    public List<Department> findAll() {
+        log.info("GET /api/departments");
+        return departmentService.findAll();
+    }
+
+    @GetMapping("/search")
+    public List<Department> search(@RequestParam String name) {
+        log.info("GET /api/departments/search");
+        return departmentService.search(name);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Department> updateDepartment(@PathVariable Long id, @Valid @RequestBody Department departmentDetails) {
-        Optional<Department> departmentOpt = departmentRepository.findById(id);
-        if (departmentOpt.isPresent()) {
-            Department department = departmentOpt.get();
-            department.setName(departmentDetails.getName());
-            return ResponseEntity.ok(departmentRepository.save(department));
-        }
-        return ResponseEntity.notFound().build();
+    public Department update(@PathVariable Long id, @RequestBody Department department) {
+        log.info("PUT /api/departments/{}", id);
+        return departmentService.update(id, department);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteDepartment(@PathVariable Long id) {
-        if (departmentRepository.existsById(id)) {
-            departmentRepository.deleteById(id);
-            return ResponseEntity.ok().build();
-        }
-        return ResponseEntity.notFound().build();
+    public void delete(@PathVariable Long id) {
+        log.info("DELETE /api/departments/{}", id);
+        departmentService.delete(id);
     }
 }

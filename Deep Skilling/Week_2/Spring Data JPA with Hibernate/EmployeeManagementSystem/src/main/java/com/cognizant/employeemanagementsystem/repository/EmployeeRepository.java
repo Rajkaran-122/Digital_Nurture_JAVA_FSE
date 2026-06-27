@@ -1,32 +1,46 @@
 package com.cognizant.employeemanagementsystem.repository;
 
+import com.cognizant.employeemanagementsystem.dto.EmployeeSummary;
+import com.cognizant.employeemanagementsystem.entity.Employee;
+import com.cognizant.employeemanagementsystem.projection.EmployeeView;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.stereotype.Repository;
-
-import com.cognizant.employeemanagementsystem.model.Employee;
-import com.cognizant.employeemanagementsystem.projection.EmployeeProjection;
+import org.springframework.data.repository.query.Param;
 
 import java.util.List;
+import java.util.Optional;
 
-import org.springframework.data.jpa.repository.EntityGraph;
-
-@Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+    Optional<Employee> findByEmail(String email);
 
-    // Derived query method
     List<Employee> findByNameContainingIgnoreCase(String name);
 
-    // Custom query with @Query
-    @Query("SELECT e FROM Employee e WHERE e.email LIKE %:domain%")
-    List<Employee> findByEmailDomain(String domain);
+    List<Employee> findByDepartmentName(String departmentName);
 
-    // Pagination, Sorting, and N+1 fix
-    @EntityGraph(attributePaths = {"department"})
-    Page<Employee> findAll(Pageable pageable);
+    List<Employee> findBySalaryGreaterThan(Double salary);
 
-    // Projection
-    List<EmployeeProjection> findProjectedBy();
+    List<Employee> findByPermanentTrue();
+
+    List<Employee> findByDepartmentName(String departmentName, Sort sort);
+
+    Page<Employee> findByNameContainingIgnoreCase(String name, Pageable pageable);
+
+    List<Employee> findPermanentEmployees();
+
+    List<Employee> findBySalaryGreaterThanNamed(@Param("salary") Double salary);
+
+    @Query("SELECT e FROM Employee e WHERE LOWER(e.name) LIKE LOWER(CONCAT('%', :keyword, '%')) OR LOWER(e.email) LIKE LOWER(CONCAT('%', :keyword, '%'))")
+    List<Employee> searchByNameOrEmail(@Param("keyword") String keyword);
+
+    @Query("SELECT AVG(e.salary) FROM Employee e")
+    Double findAverageSalary();
+
+    @Query("SELECT e.id AS id, e.name AS name, e.email AS email, e.department AS department FROM Employee e")
+    List<EmployeeView> findEmployeeViews();
+
+    @Query("SELECT new com.cognizant.employeemanagementsystem.dto.EmployeeSummary(e.id, e.name, e.email, d.name) FROM Employee e LEFT JOIN e.department d")
+    List<EmployeeSummary> findEmployeeSummaries();
 }

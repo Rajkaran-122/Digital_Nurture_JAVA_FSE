@@ -1,6 +1,8 @@
-# PL/SQL Week 1 Exercises
+# 💾 PL/SQL Database Engineering
 
-This folder contains the complete solutions for the PL/SQL Week 1 Exercises, meticulously organized into schema setup and individual exercise files.
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+
+Welcome to the **PL/SQL** module! This folder contains the complete solutions for the PL/SQL Week 1 Exercises, meticulously organized into schema setup and individual modular exercise files.
 
 ## Directory Structure
 

@@ -1,0 +1,26 @@
+This Spring Boot 3 application implements the HQL, JPQL, Native Query and Criteria Query hands-on.
+
+Run in IntelliJ IDEA:
+1. Open this folder as a Maven project.
+2. Wait for Maven reload.
+3. Run OrmQueryHandsonApplication.
+
+Database:
+The app uses H2 in-memory database by default so it runs directly without MySQL setup.
+MySQL connector is also included in pom.xml. To use MySQL, change application.properties datasource URL, username and password.
+
+Implemented hands-ons:
+1. HQL and JPQL notes.
+2. Get all permanent employees using HQL with fetch joins for department and skills.
+3. Fetch quiz attempt details using HQL across user, attempt, attempt_question, question, attempt_option and options.
+4. Get average salary using HQL with department id parameter.
+5. Get all employees using Native Query.
+6. Criteria Query example for dynamic employee filtering.
+
+Important notes:
+JPQL is a subset of HQL.
+HQL works with entity names and fields, not table names and column names.
+join links entities but does not always populate association data.
+join fetch populates associated beans in the same query.
+Native queries directly use database table and column names.
+Criteria Query helps when the where clause is dynamic.

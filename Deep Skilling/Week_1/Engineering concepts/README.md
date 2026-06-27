@@ -1,4 +1,10 @@
-# Engineering Concepts Exercises
+# 🏛️ Engineering Concepts & Design Patterns
+
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+
+Welcome to the **Engineering Concepts** module! This section comprehensively covers the fundamental building blocks of optimized software architecture, focusing on Data Structures, Time Complexity, and Enterprise Design Patterns.
+
+---
 
 ## Data Structures and Algorithms
 

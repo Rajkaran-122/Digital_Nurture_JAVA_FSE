@@ -1,4 +1,10 @@
-# Git Branching, Merging, Conflict Resolution and Remote Repository
+# 🔀 Git Version Control & Repository Management
+
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+
+Welcome to the **Git** module! This section serves as a comprehensive reference guide for mastering version control workflows, including branching, merging, and conflict resolution using Git and GitLab.
+
+---
 
 ## Objective
 

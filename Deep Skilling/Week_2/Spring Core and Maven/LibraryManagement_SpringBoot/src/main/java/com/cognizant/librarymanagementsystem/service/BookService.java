@@ -1,0 +1,67 @@
+package com.cognizant.librarymanagementsystem.service;
+
+import com.cognizant.librarymanagementsystem.model.Book;
+import com.cognizant.librarymanagementsystem.repository.BookRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class BookService {
+
+    private static final Logger logger = LoggerFactory.getLogger(BookService.class);
+
+    private final BookRepository bookRepository;
+
+    @Autowired
+    public BookService(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
+
+    public Book addBook(Book book) {
+        logger.info("[BookService] Adding book: {}", book.getTitle());
+        return bookRepository.save(book);
+    }
+
+    public List<Book> getAllBooks() {
+        logger.info("[BookService] Fetching all books");
+        return bookRepository.findAll();
+    }
+
+    public Optional<Book> getBookById(Long id) {
+        logger.info("[BookService] Fetching book by id: {}", id);
+        return bookRepository.findById(id);
+    }
+
+    public List<Book> getBooksByAuthor(String author) {
+        logger.info("[BookService] Fetching books by author: {}", author);
+        return bookRepository.findByAuthor(author);
+    }
+
+    public List<Book> searchByTitle(String keyword) {
+        logger.info("[BookService] Searching books by title keyword: {}", keyword);
+        return bookRepository.findByTitleContainingIgnoreCase(keyword);
+    }
+
+    public Book updateBook(Long id, Book updatedBook) {
+        logger.info("[BookService] Updating book with id: {}", id);
+        return bookRepository.findById(id).map(existing -> {
+            existing.setTitle(updatedBook.getTitle());
+            existing.setAuthor(updatedBook.getAuthor());
+            existing.setIsbn(updatedBook.getIsbn());
+            return bookRepository.save(existing);
+        }).orElseThrow(() -> new RuntimeException("Book not found with id: " + id));
+    }
+
+    public void deleteBook(Long id) {
+        logger.info("[BookService] Deleting book with id: {}", id);
+        if (!bookRepository.existsById(id)) {
+            throw new RuntimeException("Book not found with id: " + id);
+        }
+        bookRepository.deleteById(id);
+    }
+}

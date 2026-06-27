@@ -1,0 +1,34 @@
+Hands-on implemented:
+1. Country query methods
+   - findByNameContainingIgnoreCase
+   - findByNameContainingIgnoreCaseOrderByNameAsc
+   - findByNameStartingWithIgnoreCase
+
+2. Stock query methods
+   - findByCodeAndDateBetween
+   - findByCodeAndCloseGreaterThan
+   - findTop3ByOrderByVolumeDesc
+   - findTop3ByCodeOrderByCloseAsc
+
+3. Payroll entity mappings
+   - Employee
+   - Department
+   - Skill
+
+4. Many-to-one mapping
+   - Employee to Department using @ManyToOne and @JoinColumn(name = "em_dp_id")
+
+5. One-to-many mapping
+   - Department to Employee using @OneToMany(mappedBy = "department", fetch = FetchType.EAGER)
+
+6. Many-to-many mapping
+   - Employee to Skill using employee_skill join table
+   - Skill to Employee using mappedBy = "skillList"
+
+MySQL switch:
+Replace application.properties datasource values with:
+spring.datasource.url=jdbc:mysql://localhost:3306/ormlearn
+spring.datasource.username=root
+spring.datasource.password=your_password
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update

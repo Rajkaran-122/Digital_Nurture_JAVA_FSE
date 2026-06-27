@@ -1,4 +1,4 @@
-# 🧪 JUnit, Mockito and SL4J
+# JUnit, Mockito and SL4J
 
 ![JUnit5](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -7,7 +7,7 @@ This module focuses on Enterprise Testing methodologies and Application Logging.
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 ### 1. Unit Testing with JUnit 5
 - Understanding the Test-Driven Development (TDD) lifecycle.
@@ -26,7 +26,7 @@ This module focuses on Enterprise Testing methodologies and Application Logging.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 - **`src/main/java/`**: Contains the core business logic components designed to be testable.
 - **`src/test/java/`**: Houses the JUnit test suites and Mockito setup validating the core logic.

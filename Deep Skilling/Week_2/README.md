@@ -1,4 +1,4 @@
-# 🚀 Deep Skilling: Week 2 - Spring Framework & Spring Boot
+# Deep Skilling: Week 2 - Spring Framework & Spring Boot
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
 ![Maven](https://img.shields.io/badge/apache_maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
@@ -9,7 +9,7 @@ Welcome to the **Week 2** module of the Cognizant Digital Nurture (Java FSE) pro
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 This repository is professionally separated into two distinct modules to cleanly decouple classic Spring Core configurations from modern Spring Data JPA patterns.
 
@@ -30,19 +30,19 @@ Week_2/
 
 ---
 
-## 🔗 Quick Navigation
+## Quick Navigation
 
 To view the detailed implementation, features, and visual output proofs of each project, please navigate to the dedicated READMEs:
 
-1. 📚 [**Spring Core & Maven (Library Management)**](Spring%20Core%20and%20Maven/README.md)
+1. [**Spring Core & Maven (Library Management)**](Spring%20Core%20and%20Maven/README.md)
    - Features: Inversion of Control (IoC), Dependency Injection (Constructor/Setter), XML & Annotation configurations, and Spring AOP Logging.
    
-2. 🗄️ [**Spring Data JPA with Hibernate (Employee Management)**](Spring%20Data%20JPA%20with%20Hibernate/README.md)
+2. [**Spring Data JPA with Hibernate (Employee Management)**](Spring%20Data%20JPA%20with%20Hibernate/README.md)
    - Features: Robust REST APIs, Service Layers, Data Transfer Objects (DTOs), `@Entity` mappings, automated Auditing, and embedded H2 databases.
 
 ---
 
-## 🛠️ Technologies & Tools
+## Technologies & Tools
 - **Frameworks:** Spring Core, Spring Boot 3, Spring WebMVC, Spring Data JPA, Spring AOP
 - **Database:** H2 Database Engine, Hibernate ORM
 - **Build Tool:** Apache Maven

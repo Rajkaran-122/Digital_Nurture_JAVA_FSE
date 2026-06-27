@@ -1,90 +1,158 @@
-# Week 2: Spring Framework & Spring Boot
+# Spring Core & Maven Hands-on
 
-This directory contains the solutions for the Week 2 Deep Skilling exercises, which focus on learning the Spring Framework. The exercises have been professionally separated into two distinct Maven projects to cleanly decouple classic Spring Core configurations from modern Spring Boot conventions.
+**Application Name:** LibraryManagement  
+**Package Name:** `com.cognizant.rishbootdev.librarymanagementsystem`
 
-## Project Structure
-
-- **`LibraryManagement_SpringCore/`** (Exercises 1-8): Focuses on classic Spring Framework features including XML Configuration, Annotation-based Component Scanning, Dependency Injection (Constructor & Setter), and Spring AOP (Aspect-Oriented Programming).
-- **`LibraryManagement_SpringBoot/`** (Exercise 9): A modern Spring Boot application featuring a RESTful API, Spring Data JPA, and an embedded H2 database.
+This project demonstrates the fundamentals of the Spring Framework, including Spring Core, Dependency Injection (IoC), Spring AOP, XML Configuration, Annotation-based Configuration, Constructor & Setter Injection, Maven configuration, and a basic Spring Boot application. All exercises from the hands-on document have been implemented.
 
 ---
 
-## 1. Spring Core Application (Exercises 1-8)
+## Exercise 1 – Configuring a Basic Spring Application
+**Implemented:**
+- Maven project creation
+- Spring Core dependencies
+- XML-based bean configuration
+- BookService
+- BookRepository
+- Main class to load Spring context
 
-### Features Implemented
-- **Dependency Injection:** `@Service` and `@Repository` auto-wiring.
-- **XML Configuration:** Explicit `<bean>` definitions for constructor and setter injection.
-- **Spring AOP:** A custom `LoggingAspect` intercepting method calls with `@Before`, `@After`, and `@Around` advice to log execution times.
-
-### How to Run
-Navigate into the `LibraryManagement_SpringCore` directory and run the following Maven command:
-```bash
-mvn clean compile exec:java -Dexec.mainClass="com.library.LibraryManagementApplication"
-```
-
----
-
-## 2. Spring Boot Application (Exercise 9)
-
-### Features Implemented
-- **RESTful Endpoints:** Fully functional `BookController` with GET, POST, PUT, and DELETE operations.
-- **Spring Data JPA:** `BookRepository` interface for automatic database operations without writing boilerplate SQL.
-- **In-Memory Database:** H2 database configured for instant testing with no external dependencies.
-
-### How to Run
-Navigate into the `LibraryManagement_SpringBoot` directory and start the server:
-```bash
-mvn spring-boot:run
-```
-The server will start on **port 8081** (configured in `application.properties` to avoid conflicts).
-
-### API Documentation
-- **GET** `http://localhost:8081/api/books` - Retrieve all books
-- **POST** `http://localhost:8081/api/books` - Create a new book
-- **PUT** `http://localhost:8081/api/books/{id}` - Update a book
-- **DELETE** `http://localhost:8081/api/books/{id}` - Delete a book
+**Output:**  
+![Exercise 1 Output](images/exercise_1_output.png)
 
 ---
 
-## Database Configuration & H2 Console
+## Exercise 2 – Implementing Dependency Injection
+**Implemented:**
+- Setter Injection
+- XML bean wiring
+- Dependency Injection using Spring IoC Container
 
-We are using an embedded H2 database for the Spring Boot project. You can inspect the database directly using the H2 web console.
+**Output:**  
+![Exercise 2 Output](images/exercise_2_output.png)
 
-**Login Details:**
-- **URL:** `http://localhost:8081/h2-console`
-- **JDBC URL:** `jdbc:h2:mem:librarydb`
-- **User Name:** `sa`
-- **Password:** `password`
+---
 
-### H2 Console Demonstration
-Below are screenshots demonstrating the running H2 Console and successful queries against our `books` table:
+## Exercise 3 – Implementing Logging with Spring AOP
+**Implemented:**
+- Spring AOP
+- Logging Aspect
+- Method execution time logging
+- AspectJ Auto Proxy
 
+**Output:**  
+![Exercise 3 Output](images/exercise_3_output.png)
+
+---
+
+## Exercise 4 – Creating and Configuring a Maven Project
+**Implemented:**
+- Maven project
+- Spring Context
+- Spring AOP
+- Spring WebMVC dependencies
+- Maven Compiler Plugin configuration
+
+**Output:**  
+![Exercise 4 Output](images/exercise_4_output.png)
+
+---
+
+## Exercise 5 – Configuring the Spring IoC Container
+**Implemented:**
+- XML Bean Configuration
+- IoC Container
+- Bean Initialization
+- Dependency Injection
+
+**Output:**  
+![Exercise 5 Output](images/exercise_5_output.png)
+
+---
+
+## Exercise 6 – Configuring Beans with Annotations
+**Implemented:**
+- `@Service`
+- `@Repository`
+- Component Scanning
+- Annotation-based Bean Configuration
+
+**Output:**  
+![Exercise 6 Output](images/exercise_6_output.png)
+
+---
+
+## Exercise 7 – Constructor and Setter Injection
+**Implemented:**
+- Constructor Injection
+- Setter Injection
+- XML Constructor Configuration
+
+**Output:**  
+![Exercise 7 Output](images/exercise_7_output.png)
+
+---
+
+## Exercise 8 – Basic Spring AOP
+**Implemented:**
+- Before Advice
+- After Advice
+- Logging Aspect
+- AspectJ Auto Proxy
+
+**Output:**  
+![Exercise 8 Output](images/exercise_8_output.png)
+
+---
+
+## Exercise 9 – Spring Boot Application
+**Implemented:**
+- Spring Boot Project
+- Spring Web
+- Spring Data JPA
+- H2 Database
+- Book Entity
+- Book Repository
+- Book REST Controller
+- CRUD Operations
+
+**Output:**
+
+*H2 Console - Login*  
 ![H2 Console Login](images/H2%20Console%20-%20Google%20Chrome%2024-06-2026%2002_46_14.png)
 
+*H2 Console - Connected*  
 ![H2 Console Connected](images/H2%20Console%20-%20Google%20Chrome%2024-06-2026%2002_49_36.png)
 
+*H2 Console - Query Results*  
 ![H2 Console Query Results](images/H2%20Console%20-%20Google%20Chrome%2024-06-2026%2002_51_00.png)
 
-## Employee Management System API Documentation
-
-![Swagger UI 1](images/Swagger%20UI%20-%20Google%20Chrome%2024-06-2026%2019_43_35.png)
-
+*API Documentation (Swagger UI)*  
+![Swagger UI 1](images/Swagger%20UI%20-%20Google%20Chrome%2024-06-2026%2019_43_35.png)  
 ![Swagger UI 2](images/Swagger%20UI%20-%20Google%20Chrome%2024-06-2026%2019_43_55.png)
 
-## Exercise Execution Outputs
+---
 
-![Exercise 1](images/exercise_1_output.png)
+## Technologies Used
+- Spring Core
+- Spring Boot 3
+- Spring AOP
+- Spring Context
+- Spring WebMVC
+- Spring Data JPA
+- H2 Database
+- Maven
+- Lombok
+- SLF4J Logging
+- IntelliJ IDEA
 
-![Exercise 2](images/exercise_2_output.png)
-
-![Exercise 3](images/exercise_3_output.png)
-
-![Exercise 4](images/exercise_4_output.png)
-
-![Exercise 5](images/exercise_5_output.png)
-
-![Exercise 6](images/exercise_6_output.png)
-
-![Exercise 7](images/exercise_7_output.png)
-
-![Exercise 8](images/exercise_8_output.png)
+## Project Features
+- XML-based Bean Configuration
+- Spring IoC Container
+- Dependency Injection (Setter & Constructor)
+- Annotation-based Bean Configuration
+- Spring AOP Logging
+- Maven Build Configuration
+- Spring Boot REST Application
+- CRUD Operations using Spring Data JPA
+- Builder Pattern
+- Lombok Integration

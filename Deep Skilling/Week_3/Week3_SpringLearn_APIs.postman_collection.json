@@ -1,0 +1,414 @@
+{
+	"info": {
+		"_postman_id": "week3-spring-learn-collection",
+		"name": "Week 3 - Spring Learn REST APIs",
+		"description": "Postman collection for Week 3 Spring Boot REST API hands-on.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "baseUrl_handson2",
+			"value": "http://localhost:8083"
+		},
+		{
+			"key": "baseUrl_handson3",
+			"value": "http://localhost:8083"
+		},
+		{
+			"key": "baseUrl_handson4",
+			"value": "http://localhost:8090"
+		},
+		{
+			"key": "baseUrl_jwt",
+			"value": "http://localhost:8090"
+		},
+		{
+			"key": "jwtToken",
+			"value": ""
+		}
+	],
+	"item": [
+		{
+			"name": "Handson 2 - REST GET APIs",
+			"item": [
+				{
+					"name": "Hello World",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson2}}/hello",
+							"host": ["{{baseUrl_handson2}}"],
+							"path": ["hello"]
+						},
+						"description": "Returns 'Hello World!!' text."
+					}
+				},
+				{
+					"name": "Get Country (India)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson2}}/country",
+							"host": ["{{baseUrl_handson2}}"],
+							"path": ["country"]
+						},
+						"description": "Returns India country details loaded from country.xml."
+					}
+				},
+				{
+					"name": "Get All Countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson2}}/countries",
+							"host": ["{{baseUrl_handson2}}"],
+							"path": ["countries"]
+						},
+						"description": "Returns all 4 countries from XML configuration."
+					}
+				},
+				{
+					"name": "Get Country By Code (IN)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson2}}/country/in",
+							"host": ["{{baseUrl_handson2}}"],
+							"path": ["country", "in"]
+						},
+						"description": "Returns country by code (case-insensitive)."
+					}
+				},
+				{
+					"name": "Get Country - Not Found (az)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson2}}/country/az",
+							"host": ["{{baseUrl_handson2}}"],
+							"path": ["country", "az"]
+						},
+						"description": "Should return 404 Not Found with reason 'Country not found'."
+					}
+				}
+			]
+		},
+		{
+			"name": "Handson 3 - Employee & Department GET",
+			"item": [
+				{
+					"name": "Get All Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson3}}/employees",
+							"host": ["{{baseUrl_handson3}}"],
+							"path": ["employees"]
+						},
+						"description": "Returns all employees with department and skills from XML config."
+					}
+				},
+				{
+					"name": "Get All Departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson3}}/departments",
+							"host": ["{{baseUrl_handson3}}"],
+							"path": ["departments"]
+						},
+						"description": "Returns all departments from XML config."
+					}
+				}
+			]
+		},
+		{
+			"name": "Handson 4 - CRUD & Validation",
+			"item": [
+				{
+					"name": "Get All Countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson4}}/countries",
+							"host": ["{{baseUrl_handson4}}"],
+							"path": ["countries"]
+						}
+					}
+				},
+				{
+					"name": "Get Country By Code (IN)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson4}}/countries/IN",
+							"host": ["{{baseUrl_handson4}}"],
+							"path": ["countries", "IN"]
+						}
+					}
+				},
+				{
+					"name": "Add Country (Valid)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"code\": \"FR\",\n  \"name\": \"France\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl_handson4}}/countries",
+							"host": ["{{baseUrl_handson4}}"],
+							"path": ["countries"]
+						},
+						"description": "Creates a new country. Should return 200 with the country in response body."
+					}
+				},
+				{
+					"name": "Add Country (Validation Error)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"code\": \"I\",\n  \"name\": \"India\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl_handson4}}/countries",
+							"host": ["{{baseUrl_handson4}}"],
+							"path": ["countries"]
+						},
+						"description": "Should return 400 Bad Request with 'Country code should be 2 characters'."
+					}
+				},
+				{
+					"name": "Get All Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson4}}/employees",
+							"host": ["{{baseUrl_handson4}}"],
+							"path": ["employees"]
+						}
+					}
+				},
+				{
+					"name": "Update Employee (Valid)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 1,\n  \"name\": \"Rajkaran Updated\",\n  \"salary\": 90000,\n  \"permanent\": true,\n  \"dateOfBirth\": \"14/07/2004\",\n  \"department\": {\n    \"id\": 1,\n    \"name\": \"Engineering\"\n  },\n  \"skillList\": [\n    { \"id\": 1, \"name\": \"Java\" },\n    { \"id\": 3, \"name\": \"SQL\" }\n  ]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl_handson4}}/employees",
+							"host": ["{{baseUrl_handson4}}"],
+							"path": ["employees"]
+						},
+						"description": "Updates employee with id 1. Should return 200 OK."
+					}
+				},
+				{
+					"name": "Update Employee (Not Found)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 999,\n  \"name\": \"Unknown\",\n  \"salary\": 50000,\n  \"permanent\": true,\n  \"dateOfBirth\": \"14/07/2004\",\n  \"department\": {\n    \"id\": 1,\n    \"name\": \"Engineering\"\n  },\n  \"skillList\": [\n    { \"id\": 1, \"name\": \"Java\" }\n  ]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl_handson4}}/employees",
+							"host": ["{{baseUrl_handson4}}"],
+							"path": ["employees"]
+						},
+						"description": "Should return 404 Not Found since employee 999 doesn't exist."
+					}
+				},
+				{
+					"name": "Delete Employee (id=1)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson4}}/employees/1",
+							"host": ["{{baseUrl_handson4}}"],
+							"path": ["employees", "1"]
+						},
+						"description": "Deletes employee with id 1. Should return 200 OK."
+					}
+				},
+				{
+					"name": "Delete Employee (Not Found)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson4}}/employees/999",
+							"host": ["{{baseUrl_handson4}}"],
+							"path": ["employees", "999"]
+						},
+						"description": "Should return 404 Not Found since employee 999 doesn't exist."
+					}
+				},
+				{
+					"name": "Get All Departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_handson4}}/departments",
+							"host": ["{{baseUrl_handson4}}"],
+							"path": ["departments"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "JWT Authentication",
+			"item": [
+				{
+					"name": "1. Access Countries (No Auth - 401)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_jwt}}/countries",
+							"host": ["{{baseUrl_jwt}}"],
+							"path": ["countries"]
+						},
+						"description": "Should return 401 Unauthorized since no credentials are provided."
+					}
+				},
+				{
+					"name": "2. Access Countries (Basic Auth USER - 200)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_jwt}}/countries",
+							"host": ["{{baseUrl_jwt}}"],
+							"path": ["countries"]
+						},
+						"description": "Should return 200 OK with country list when using USER role.",
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{ "key": "username", "value": "user" },
+								{ "key": "password", "value": "pwd" }
+							]
+						}
+					}
+				},
+				{
+					"name": "3. Access Countries (Basic Auth ADMIN - 403)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_jwt}}/countries",
+							"host": ["{{baseUrl_jwt}}"],
+							"path": ["countries"]
+						},
+						"description": "Should return 403 Forbidden since ADMIN role doesn't have access to /countries.",
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{ "key": "username", "value": "admin" },
+								{ "key": "password", "value": "pwd" }
+							]
+						}
+					}
+				},
+				{
+					"name": "4. Generate JWT Token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl_jwt}}/authenticate",
+							"host": ["{{baseUrl_jwt}}"],
+							"path": ["authenticate"]
+						},
+						"description": "Generates a JWT token. Copy the token from the response to use in subsequent requests.",
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{ "key": "username", "value": "user" },
+								{ "key": "password", "value": "pwd" }
+							]
+						}
+					}
+				},
+				{
+					"name": "5. Access Countries (Bearer JWT - 200)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwtToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl_jwt}}/countries",
+							"host": ["{{baseUrl_jwt}}"],
+							"path": ["countries"]
+						},
+						"description": "Paste the JWT token from step 4 into the jwtToken variable. Should return 200 OK."
+					}
+				},
+				{
+					"name": "6. Access Countries (Invalid JWT - 401)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer invalid-token-here"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl_jwt}}/countries",
+							"host": ["{{baseUrl_jwt}}"],
+							"path": ["countries"]
+						},
+						"description": "Should return 401 Unauthorized since the JWT token is invalid."
+					}
+				}
+			]
+		}
+	]
+}

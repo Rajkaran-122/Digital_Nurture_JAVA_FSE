@@ -196,7 +196,7 @@ springlearn.service.exception.CountryNotFoundException
 
 ### Postman Output
 
-*Screenshot demonstrating the successful execution and response of this endpoint.*
+*Screenshot demonstrating the 404 Not Found error (CountryNotFoundException).*
 
 ![Country Exception API](../postman_output/country_not_found_exception.png)
 
@@ -248,4 +248,5 @@ http://localhost:8083
 * REST Controller
 * Service Layer
 * MockMvc Testing
+
 

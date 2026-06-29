@@ -267,7 +267,7 @@ PUT http://localhost:8090/employees
 
 ### Postman Output
 
-*Screenshot demonstrating the successful execution and response of this endpoint.*
+*Screenshot demonstrating the 404 Not Found error when updating a non-existent employee.*
 
 ![Employee Update Exception](../postman_output/crud_employee_put_not_found.png)
 
@@ -287,7 +287,7 @@ DELETE http://localhost:8090/employees/999
 
 ### Postman Output
 
-*Screenshot demonstrating the successful execution and response of this endpoint.*
+*Screenshot demonstrating the 404 Not Found error when deleting a non-existent employee.*
 
 ![Employee Delete Exception](../postman_output/crud_employee_delete_exception.png)
 
@@ -498,4 +498,5 @@ GET http://localhost:8090/departments
 ![Departments](../postman_output/crud_departments_get_all.png)
 
 ---
+
 

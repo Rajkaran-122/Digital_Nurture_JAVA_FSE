@@ -10,21 +10,104 @@ This module dives deep into Object-Relational Mapping (ORM) using Spring Data JP
 ## Included Projects
 
 ### 1. `orm-learn` (Hands-on 1)
-- Focuses on basic entity mapping for `Country`, `Employee`, `Department`, `Skill`, and `Stock`.
-- Demonstrates custom Exception Handling (e.g., `CountryNotFoundException`).
+This project focuses on basic entity mapping for `Country`, `Employee`, `Department`, `Skill`, and `Stock` and demonstrates custom Exception Handling (e.g., `CountryNotFoundException`).
 
-**Output Logs (Exercises 1-10):**
-![Exercise 1](images/exercise_1_output.png)
-![Exercise 2](images/exercise_2_output.png)
-![Exercise 3](images/exercise_3_output.png)
-![Exercise 4](images/exercise_4_output.png)
-![Exercise 5](images/exercise_5_output.png)
-![Exercise 6](images/exercise_6_output.png)
-![Exercise 7](images/exercise_7_output.png)
-![Exercise 8](images/exercise_8_output.png)
-![Exercise 9](images/exercise_9_output.png)
-![Exercise 10](images/exercise_10_output.png)
-![Exercise 10.1](images/exercise_10_1output.png)
+#### Exercise 1 – Project Setup & Entity Creation
+**Implemented:**
+- Configured Spring Boot with Spring Data JPA.
+- Created `Country` entity and mapped it to the database table.
+
+**Output:**  
+![Exercise 1 Output](images/exercise_1_output.png)
+
+---
+
+#### Exercise 2 – Fetching All Records
+**Implemented:**
+- Created `CountryRepository` interface extending `JpaRepository`.
+- Used `findAll()` to retrieve all country records.
+
+**Output:**  
+![Exercise 2 Output](images/exercise_2_output.png)
+
+---
+
+#### Exercise 3 – Fetching Record by ID
+**Implemented:**
+- Used `findById()` to retrieve a country by its code.
+- Handled custom `CountryNotFoundException`.
+
+**Output:**  
+![Exercise 3 Output](images/exercise_3_output.png)
+
+---
+
+#### Exercise 4 – Adding a New Record
+**Implemented:**
+- Used `save()` to insert a new country into the database.
+
+**Output:**  
+![Exercise 4 Output](images/exercise_4_output.png)
+
+---
+
+#### Exercise 5 – Updating a Record
+**Implemented:**
+- Retrieved a country by its ID, updated its name, and saved the changes.
+
+**Output:**  
+![Exercise 5 Output](images/exercise_5_output.png)
+
+---
+
+#### Exercise 6 – Deleting a Record
+**Implemented:**
+- Used `deleteById()` to remove a country record from the database.
+
+**Output:**  
+![Exercise 6 Output](images/exercise_6_output.png)
+
+---
+
+#### Exercise 7 – Custom Finder Methods (String Matching)
+**Implemented:**
+- Created custom query methods in `CountryRepository`.
+- Searched countries by name containing a string and ordered by name.
+
+**Output:**  
+![Exercise 7 Output](images/exercise_7_output.png)
+
+---
+
+#### Exercise 8 – Custom Finder Methods (Starting With)
+**Implemented:**
+- Searched countries by name starting with a specific character.
+
+**Output:**  
+![Exercise 8 Output](images/exercise_8_output.png)
+
+---
+
+#### Exercise 9 – Custom Queries with Stock Entity
+**Implemented:**
+- Fetched stock data between specific dates.
+- Fetched stock data with close price greater than a certain value.
+- Fetched top 3 highest volume stock transactions.
+
+**Output:**  
+![Exercise 9 Output](images/exercise_9_output.png)
+
+---
+
+#### Exercise 10 – Relationship Mapping (Employee & Department/Skill)
+**Implemented:**
+- Mapped One-to-Many and Many-to-Many relationships for `Employee`, `Department`, and `Skill`.
+- Fetched associated data seamlessly using Spring Data JPA.
+
+**Output:**  
+![Exercise 10 Output](images/exercise_10_output.png)  
+![Exercise 10.1 Output](images/exercise_10_1output.png)
+
 
 ### 2. `spring-data-jpa-handson_2`
 - Introduces the Service layer pattern.

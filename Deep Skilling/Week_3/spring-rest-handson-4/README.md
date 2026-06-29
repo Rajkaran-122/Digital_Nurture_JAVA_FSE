@@ -78,6 +78,8 @@ POST http://localhost:8090/countries
 
 ### Postman Output
 
+*Screenshot demonstrating the successful execution and response of this endpoint.*
+
 ![Add Country](../postman_output/crud_country_post_valid.png)
 
 ---
@@ -118,6 +120,8 @@ private String code;
 ```
 
 ### Postman Output
+
+*Screenshot demonstrating the successful execution and response of this endpoint.*
 
 ![Country Validation](../postman_output/crud_country_post_validation_error.png)
 
@@ -183,6 +187,8 @@ PUT http://localhost:8090/employees
 
 ### Postman Output
 
+*Screenshot demonstrating the successful execution and response of this endpoint.*
+
 ![Update Employee](../postman_output/crud_employee_put_update.png)
 
 ---
@@ -194,6 +200,8 @@ GET http://localhost:8090/employees
 ```
 
 ### Postman Output
+
+*Screenshot demonstrating the successful execution and response of this endpoint.*
 
 ![Updated Employees](../postman_output/crud_employee_put_verify.png)
 
@@ -217,6 +225,8 @@ DELETE http://localhost:8090/employees/1
 
 ### Postman Output
 
+*Screenshot demonstrating the successful execution and response of this endpoint.*
+
 ![Delete Employee](../postman_output/crud_employee_delete.png)
 
 ---
@@ -228,6 +238,8 @@ GET http://localhost:8090/employees
 ```
 
 ### Postman Output
+
+*Screenshot demonstrating the successful execution and response of this endpoint.*
 
 ![Employees After Delete](../postman_output/crud_employee_delete_verify.png)
 
@@ -255,6 +267,8 @@ PUT http://localhost:8090/employees
 
 ### Postman Output
 
+*Screenshot demonstrating the successful execution and response of this endpoint.*
+
 ![Employee Update Exception](../postman_output/crud_employee_put_not_found.png)
 
 ---
@@ -273,7 +287,9 @@ DELETE http://localhost:8090/employees/999
 
 ### Postman Output
 
-![Employee Delete Exception](../postman_output/handson_4_11.png)
+*Screenshot demonstrating the successful execution and response of this endpoint.*
+
+![Employee Delete Exception](../postman_output/crud_employee_delete_exception.png)
 
 ---
 
@@ -348,6 +364,7 @@ POST http://localhost:8090/countries
 }
 ```
 
+*Demonstrates a 400 Bad Request (Validation Error) because the country code is only 1 character instead of exactly 2.*
 ![Country Validation](../postman_output/crud_country_post_validation_error.png)
 
 ---
@@ -434,6 +451,7 @@ PUT http://localhost:8090/employees
 }
 ```
 
+*Demonstrates a 404 Not Found error because the requested employee ID to update does not exist.*
 ![Employee Update Exception](../postman_output/crud_employee_put_not_found.png)
 
 ---
@@ -464,7 +482,8 @@ GET http://localhost:8090/employees
 DELETE http://localhost:8090/employees/999
 ```
 
-![Delete Employee Exception](../postman_output/handson_4_11.png)
+*Demonstrates a 404 Not Found (EmployeeNotFoundException) because the requested employee ID (999) does not exist.*
+![Delete Employee Exception](../postman_output/crud_employee_delete_exception.png)
 
 ---
 
@@ -479,3 +498,4 @@ GET http://localhost:8090/departments
 ![Departments](../postman_output/crud_departments_get_all.png)
 
 ---
+

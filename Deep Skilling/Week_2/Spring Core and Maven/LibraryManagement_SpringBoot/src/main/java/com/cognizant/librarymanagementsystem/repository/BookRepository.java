@@ -6,7 +6,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+// jpa data access
 @Repository
+// jpa data access
 public interface BookRepository extends JpaRepository<Book, Long> {
 
     List<Book> findByAuthor(String author);
@@ -14,3 +16,4 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     List<Book> findByTitleContainingIgnoreCase(String keyword);
 }
    
+

@@ -5,7 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
+// handling rest endpoints
 @RestController
+// handling rest endpoints
 public class HelloController {
 
     @GetMapping("/hello")
@@ -17,3 +19,4 @@ public class HelloController {
         return response;
     }
 }
+

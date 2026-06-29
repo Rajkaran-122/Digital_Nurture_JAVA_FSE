@@ -12,7 +12,9 @@ import java.util.Date;
 import java.util.List;
 
 @Slf4j
+// main app entry point
 @SpringBootApplication
+// main app entry point
 public class SpringLearnApplication {
 
     public static void main(String[] args) throws ParseException {
@@ -66,3 +68,4 @@ public class SpringLearnApplication {
         log.info("END");
     }
 }
+

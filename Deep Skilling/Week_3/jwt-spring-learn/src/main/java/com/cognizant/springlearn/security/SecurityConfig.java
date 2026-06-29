@@ -18,9 +18,11 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Slf4j
+// jwt security configuration
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
+// jwt security configuration
 public class SecurityConfig {
 
     private final JwtAuthorizationFilter jwtAuthorizationFilter;
@@ -62,3 +64,4 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 }
+

@@ -10,7 +10,9 @@ import com.cognizant.springlearn.exception.CountryNotFoundException;
 import java.util.List;
 
 @Slf4j
+// business logic layer
 @Service
+// business logic layer
 public class CountryService {
 
     public List<Country> getAllCountries() {
@@ -43,3 +45,4 @@ public class CountryService {
         return country;
     }
 }
+

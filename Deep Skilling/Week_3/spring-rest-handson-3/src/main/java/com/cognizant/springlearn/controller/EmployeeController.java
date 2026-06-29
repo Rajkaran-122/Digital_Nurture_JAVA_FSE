@@ -10,8 +10,10 @@ import com.cognizant.springlearn.service.EmployeeService;
 import java.util.List;
 
 @Slf4j
+// handling rest endpoints
 @RestController
 @RequiredArgsConstructor
+// handling rest endpoints
 public class EmployeeController {
 
     private final EmployeeService employeeService;
@@ -25,3 +27,4 @@ public class EmployeeController {
         return employees;
     }
 }
+

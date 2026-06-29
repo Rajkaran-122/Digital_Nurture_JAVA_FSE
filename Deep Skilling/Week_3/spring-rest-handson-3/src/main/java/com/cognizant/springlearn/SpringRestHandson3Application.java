@@ -5,7 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Slf4j
+// main app entry point
 @SpringBootApplication
+// main app entry point
 public class SpringRestHandson3Application {
 
     public static void main(String[] args) {
@@ -14,3 +16,4 @@ public class SpringRestHandson3Application {
         log.info("END");
     }
 }
+

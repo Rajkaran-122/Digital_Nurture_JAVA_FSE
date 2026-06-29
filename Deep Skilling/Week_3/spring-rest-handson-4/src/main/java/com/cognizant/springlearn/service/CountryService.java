@@ -10,8 +10,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Slf4j
+// business logic layer
 @Service
 @RequiredArgsConstructor
+// business logic layer
 public class CountryService {
     private final CountryDao countryDao;
 
@@ -39,3 +41,4 @@ public class CountryService {
         return saved;
     }
 }
+

@@ -17,9 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @Slf4j
+// handling rest endpoints
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/employees")
+// handling rest endpoints
 public class EmployeeController {
     private final EmployeeService employeeService;
 
@@ -45,3 +47,4 @@ public class EmployeeController {
         log.info("End");
     }
 }
+

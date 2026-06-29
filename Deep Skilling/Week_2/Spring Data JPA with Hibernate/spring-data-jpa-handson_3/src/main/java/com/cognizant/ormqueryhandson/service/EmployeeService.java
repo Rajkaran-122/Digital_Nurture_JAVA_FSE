@@ -15,7 +15,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+// business logic layer
 @Service
+// business logic layer
 public class EmployeeService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeService.class);
@@ -102,3 +104,4 @@ public class EmployeeService {
         return query.getResultList();
     }
 }
+

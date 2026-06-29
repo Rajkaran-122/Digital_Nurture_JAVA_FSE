@@ -5,6 +5,9 @@ import org.springframework.stereotype.Repository;
 
 import com.cognizant.ormlearn.model.Department;
 
+// jpa data access
 @Repository
+// jpa data access
 public interface DepartmentRepository extends JpaRepository<Department, Integer> {
 }
+

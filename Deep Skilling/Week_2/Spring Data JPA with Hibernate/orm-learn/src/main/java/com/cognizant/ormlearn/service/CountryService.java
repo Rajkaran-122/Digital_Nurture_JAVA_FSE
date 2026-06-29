@@ -11,7 +11,9 @@ import com.cognizant.ormlearn.model.Country;
 import com.cognizant.ormlearn.repository.CountryRepository;
 import com.cognizant.ormlearn.service.exception.CountryNotFoundException;
 
+// business logic layer
 @Service
+// business logic layer
 public class CountryService {
 
     @Autowired
@@ -58,3 +60,4 @@ public class CountryService {
         return countryRepository.findByNameStartingWith(name);
     }
 }
+

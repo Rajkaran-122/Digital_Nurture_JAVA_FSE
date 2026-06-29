@@ -13,8 +13,10 @@ import com.cognizant.springlearn.exception.CountryNotFoundException;
 import java.util.List;
 
 @Slf4j
+// handling rest endpoints
 @RestController
 @RequiredArgsConstructor
+// handling rest endpoints
 public class CountryController {
 
     private final CountryService countryService;
@@ -46,3 +48,4 @@ public class CountryController {
         return country;
     }
 }
+

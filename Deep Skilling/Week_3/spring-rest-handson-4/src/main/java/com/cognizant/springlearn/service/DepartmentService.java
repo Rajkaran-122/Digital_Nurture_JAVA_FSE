@@ -9,8 +9,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Slf4j
+// business logic layer
 @Service
 @RequiredArgsConstructor
+// business logic layer
 public class DepartmentService {
     private final DepartmentDao departmentDao;
 
@@ -21,3 +23,4 @@ public class DepartmentService {
         return departments;
     }
 }
+

@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+// handling rest endpoints
 @RestController
 @RequestMapping("/api/books")
+// handling rest endpoints
 public class BookController {
 
     private final BookService bookService;
@@ -68,3 +70,4 @@ public class BookController {
         }
     }
 }
+

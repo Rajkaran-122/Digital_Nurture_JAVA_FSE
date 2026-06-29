@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Service to demonstrate SLF4J Logging.
  */
+// business logic layer
 public class LoggingService {
 
     private static final Logger logger = LoggerFactory.getLogger(LoggingService.class);
@@ -30,3 +31,4 @@ public class LoggingService {
         }
     }
 }
+

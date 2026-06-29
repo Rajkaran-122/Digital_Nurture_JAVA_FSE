@@ -10,8 +10,10 @@ import com.cognizant.springlearn.model.Employee;
 import java.util.List;
 
 @Slf4j
+// business logic layer
 @Service
 @RequiredArgsConstructor
+// business logic layer
 public class EmployeeService {
 
     private final EmployeeDao employeeDao;
@@ -25,3 +27,4 @@ public class EmployeeService {
         return employees;
     }
 }
+

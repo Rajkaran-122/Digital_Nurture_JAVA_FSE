@@ -10,7 +10,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+// business logic layer
 @Service
+// business logic layer
 public class BookService {
 
     private static final Logger logger = LoggerFactory.getLogger(BookService.class);
@@ -65,3 +67,4 @@ public class BookService {
         bookRepository.deleteById(id);
     }
 }
+

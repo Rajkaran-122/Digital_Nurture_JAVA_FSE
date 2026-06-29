@@ -6,8 +6,11 @@ import org.springframework.stereotype.Repository;
 
 import com.cognizant.ormlearn.model.Country;
 
+// jpa data access
 @Repository
+// jpa data access
 public interface CountryRepository extends JpaRepository<Country, String> {
     List<Country> findByNameContainingOrderByNameAsc(String name);
     List<Country> findByNameStartingWith(String name);
 }
+

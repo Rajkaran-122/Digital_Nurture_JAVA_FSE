@@ -1,5 +1,6 @@
 package com.cognizant.nurture.mockadv;
 
+// business logic layer
 public class ApiService {
     private final RestClient restClient;
 
@@ -11,3 +12,4 @@ public class ApiService {
         return "Fetched " + restClient.getResponse();
     }
 }
+

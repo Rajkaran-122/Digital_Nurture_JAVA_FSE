@@ -1,5 +1,6 @@
 package com.cognizant.nurture.mockadv;
 
+// business logic layer
 public class Service {
     private final Repository repository;
 
@@ -11,3 +12,4 @@ public class Service {
         return "Processed " + repository.getData();
     }
 }
+

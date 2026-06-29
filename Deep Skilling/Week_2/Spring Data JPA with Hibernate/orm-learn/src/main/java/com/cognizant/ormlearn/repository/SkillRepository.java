@@ -5,6 +5,9 @@ import org.springframework.stereotype.Repository;
 
 import com.cognizant.ormlearn.model.Skill;
 
+// jpa data access
 @Repository
+// jpa data access
 public interface SkillRepository extends JpaRepository<Skill, Integer> {
 }
+

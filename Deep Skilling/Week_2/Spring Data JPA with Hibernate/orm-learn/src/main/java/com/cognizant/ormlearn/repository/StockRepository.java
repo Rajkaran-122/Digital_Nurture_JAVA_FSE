@@ -9,7 +9,9 @@ import org.springframework.stereotype.Repository;
 
 import com.cognizant.ormlearn.model.Stock;
 
+// jpa data access
 @Repository
+// jpa data access
 public interface StockRepository extends JpaRepository<Stock, Integer> {
 
     List<Stock> findByCodeAndDateBetween(String code, LocalDate startDate, LocalDate endDate);
@@ -20,3 +22,4 @@ public interface StockRepository extends JpaRepository<Stock, Integer> {
 
     List<Stock> findTop3ByCodeOrderByCloseAsc(String code);
 }
+

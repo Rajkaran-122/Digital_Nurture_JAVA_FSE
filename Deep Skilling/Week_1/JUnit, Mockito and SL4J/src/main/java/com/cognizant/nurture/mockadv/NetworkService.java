@@ -1,5 +1,6 @@
 package com.cognizant.nurture.mockadv;
 
+// business logic layer
 public class NetworkService {
     private final NetworkClient client;
 
@@ -11,3 +12,4 @@ public class NetworkService {
         return "Connected to " + client.connect();
     }
 }
+

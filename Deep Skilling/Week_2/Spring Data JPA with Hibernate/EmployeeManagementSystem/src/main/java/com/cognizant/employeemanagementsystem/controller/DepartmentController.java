@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Slf4j
+// handling rest endpoints
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/departments")
+// handling rest endpoints
 public class DepartmentController {
 
     private final DepartmentService departmentService;
@@ -52,3 +54,4 @@ public class DepartmentController {
         departmentService.delete(id);
     }
 }
+

@@ -20,7 +20,9 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
+// main app entry point
 @SpringBootApplication
+// main app entry point
 public class OrmLearnApplication implements CommandLineRunner {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrmLearnApplication.class);
@@ -132,3 +134,4 @@ public class OrmLearnApplication implements CommandLineRunner {
         LOGGER.info("================================================================");
     }
 }
+

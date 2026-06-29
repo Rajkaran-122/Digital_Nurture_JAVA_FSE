@@ -3,6 +3,7 @@ package com.cognizant.nurture.service;
 /**
  * Service class that depends on an external API.
  */
+// business logic layer
 public class MyService {
 
     private final ExternalApi externalApi;
@@ -27,3 +28,4 @@ public class MyService {
         externalApi.performActionWithData(data);
     }
 }
+

@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @Slf4j
+// handling rest endpoints
 @RestController
 @RequestMapping("/api")
+// handling rest endpoints
 public class CountryController {
 
     @GetMapping("/country")
@@ -36,3 +38,4 @@ public class CountryController {
         return countries;
     }
 }
+

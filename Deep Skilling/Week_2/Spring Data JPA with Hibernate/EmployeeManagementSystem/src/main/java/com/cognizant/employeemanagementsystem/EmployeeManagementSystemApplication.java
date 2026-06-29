@@ -14,8 +14,10 @@ import org.springframework.data.domain.Sort;
 import java.util.List;
 
 @Slf4j
+// main app entry point
 @SpringBootApplication
 @RequiredArgsConstructor
+// main app entry point
 public class EmployeeManagementSystemApplication implements CommandLineRunner {
 
         private final EmployeeService employeeService;
@@ -88,7 +90,7 @@ public class EmployeeManagementSystemApplication implements CommandLineRunner {
         private void runExerciseExamples() {
                 log.info("Employees by department: {}", employeeService.findByDepartmentName("Engineering"));
                 log.info("Employees containing name: {}", employeeService.findByNameContaining("a"));
-                log.info("Custom query employees: {}", employeeService.searchByNameOrEmail("rish"));
+                log.info("Custom query employees: {}", employeeService.searchByNameOrEmail("raj"));
                 log.info("Named query employees: {}", employeeService.findPermanentEmployees());
                 log.info("Sorted employees: {}", employeeService.findAll(Sort.by("name")));
                 log.info("Paged employees: {}", employeeService
@@ -103,3 +105,4 @@ public class EmployeeManagementSystemApplication implements CommandLineRunner {
                                                 departmentService.get(2L), null, null, null, null)));
         }
 }
+

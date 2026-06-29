@@ -20,6 +20,7 @@ import java.util.List;
  *  Exercise 6 : Annotation (@Service, @Repository) bean also retrieved
  *  Exercise 7 : Constructor-injected BookService verified separately
  */
+// main app entry point
 public class LibraryManagementApplication {
 
     private static final Logger logger = LoggerFactory.getLogger(LibraryManagementApplication.class);
@@ -83,3 +84,4 @@ public class LibraryManagementApplication {
     }
 
 }
+

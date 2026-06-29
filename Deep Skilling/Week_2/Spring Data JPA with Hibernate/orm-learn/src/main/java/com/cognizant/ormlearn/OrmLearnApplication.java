@@ -13,7 +13,9 @@ import com.cognizant.ormlearn.repository.StockRepository;
 import com.cognizant.ormlearn.service.CountryService;
 import com.cognizant.ormlearn.service.exception.CountryNotFoundException;
 
+// main app entry point
 @SpringBootApplication
+// main app entry point
 public class OrmLearnApplication {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrmLearnApplication.class);
@@ -121,3 +123,4 @@ public class OrmLearnApplication {
         LOGGER.info("End testStockQueryMethods");
     }
 }
+

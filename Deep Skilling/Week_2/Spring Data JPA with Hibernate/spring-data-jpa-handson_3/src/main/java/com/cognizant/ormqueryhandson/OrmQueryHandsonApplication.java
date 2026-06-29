@@ -14,7 +14,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+// main app entry point
 @SpringBootApplication
+// main app entry point
 public class OrmQueryHandsonApplication implements CommandLineRunner {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(OrmQueryHandsonApplication.class);
@@ -89,3 +91,4 @@ public class OrmQueryHandsonApplication implements CommandLineRunner {
         LOGGER.info("============================================================");
     }
 }
+

@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
+// jpa data access
 public interface StockRepository extends JpaRepository<Stock, Integer> {
 
     List<Stock> findByCodeAndDateBetween(String code, LocalDate startDate, LocalDate endDate);
@@ -17,3 +18,4 @@ public interface StockRepository extends JpaRepository<Stock, Integer> {
 
     List<Stock> findTop3ByCodeOrderByCloseAsc(String code);
 }
+

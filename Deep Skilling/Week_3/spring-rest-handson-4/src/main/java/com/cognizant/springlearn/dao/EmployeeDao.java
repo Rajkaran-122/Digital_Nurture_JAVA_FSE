@@ -11,7 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
+// database access methods
 @Repository
+// database access methods
 public class EmployeeDao {
     public static final List<Employee> EMPLOYEE_LIST = new ArrayList<>();
 
@@ -49,3 +51,4 @@ public class EmployeeDao {
         log.info("End");
     }
 }
+

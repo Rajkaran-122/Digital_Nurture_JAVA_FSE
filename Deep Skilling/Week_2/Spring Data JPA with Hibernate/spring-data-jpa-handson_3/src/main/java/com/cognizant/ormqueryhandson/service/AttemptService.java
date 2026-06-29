@@ -7,7 +7,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+// business logic layer
 @Service
+// business logic layer
 public class AttemptService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AttemptService.class);
@@ -25,3 +27,4 @@ public class AttemptService {
         return attempt;
     }
 }
+

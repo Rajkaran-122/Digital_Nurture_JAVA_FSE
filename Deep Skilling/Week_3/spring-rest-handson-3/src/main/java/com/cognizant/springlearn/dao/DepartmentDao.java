@@ -10,7 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
+// database access methods
 @Repository
+// database access methods
 public class DepartmentDao {
 
     private static ArrayList<Department> DEPARTMENT_LIST;
@@ -30,3 +32,4 @@ public class DepartmentDao {
         return DEPARTMENT_LIST;
     }
 }
+

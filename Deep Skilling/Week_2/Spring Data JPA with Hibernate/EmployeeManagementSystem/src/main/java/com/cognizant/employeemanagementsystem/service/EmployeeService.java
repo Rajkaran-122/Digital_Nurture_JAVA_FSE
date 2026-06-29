@@ -17,8 +17,10 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Slf4j
+// business logic layer
 @Service
 @RequiredArgsConstructor
+// business logic layer
 public class EmployeeService {
 
     private final EmployeeRepository employeeRepository;
@@ -109,3 +111,4 @@ public class EmployeeService {
         return employeeRepository.saveAll(employees);
     }
 }
+

@@ -1,5 +1,6 @@
 package com.cognizant.nurture.mockadv;
 
+// business logic layer
 public class FileService {
     private final FileReader reader;
     private final FileWriter writer;
@@ -13,3 +14,4 @@ public class FileService {
         return "Processed " + reader.read();
     }
 }
+

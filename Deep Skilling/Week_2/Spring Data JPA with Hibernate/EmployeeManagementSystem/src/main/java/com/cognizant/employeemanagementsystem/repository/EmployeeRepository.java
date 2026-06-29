@@ -13,6 +13,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 import java.util.Optional;
 
+// jpa data access
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     Optional<Employee> findByEmail(String email);
 
@@ -44,3 +45,4 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     @Query("SELECT new com.cognizant.employeemanagementsystem.dto.EmployeeSummary(e.id, e.name, e.email, d.name) FROM Employee e LEFT JOIN e.department d")
     List<EmployeeSummary> findEmployeeSummaries();
 }
+

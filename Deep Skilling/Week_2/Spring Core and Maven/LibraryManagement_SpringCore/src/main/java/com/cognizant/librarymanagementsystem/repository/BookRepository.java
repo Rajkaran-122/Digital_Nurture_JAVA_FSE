@@ -10,7 +10,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// jpa data access
 @Repository
+// jpa data access
 public class BookRepository {
 
     private static final Logger logger = LoggerFactory.getLogger(BookRepository.class);
@@ -44,3 +46,4 @@ public class BookRepository {
         bookStore.remove(id);
     }
 }
+

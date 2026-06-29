@@ -16,9 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @Slf4j
+// handling rest endpoints
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/countries")
+// handling rest endpoints
 public class CountryController {
     private final CountryService countryService;
 
@@ -47,3 +49,4 @@ public class CountryController {
         return saved;
     }
 }
+

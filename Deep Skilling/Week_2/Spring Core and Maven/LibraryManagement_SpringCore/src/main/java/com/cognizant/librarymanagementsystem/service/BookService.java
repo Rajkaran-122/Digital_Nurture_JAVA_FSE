@@ -11,8 +11,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 
+// business logic layer
 @Service("annotationBookService")
 @Scope(value = "prototype")
+// business logic layer
 public class BookService {
 
     private static final Logger logger = LoggerFactory.getLogger(BookService.class);
@@ -62,3 +64,4 @@ public class BookService {
         logger.info("[BookService] Book removed successfully.");
     }
 }
+

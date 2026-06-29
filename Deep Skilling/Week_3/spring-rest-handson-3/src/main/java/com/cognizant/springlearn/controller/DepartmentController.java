@@ -10,8 +10,10 @@ import com.cognizant.springlearn.service.DepartmentService;
 import java.util.List;
 
 @Slf4j
+// handling rest endpoints
 @RestController
 @RequiredArgsConstructor
+// handling rest endpoints
 public class DepartmentController {
 
     private final DepartmentService departmentService;
@@ -26,3 +28,4 @@ public class DepartmentController {
     }
 
 }
+

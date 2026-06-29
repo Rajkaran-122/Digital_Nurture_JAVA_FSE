@@ -10,7 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
+// database access methods
 @Repository
+// database access methods
 public class CountryDao {
     public static final List<Country> COUNTRY_LIST = new ArrayList<>();
 
@@ -34,3 +36,4 @@ public class CountryDao {
         return country;
     }
 }
+

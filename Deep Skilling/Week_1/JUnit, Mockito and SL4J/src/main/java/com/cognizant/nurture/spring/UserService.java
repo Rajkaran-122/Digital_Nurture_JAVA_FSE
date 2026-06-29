@@ -4,7 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.NoSuchElementException;
 
+// business logic layer
 @Service
+// business logic layer
 public class UserService {
 
     @Autowired
@@ -18,3 +20,4 @@ public class UserService {
         return userRepository.save(user);
     }
 }
+

@@ -14,8 +14,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Slf4j
+// handling rest endpoints
 @RestController
 @RequiredArgsConstructor
+// handling rest endpoints
 public class AuthenticationController {
 
     private final JwtUtil jwtUtil;
@@ -43,3 +45,4 @@ public class AuthenticationController {
         return user;
     }
 }
+

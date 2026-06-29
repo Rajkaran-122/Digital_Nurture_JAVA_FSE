@@ -8,7 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
+// business logic layer
 @Service
+// business logic layer
 public class CountryService {
 
     private static final List<Country> COUNTRIES = new ArrayList<>();
@@ -34,3 +36,4 @@ public class CountryService {
         return country;
     }
 }
+

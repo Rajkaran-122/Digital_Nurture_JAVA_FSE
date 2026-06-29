@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @Slf4j
+// handling rest endpoints
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/departments")
+// handling rest endpoints
 public class DepartmentController {
     private final DepartmentService departmentService;
 
@@ -25,3 +27,4 @@ public class DepartmentController {
         return departments;
     }
 }
+

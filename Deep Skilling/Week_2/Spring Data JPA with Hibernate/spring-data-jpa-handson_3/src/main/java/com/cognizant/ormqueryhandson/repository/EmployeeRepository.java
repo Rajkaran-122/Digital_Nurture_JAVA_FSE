@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+// jpa data access
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
     @Query("SELECT DISTINCT e FROM Employee e left join fetch e.department left join fetch e.skillList WHERE e.permanent = true")
@@ -20,3 +21,4 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     @Query(value = "SELECT * FROM employee", nativeQuery = true)
     List<Employee> getAllEmployeesNative();
 }
+

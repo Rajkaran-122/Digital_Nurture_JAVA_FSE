@@ -16,10 +16,12 @@ import java.util.List;
 public class DepartmentDao {
     public static final List<Department> DEPARTMENT_LIST = new ArrayList<>();
 
+    @SuppressWarnings("unchecked")
     public DepartmentDao() {
         log.info("Start");
         ApplicationContext context = new ClassPathXmlApplicationContext("employee.xml");
         DEPARTMENT_LIST.addAll(context.getBean("departmentList", List.class));
+        ((ClassPathXmlApplicationContext) context).close();
         log.info("End");
     }
 

@@ -52,6 +52,7 @@ public class SpringLearnApplication {
     }
 
     // Hands on 6: Load list of countries from XML.
+    @SuppressWarnings("unchecked")
     public static void displayCountries() {
         log.info("START");
         ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");

@@ -17,10 +17,12 @@ import java.util.List;
 public class EmployeeDao {
     public static final List<Employee> EMPLOYEE_LIST = new ArrayList<>();
 
+    @SuppressWarnings("unchecked")
     public EmployeeDao() {
         log.info("Start");
         ApplicationContext context = new ClassPathXmlApplicationContext("employee.xml");
         EMPLOYEE_LIST.addAll(context.getBean("employeeList", List.class));
+        ((ClassPathXmlApplicationContext) context).close();
         log.info("End");
     }
 

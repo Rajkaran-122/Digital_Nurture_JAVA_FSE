@@ -15,11 +15,13 @@ import java.util.List;
 // business logic layer
 public class CountryService {
 
+    @SuppressWarnings("unchecked")
     public List<Country> getAllCountries() {
         log.info("START");
         ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
         List<Country> countries = context.getBean("countryList", List.class);
         log.debug("Countries: {}", countries);
+        ((ClassPathXmlApplicationContext) context).close();
         log.info("END");
         return countries;
     }
@@ -41,6 +43,7 @@ public class CountryService {
         ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
         Country country = context.getBean("in", Country.class);
         log.debug("Country: {}", country);
+        ((ClassPathXmlApplicationContext) context).close();
         log.info("END");
         return country;
     }

@@ -1,3 +1,8 @@
+
+> [!WARNING]
+> **PROPRIETARY & CONFIDENTIAL**
+> This repository and all its contents are the exclusive property of **Rajkaran_122**. Unauthorized copying, modification, distribution, or reuse is strictly prohibited. This is NOT an open source project.
+
 # Digital Nurture JAVA FSE Program
 
 Welcome to the **Digital Nurture Java Full Stack Engineering (FSE)** program repository. 
@@ -33,7 +38,3 @@ These modules provide hands-on experience with enterprise-grade Java development
 * [Week 3: Spring REST and JWT Authentication](Deep%20Skilling/Week_3/): Building scalable, secure RESTful web services with token-based authentication.
 
 ---
-
-> [!WARNING]
-> **PROPRIETARY & CONFIDENTIAL**
-> This repository and all its contents are the exclusive property of **Rajkaran_122**. Unauthorized copying, modification, distribution, or reuse is strictly prohibited. This is NOT an open source project.

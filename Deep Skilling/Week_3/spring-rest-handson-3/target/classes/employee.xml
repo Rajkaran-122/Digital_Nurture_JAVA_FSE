@@ -4,37 +4,37 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="java" class="springlearn.model.Skill">
+    <bean id="java" class="com.cognizant.springlearn.model.Skill">
         <property name="id" value="1"/>
         <property name="name" value="Java"/>
     </bean>
 
-    <bean id="spring" class="springlearn.model.Skill">
+    <bean id="spring" class="com.cognizant.springlearn.model.Skill">
         <property name="id" value="2"/>
         <property name="name" value="Spring Boot"/>
     </bean>
 
-    <bean id="angular" class="springlearn.model.Skill">
+    <bean id="angular" class="com.cognizant.springlearn.model.Skill">
         <property name="id" value="3"/>
         <property name="name" value="Angular"/>
     </bean>
 
-    <bean id="engineering" class="springlearn.model.Department">
+    <bean id="engineering" class="com.cognizant.springlearn.model.Department">
         <property name="id" value="1"/>
         <property name="name" value="Engineering"/>
     </bean>
 
-    <bean id="hr" class="springlearn.model.Department">
+    <bean id="hr" class="com.cognizant.springlearn.model.Department">
         <property name="id" value="2"/>
         <property name="name" value="Human Resources"/>
     </bean>
 
-    <bean id="finance" class="springlearn.model.Department">
+    <bean id="finance" class="com.cognizant.springlearn.model.Department">
         <property name="id" value="3"/>
         <property name="name" value="Finance"/>
     </bean>
 
-    <bean id="employee1" class="springlearn.model.Employee">
+    <bean id="employee1" class="com.cognizant.springlearn.model.Employee">
         <property name="id" value="1"/>
         <property name="name" value="Rajkaran"/>
         <property name="salary" value="75000"/>
@@ -48,7 +48,7 @@
         </property>
     </bean>
 
-    <bean id="employee2" class="springlearn.model.Employee">
+    <bean id="employee2" class="com.cognizant.springlearn.model.Employee">
         <property name="id" value="2"/>
         <property name="name" value="Aman Sharma"/>
         <property name="salary" value="52000"/>
@@ -62,7 +62,7 @@
         </property>
     </bean>
 
-    <bean id="employee3" class="springlearn.model.Employee">
+    <bean id="employee3" class="com.cognizant.springlearn.model.Employee">
         <property name="id" value="3"/>
         <property name="name" value="Priya Verma"/>
         <property name="salary" value="64000"/>
@@ -75,7 +75,7 @@
         </property>
     </bean>
 
-    <bean id="employee4" class="springlearn.model.Employee">
+    <bean id="employee4" class="com.cognizant.springlearn.model.Employee">
         <property name="id" value="4"/>
         <property name="name" value="Neha Singh"/>
         <property name="salary" value="83000"/>

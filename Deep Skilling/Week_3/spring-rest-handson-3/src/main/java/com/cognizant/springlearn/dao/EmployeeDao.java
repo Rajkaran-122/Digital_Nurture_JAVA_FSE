@@ -17,10 +17,12 @@ public class EmployeeDao {
 
     private static ArrayList<Employee> EMPLOYEE_LIST;
 
+    @SuppressWarnings("unchecked")
     public EmployeeDao() {
         log.info("START");
         ApplicationContext context = new ClassPathXmlApplicationContext("employee.xml");
         EMPLOYEE_LIST = context.getBean("employeeList", ArrayList.class);
+        ((ClassPathXmlApplicationContext) context).close();
         log.debug("Employee list loaded: {}", EMPLOYEE_LIST);
         log.info("END");
     }

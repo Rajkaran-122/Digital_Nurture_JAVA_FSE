@@ -17,10 +17,12 @@ public class DepartmentDao {
 
     private static ArrayList<Department> DEPARTMENT_LIST;
 
+    @SuppressWarnings("unchecked")
     public DepartmentDao() {
         log.info("START");
         ApplicationContext context = new ClassPathXmlApplicationContext("employee.xml");
         DEPARTMENT_LIST = context.getBean("departmentList", ArrayList.class);
+        ((ClassPathXmlApplicationContext) context).close();
         log.debug("Department list loaded: {}", DEPARTMENT_LIST);
         log.info("END");
     }

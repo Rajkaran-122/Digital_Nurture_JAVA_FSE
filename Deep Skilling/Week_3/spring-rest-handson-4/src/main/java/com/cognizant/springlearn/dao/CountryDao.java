@@ -16,10 +16,12 @@ import java.util.List;
 public class CountryDao {
     public static final List<Country> COUNTRY_LIST = new ArrayList<>();
 
+    @SuppressWarnings("unchecked")
     public CountryDao() {
         log.info("Start");
         ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
         COUNTRY_LIST.addAll(context.getBean("countryList", List.class));
+        ((ClassPathXmlApplicationContext) context).close();
         log.info("End");
     }
 

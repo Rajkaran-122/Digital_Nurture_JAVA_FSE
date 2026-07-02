@@ -1,39 +1,24 @@
 package com.cognizant.springlearn.service;
 
 import com.cognizant.springlearn.model.Country;
-import lombok.extern.slf4j.Slf4j;
+import com.cognizant.springlearn.repository.CountryRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
-@Slf4j
-// business logic layer
 @Service
-// business logic layer
+@RequiredArgsConstructor
 public class CountryService {
 
-    private static final List<Country> COUNTRIES = new ArrayList<>();
-
-    static {
-        COUNTRIES.add(Country.builder().code("US").name("United States").build());
-        COUNTRIES.add(Country.builder().code("DE").name("Germany").build());
-        COUNTRIES.add(Country.builder().code("IN").name("India").build());
-        COUNTRIES.add(Country.builder().code("JP").name("Japan").build());
-    }
+    private final CountryRepository countryRepository;
 
     public List<Country> getAllCountries() {
-        log.info("Start");
-        log.info("End");
-        return COUNTRIES;
+        return countryRepository.findAll();
     }
 
     public Country addCountry(Country country) {
-        log.info("Start");
-        COUNTRIES.add(country);
-        log.debug("Country added: {}", country);
-        log.info("End");
-        return country;
+        return countryRepository.save(country);
     }
 }
 

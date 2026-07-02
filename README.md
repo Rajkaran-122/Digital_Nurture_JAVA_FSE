@@ -1,8 +1,13 @@
+
+> [!WARNING]
+> **PROPRIETARY & CONFIDENTIAL**
+> This repository and all its contents are the exclusive property of **Rajkaran_122**. Unauthorized copying, modification, distribution, or reuse is strictly prohibited. This is NOT an open source project.
+
 # Digital Nurture JAVA FSE Program
 
 Welcome to the **Digital Nurture Java Full Stack Engineering (FSE)** program repository. 
 
-This repository serves as a comprehensive workspace for the Java FSE training journey. It is meticulously structured to guide learners from the fundamentals of web development and database management through advanced enterprise application development using the Spring ecosystem.
+It is Self Learning Repository serves as a comprehensive workspace for the Java FSE training journey. It is meticulously structured to guide learners from the fundamentals of web development and database management through advanced enterprise application development using the Spring ecosystem.
 
 The curriculum is divided into two primary learning phases:
 
@@ -33,9 +38,3 @@ These modules provide hands-on experience with enterprise-grade Java development
 * [Week 3: Spring REST and JWT Authentication](Deep%20Skilling/Week_3/): Building scalable, secure RESTful web services with token-based authentication.
 
 ---
-
-## How to Use This Repository
-
-1. **Navigate**: Use the links above to jump directly to the module you are working on.
-2. **Review**: Each folder contains its own dedicated instructions, code samples, and hands-on exercises.
-3. **Practice**: Follow the module guidelines to complete the exercises and build your portfolio.

@@ -36,5 +36,22 @@ These modules provide hands-on experience with enterprise-grade Java development
 * [Week 1: Engineering Concepts, GIT, PLSQL, JUnit & Mockito](Deep%20Skilling/Week_1/): Version control best practices, advanced database programming, and unit testing methodologies.
 * [Week 2: Spring Core, Maven, and Spring Data JPA with Hibernate](Deep%20Skilling/Week_2/): Dependency injection, project management with Maven, and ORM integration.
 * [Week 3: Spring REST and JWT Authentication](Deep%20Skilling/Week_3/): Building scalable, secure RESTful web services with token-based authentication.
+* [Week 4: Microservices, API Gateway & Code Quality](Deep%20Skilling/Week_4/): Distributed systems with Spring Cloud, resilient architectures, and static code analysis using SonarQube.
+
+---
+
+## 🏗 Architecture Highlights
+
+A sneak peek into some of the robust systems built during this program:
+
+<p align="center">
+  <b>API Gateway & Service Discovery (Week 4)</b><br/>
+  <img src="Deep%20Skilling/Week_4/1_spring-boot/output/api-gateway-arch.png" width="800">
+</p>
+
+<p align="center">
+  <b>Code Quality & Static Analysis (Week 4)</b><br/>
+  <img src="Deep%20Skilling/Week_4/sonarqube/images/12-quality-gate-passed.png" width="800">
+</p>
 
 ---

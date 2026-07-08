@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jwt-spring-learn" />
+        <module name="centralized-auth-sso-exercises" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="centralized-auth-sso-exercises" options="-parameters" />
       <module name="jwt-spring-learn" options="-parameters" />
     </option>
   </component>

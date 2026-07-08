@@ -153,7 +153,7 @@ SonarQube reported issues such as:
 
 ![Bug issues detected](images/06-bugs.png)
 
-![Security hotspots detected](images/07-hotspots.png)
+![Security Hotspots](images/07-hotspots.png)
 
 ![Code tab file metrics before fix](images/08-metrics-before.png)
 

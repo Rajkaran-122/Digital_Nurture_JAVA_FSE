@@ -303,7 +303,7 @@ Run the above command multiple times to observe requests distributed across diff
 
 ## Output Screenshot
 
-![Exercise 2 Output](outputs/lb-balancing-out.png)
+![Load Balancing Output](outputs/lb-balancing-out.png)
 
 ---
 # Exercise 3 – Resilience Patterns in an API Gateway

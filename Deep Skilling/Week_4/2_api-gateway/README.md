@@ -58,13 +58,13 @@ Microservices architecture divides a large application into multiple small, inde
 
 | Status | Exercise | Codebase | Output |
 |---------|----------|----------|--------|
-| ✅ | Exercise  – Create Account Microservice | [account-service](./account-service) | ![](outputs/account-service-out.png) |
-| ✅ | Exercise  – Create Loan Microservice | [loan-service](./loan-service) | ![](outputs/loan-service-out.png) |
-| ✅ | Exercise  – Create Eureka Discovery Server | [eureka-discovery-server](./eureka-discovery-server) | ![](outputs/eureka-out.png) |
-| ✅ | Exercise – Register Microservices with Eureka | [account-service](./account-service) / [loan-service](./loan-service) | ![](outputs/eureka-register-out.png) |
-| ✅ | Exercise  – Create Greet Service | [greet-service](./greet-service) | ![](outputs/greet-service-out.png) |
-| ✅ | Exercise  – Create API Gateway | [api-gateway](./api-gateway) | ![](outputs/api-gateway-out.png) |
-| ✅ | Exercise  – Configure Global Logging Filter | [api-gateway](./api-gateway) | ![](outputs/global-logging-out.png) |
+| ✅ | Exercise  – Create Account Microservice | [account-service](./account-service) | ![](outputs/account-service-arch.png) |
+| ✅ | Exercise  – Create Loan Microservice | [loan-service](./loan-service) | ![](outputs/loan-service-arch.png) |
+| ✅ | Exercise  – Create Eureka Discovery Server | [eureka-discovery-server](./eureka-discovery-server) | ![](outputs/eureka-arch.png) |
+| ✅ | Exercise – Register Microservices with Eureka | [account-service](./account-service) / [loan-service](./loan-service) | ![](outputs/eureka-register-arch.png) |
+| ✅ | Exercise  – Create Greet Service | [greet-service](./greet-service) | ![](outputs/greet-service-arch.png) |
+| ✅ | Exercise  – Create API Gateway | [api-gateway](./api-gateway) | ![](outputs/api-gateway-arch.png) |
+| ✅ | Exercise  – Configure Global Logging Filter | [api-gateway](./api-gateway) | ![](outputs/global-logging-arch.png) |
 
 ---
 
@@ -118,7 +118,7 @@ Example
 GET http://localhost:8080/accounts/00987987973432
 ```
 
-### Output
+### Architecture Diagram
 
 ```text
 outputs/account-service-arch.png
@@ -155,7 +155,7 @@ Example
 GET http://localhost:8081/loans/H00987987972342
 ```
 
-### Output
+### Architecture Diagram
 
 ```text
 outputs/loan-service-arch.png
@@ -184,7 +184,7 @@ Configured **Spring Cloud Netflix Eureka Discovery Server** to act as the centra
 http://localhost:8761
 ```
 
-### Output
+### Architecture Diagram
 
 ```text
 outputs/eureka-arch.png
@@ -222,7 +222,7 @@ Verify that
 
 are successfully registered.
 
-### Output
+### Architecture Diagram
 
 ```text
 outputs/eureka-register-arch.png
@@ -256,7 +256,7 @@ GET http://localhost:8082/greet
 Hello World!!
 ```
 
-### Output
+### Architecture Diagram
 
 ```text
 outputs/greet-service-arch.png
@@ -300,7 +300,7 @@ GET http://localhost:9091/account-service/accounts/00987987973432
 GET http://localhost:9091/loan-service/loans/H00987987972342
 ```
 
-### Output
+### Architecture Diagram
 
 ```text
 outputs/api-gateway-arch.png
@@ -332,7 +332,7 @@ GET http://localhost:9091/greet-service/greet
 
 Observe the Gateway console logs for request and response details.
 
-### Output
+### Architecture Diagram
 
 ```text
 outputs/global-logging-arch.png

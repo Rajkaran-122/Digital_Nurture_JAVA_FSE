@@ -1,8 +1,8 @@
 <div>
   
-<h1 align="center" style="font-size: 2000rem; margin-bottom: 30px;">
-  Rajkaran's React Masterclass
-</h1>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&text=Rajkaran's%20React%20Masterclass&fontSize=60&fontAlign=50&animation=fadeIn" />
+</p>
 
 **Welcome to the Week 5 ReactJS Portfolio of Rajkaran Yadav!**  
 This directory contains 19 hands-on exercises covering the entire spectrum of React fundamentals — from component architecture to state management, routing, Context API, REST APIs, and automated testing.

@@ -120,3 +120,4 @@ some calls succeed, some hit the 3s timeout and fall back, and — once
 enough slow/failed calls accumulate — the breaker opening and every
 subsequent call short-circuiting straight to the fallback until it
 tests the waters again in HALF_OPEN.
+

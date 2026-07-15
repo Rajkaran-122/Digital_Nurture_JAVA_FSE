@@ -71,3 +71,4 @@ Start order matters:
 cd inventory-service
 mvn spring-boot:run
 ```
+

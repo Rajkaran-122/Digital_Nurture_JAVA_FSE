@@ -34,7 +34,9 @@ This exercise demonstrates **synchronous communication**, where the **Order Serv
 The communication flow implemented in this exercise is illustrated below.
 
 <p align="center">
+---
   <img src="images/output.png" alt="Inter-Service Communication" width="900">
+---
 </p>
 
 ### Communication Flow

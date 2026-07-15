@@ -7,3 +7,4 @@
 ![Bootstrap 5 Masterclass 1](<images/Bootstrap 5 Masterclass - Exercises - Google Chrome 21-06-2026 10_56_31.png>)
 ![Bootstrap 5 Masterclass 2](<images/Bootstrap 5 Masterclass - Exercises - Google Chrome 21-06-2026 10_56_02.png>)
 ![Bootstrap 5 Masterclass 3](<images/Bootstrap 5 Masterclass - Exercises - Google Chrome 21-06-2026 10_55_13.png>)
+

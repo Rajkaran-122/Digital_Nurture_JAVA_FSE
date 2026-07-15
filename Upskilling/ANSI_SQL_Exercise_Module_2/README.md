@@ -14,3 +14,4 @@ This repository contains the solutions to the 25 SQL exercises based on the Even
 - **Common Table Expressions (CTEs)**: Used in advanced queries (e.g., Average Session Duration) to improve readability over nested subqueries.
 - **Join Optimization**: Prefer `NOT EXISTS` or `LEFT JOIN ... IS NULL` over `NOT IN` when identifying missing relational records to maximize query evaluation speed on large datasets.
 - **Data Integrity**: Foreign keys utilize `ON DELETE CASCADE` where appropriate to prevent orphaned records.
+

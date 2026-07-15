@@ -39,3 +39,4 @@ mvn spring-boot:run
 
 H2 console (optional): `http://localhost:8086/h2-console`
 (JDBC URL: `jdbc:h2:mem:billingdb`, user: `sa`, no password).
+

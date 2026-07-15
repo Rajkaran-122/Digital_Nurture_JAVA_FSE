@@ -39,3 +39,4 @@ under "Instances currently registered with Eureka" once they start up.
 
 > Start Eureka Server **first**, before Config Server, Product Service,
 > and Inventory Service.
+

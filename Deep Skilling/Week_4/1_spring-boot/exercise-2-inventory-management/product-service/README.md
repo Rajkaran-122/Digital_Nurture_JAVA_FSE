@@ -72,3 +72,4 @@ mvn spring-boot:run
 
 The service starts on `http://localhost:8083` and should appear in the
 Eureka dashboard shortly after.
+

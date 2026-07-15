@@ -20,3 +20,4 @@ This repository contains the implementation of the 41 Core Java exercises. The p
    `mvn clean install`
 3. Execute the interactive menu:
    `mvn exec:java -Dexec.mainClass="com.corejava.Main"`
+

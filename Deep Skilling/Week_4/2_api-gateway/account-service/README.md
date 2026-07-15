@@ -22,3 +22,4 @@ mvn spring-boot:run
 ```text
 GET http://localhost:8080/accounts/{number}
 ```
+

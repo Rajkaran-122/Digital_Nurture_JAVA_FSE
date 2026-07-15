@@ -89,7 +89,9 @@ erDiagram
 The following schema is implemented for **Hands-on 3 - Fetch Quiz Attempt Details using HQL**.
 
 <p align="center">
+---
 <img src="images/quiz-schema.png" width="900">
+---
 </p>
 
 ---

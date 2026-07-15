@@ -16,3 +16,4 @@ This repository contains the solutions to the core JavaScript exercises, focusin
 - **Separation of Concerns**: JavaScript logic is decoupled from HTML templates, ensuring clean and maintainable code structure.
 - **ES6+ Syntax**: Extensively utilizes modern ECMAScript standards including `let`/`const`, template literals, and Promises for asynchronous operations.
 - **DOM Efficiency**: Optimizes DOM interactions by targeting specific containers and utilizing event delegation to minimize memory overhead.
+

@@ -152,3 +152,4 @@ To verify the robust implementation of the Employee Management System, an embedd
 
 *Successful Query Execution:*  
 ![H2 Console Query Results](images/h2_console_query_results.png)
+

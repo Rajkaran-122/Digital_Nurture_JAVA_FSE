@@ -553,3 +553,4 @@ curl http://localhost:8081/fallback/example
 | Exercise 3 | Implement Resilience Patterns | Resilience4j Circuit Breaker + Fallback Controller |
 
 ---
+

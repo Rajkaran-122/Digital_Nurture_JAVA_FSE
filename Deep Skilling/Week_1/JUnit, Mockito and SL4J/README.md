@@ -31,3 +31,4 @@ This module focuses on Enterprise Testing methodologies and Application Logging.
 - **`src/main/java/`**: Contains the core business logic components designed to be testable.
 - **`src/test/java/`**: Houses the JUnit test suites and Mockito setup validating the core logic.
 - **`pom.xml`**: Manages dependencies for JUnit Jupiter, Mockito Core, and SLF4J API.
+

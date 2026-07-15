@@ -16,3 +16,4 @@ This repository contains the solutions to the CSS3 exercises, implementing a cus
 - **Design System**: Implements a striking Black & White Neo-Brutalist aesthetic featuring sharp edges, pure black borders, and high contrast.
 - **Responsive Layout**: Heavy utilization of CSS Grid for two-dimensional scaffolding and Flexbox for one-dimensional alignment, ensuring fluid responsiveness across devices.
 - **Modularity**: Adheres to DRY principles by separating styling logic into centralized assets rather than relying on inline styles.
+

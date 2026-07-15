@@ -375,3 +375,4 @@ In this lab, we learned:
 * Cleaning up merged branches
 * Pulling and pushing changes to a remote repository
 * Verifying updates in GitLab
+

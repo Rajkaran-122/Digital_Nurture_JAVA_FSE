@@ -16,3 +16,4 @@ This repository contains the solutions to the HTML5 exercises, focusing on seman
 - **Semantic HTML**: Strict adherence to HTML5 elements (`<article>`, `<section>`, `<aside>`) to ensure accessibility and SEO compliance.
 - **Form Validation**: Utilizes native HTML5 validation constraints to minimize required JavaScript boilerplate.
 - **Web APIs**: Demonstrates modern browser capabilities, ensuring responsive UI feedback when interacting with local storage or asynchronous workers.
+

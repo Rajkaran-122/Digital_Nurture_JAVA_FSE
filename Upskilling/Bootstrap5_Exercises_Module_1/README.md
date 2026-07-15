@@ -18,3 +18,4 @@ This repository contains the solutions to the Bootstrap 5 exercises, showcasing 
 - **Mobile-First Design**: Ensures all layouts naturally scale from mobile devices up to large desktop monitors utilizing Bootstrap's responsive tier system.
 - **Component Reusability**: Leverages Bootstrap's native component classes to rapidly construct complex UIs without writing custom CSS.
 - **Custom SCSS Theme**: Overrides Bootstrap's default `$primary` and radius variables to inject a custom Neo-Brutalist Black & White aesthetic across the entire framework.
+

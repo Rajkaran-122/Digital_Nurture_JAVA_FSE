@@ -1,7 +1,9 @@
-﻿<table align="center">
+<table align="center">
   <tr>
     <td align="center" bgcolor="#ffffff">
+---
       <img src="https://www.svgrepo.com/show/354365/sonarqube.svg"
+---
            alt="SonarQube Logo"
            width="180">
     </td>
@@ -115,7 +117,9 @@ Many large organizations integrate SonarQube into their development lifecycle be
 A typical architecture consists of:
 
 <p align="center">
+---
     <img src="images/one.png" width="900" alt="SonarQube Architecture"/>
+---
 </p>
 
 ---
@@ -438,7 +442,9 @@ SonarQube integrates with:
 Typical pipeline:
 
 <p align="center">
+---
   <img src="images/two.png" alt="SonarQube Pipeline" width="900">
+---
 </p>
 
 ---
@@ -621,4 +627,5 @@ Analyzing source code without executing it to detect quality and security issues
 To automatically verify code quality on every build and prevent low-quality code from being merged or deployed.
 
 ---
+
 

@@ -50,3 +50,4 @@ To properly execute and verify these exercises, follow these steps in your Oracl
 - **Triggers:** Automated auditing and constraint checking on the database level.
 - **Cursors:** Explicit cursors combined with `FOR UPDATE` clauses for safe bulk operations.
 - **Packages:** Grouped procedures and functions logically by entity (`CustomerManagement`, `EmployeeManagement`, `AccountOperations`) using specs and bodies.
+

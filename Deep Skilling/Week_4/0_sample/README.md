@@ -154,3 +154,4 @@ outputs/auth-sso-out3.png
 | GET | `http://localhost:8081/auth/token?username=Rajkaran` | Public |
 | GET | `http://localhost:8081/secure` | JWT Token |
 | GET | `http://localhost:8081/jwt/secure` | JWT Token |
+

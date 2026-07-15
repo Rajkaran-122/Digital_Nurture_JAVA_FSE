@@ -1,6 +1,6 @@
 <div>
   
-<h1 align="center" style="font-size: 3em; margin-bottom: 20px;">Rajkaran's React Masterclass</h1>
+<h1 align="center" style="font-size: 9em; margin-bottom: 30px;">Rajkaran's React Masterclass</h1>
 
 **Welcome to the Week 5 ReactJS Portfolio of Rajkaran Yadav!**  
 This directory contains 19 hands-on exercises covering the entire spectrum of React fundamentals — from component architecture to state management, routing, Context API, REST APIs, and automated testing.

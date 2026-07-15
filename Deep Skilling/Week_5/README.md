@@ -1,7 +1,7 @@
 <div>
   
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&text=Rajkaran's%20React%20Masterclass&fontSize=60&fontAlign=50&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=FFFFFF&text=Rajkaran's%20React%20Masterclass&fontColor=000000&fontSize=60&fontAlign=50&animation=fadeIn" />
 </p>
 
 # Welcome to the Week 5 ReactJS Portfolio of Rajkaran Yadav!  

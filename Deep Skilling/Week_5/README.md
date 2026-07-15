@@ -1,6 +1,6 @@
 <div>
   
-<<h1 align="center" style="font-size: 2000rem; margin-bottom: 30px;">
+<h1 align="center" style="font-size: 2000rem; margin-bottom: 30px;">
   Rajkaran's React Masterclass
 </h1>
 

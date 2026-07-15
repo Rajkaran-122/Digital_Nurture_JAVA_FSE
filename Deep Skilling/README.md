@@ -8,6 +8,7 @@ Welcome to the Deep Skilling modules for the Java Full Stack Engineering program
 * [Week 2: Spring Core, Maven, and Spring Data JPA with Hibernate](Week_2/)
 * [Week 3: Spring REST and JWT Authentication](Week_3/)
 * [Week 4: Microservices, API Gateway & Code Quality](Week_4/)
+* [Week 5: ReactJS Masterclass & Frontend Development](Week_5/)
 
 
 

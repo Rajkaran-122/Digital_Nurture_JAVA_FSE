@@ -37,21 +37,16 @@ These modules provide hands-on experience with enterprise-grade Java development
 * [Week 2: Spring Core, Maven, and Spring Data JPA with Hibernate](Deep%20Skilling/Week_2/): Dependency injection, project management with Maven, and ORM integration.
 * [Week 3: Spring REST and JWT Authentication](Deep%20Skilling/Week_3/): Building scalable, secure RESTful web services with token-based authentication.
 * [Week 4: Microservices, API Gateway & Code Quality](Deep%20Skilling/Week_4/): Distributed systems with Spring Cloud, resilient architectures, and static code analysis using SonarQube.
+* [Week 5: ReactJS Masterclass](Deep%20Skilling/Week_5/): Comprehensive frontend development with 19 interactive React labs covering hooks, routing, context, and testing.
 
 ---
 
-## 🏗 Architecture Highlights
 
-A sneak peek into some of the robust systems built during this program:
+## 🔒 License & Ownership
 
-<p align="center">
-  <b>API Gateway & Service Discovery (Week 4)</b><br/>
-  <img src="Deep%20Skilling/Week_4/1_spring-boot/output/api-gateway-arch.png" width="800">
-</p>
-
-<p align="center">
-  <b>Code Quality & Static Analysis (Week 4)</b><br/>
-  <img src="Deep%20Skilling/Week_4/sonarqube/images/12-quality-gate-passed.png" width="800">
-</p>
-
----
+> **PROPRIETARY & CONFIDENTIAL**  
+> © 2026 Rajkaran_122. All rights reserved.
+> 
+> This repository, including all source code, documentation, UI designs, and architectures, is the exclusive proprietary property of **Rajkaran_122**. 
+> - **No Open Source**: This is NOT an open-source project.
+> - **Strictly Prohibited**: Any unauthorized copying, modification, distribution, reproduction, or commercial use of this material is strictly prohibited.

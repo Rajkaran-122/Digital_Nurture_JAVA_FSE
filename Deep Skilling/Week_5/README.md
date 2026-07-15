@@ -1,6 +1,6 @@
 <div>
   
-# Rajkaran's React Masterclass
+# **Rajkaran's React Masterclass**
 
 **Welcome to the Week 5 ReactJS Portfolio of Rajkaran Yadav!**  
 This directory contains 19 hands-on exercises covering the entire spectrum of React fundamentals — from component architecture to state management, routing, Context API, REST APIs, and automated testing.

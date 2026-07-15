@@ -27,9 +27,9 @@ export default function Home() {
   return (
     <div className="page-container">
       <div className="home-hero">
-        <h1>ReactJS Labs</h1>
+        <h1>Rajkaran's React Masterclass</h1>
         <p>
-          19 hands-on exercises covering React fundamentals — from setup
+          19 hands-on exercises built by Rajkaran covering React fundamentals — from setup
           to routing, state management, Context API, forms, REST APIs, and testing.
         </p>
         <div className="home-stats">

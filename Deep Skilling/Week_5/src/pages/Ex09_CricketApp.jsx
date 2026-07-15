@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { players, t20Players, ranjiPlayers } from '../data/mockData';
-import { Clock } from 'lucide-react';
+import { Clock, User, Briefcase } from 'lucide-react';
 
 export default function Ex09() {
   const [showFlag, setShowFlag] = useState(true);
@@ -61,7 +61,7 @@ export default function Ex09() {
                 </h3>
                 {aboveSeventy.map((p) => (
                   <div key={p.name} className="list-item" style={{ cursor: 'default' }}>
-                    <div className="item-icon">🏏</div>
+                    <div className="item-icon"><User size="1em" /></div>
                     <div className="item-content">
                       <div className="item-title">{p.name}</div>
                     </div>
@@ -75,7 +75,7 @@ export default function Ex09() {
                 </h3>
                 {belowSeventy.map((p) => (
                   <div key={p.name} className="list-item" style={{ cursor: 'default' }}>
-                    <div className="item-icon">🏏</div>
+                    <div className="item-icon"><User size="1em" /></div>
                     <div className="item-content">
                       <div className="item-title">{p.name}</div>
                     </div>
@@ -94,7 +94,7 @@ export default function Ex09() {
                 <h3 style={{ fontSize: '13px', fontWeight: 600, marginBottom: '12px' }}>Odd Team Players</h3>
                 {oddTeam.map((p) => (
                   <div key={p.name} className="list-item" style={{ cursor: 'default' }}>
-                    <div className="item-icon">🧑‍💼</div>
+                    <div className="item-icon"><User size="1em" /></div>
                     <div className="item-content">
                       <div className="item-title">{p.name}</div>
                       <div className="item-subtitle">Score: {p.score}</div>
@@ -106,7 +106,7 @@ export default function Ex09() {
                 <h3 style={{ fontSize: '13px', fontWeight: 600, marginBottom: '12px' }}>Even Team Players</h3>
                 {evenTeam.map((p) => (
                   <div key={p.name} className="list-item" style={{ cursor: 'default' }}>
-                    <div className="item-icon">👨‍💼</div>
+                    <div className="item-icon"><User size="1em" /></div>
                     <div className="item-content">
                       <div className="item-title">{p.name}</div>
                       <div className="item-subtitle">Score: {p.score}</div>
@@ -118,7 +118,7 @@ export default function Ex09() {
 
             <div className="divider" />
 
-            <h4>💼 Merged Array — T20 + Ranji Players</h4>
+            <h4 className="flex items-center gap-8"><Briefcase size="1em" /> Merged Array — T20 + Ranji Players</h4>
             <div className="flex flex-wrap gap-8 mt-16">
               {mergedPlayers.map((name) => (
                 <span key={name} className="tag">{name}</span>

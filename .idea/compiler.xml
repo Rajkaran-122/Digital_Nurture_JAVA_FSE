@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="LibraryManagementSystem" />
         <module name="jwt-spring-learn" />
-        <module name="centralized-auth-sso-exercises" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="centralized-auth-sso-exercises" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

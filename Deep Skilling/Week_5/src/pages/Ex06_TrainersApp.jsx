@@ -86,7 +86,13 @@ export default function Ex06() {
           {view === 'home' && (
             <div style={{ display: 'flex', gap: '32px', alignItems: 'center', padding: '24px 0' }}>
               <div style={{ flex: 1 }}>
-                <div style={{ fontSize: '40px', marginBottom: '16px', color: 'var(--text-primary)' }}>
+                <div style={{
+                  width: '72px', height: '72px', borderRadius: 'var(--radius-lg)',
+                  background: 'var(--bg-glass)', display: 'flex', alignItems: 'center',
+                  justifyContent: 'center', fontSize: '36px', border: '1px solid var(--border-color)',
+                  marginBottom: '24px', color: 'var(--text-primary)',
+                  boxShadow: 'var(--shadow-sm)'
+                }}>
                   <GraduationCap size="1em" />
                 </div>
                 <h2 style={{ fontSize: '28px', fontWeight: 800, marginBottom: '12px', letterSpacing: '-0.5px' }}>

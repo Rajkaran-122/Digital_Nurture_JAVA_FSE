@@ -84,10 +84,10 @@ export default function Sidebar({ isOpen, onClose }) {
       <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div className="sidebar-header">
           <NavLink to="/" className="sidebar-logo" onClick={onClose}>
-            <div className="sidebar-logo-icon">R</div>
+            <img src="/rajkaran-logo.png" alt="Rajkaran Logo" className="sidebar-logo-img" />
             <div className="sidebar-logo-text">
-              <h1>ReactJS HOL</h1>
-              <span>Week 5 · 19 Labs</span>
+              <h1>Rajkaran's Portfolio</h1>
+              <span></span>
             </div>
           </NavLink>
         </div>

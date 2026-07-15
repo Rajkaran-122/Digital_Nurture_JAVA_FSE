@@ -99,7 +99,7 @@ function ThemeSwitch({ theme, onToggle }) {
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         fontSize: '12px',
       }}>
-        {isDark ? '<Moon size="1em" />' : '<Sun size="1em" />'}
+        {isDark ? <Moon size="1em" /> : <Sun size="1em" />}
       </div>
     </button>
   );

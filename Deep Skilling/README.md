@@ -9,7 +9,6 @@ Welcome to the Deep Skilling modules for the Java Full Stack Engineering program
 * [Week 3: Spring REST and JWT Authentication](Week_3/)
 * [Week 4: Microservices, API Gateway & Code Quality](Week_4/)
 
-## Highlights
-![API Gateway Architecture](Week_4/1_spring-boot/output/api-gateway-arch.png)
+
 
 Navigate to each week's directory to find detailed instructions, hands-on exercises, and relevant resources.

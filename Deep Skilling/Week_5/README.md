@@ -1,6 +1,6 @@
 <div>
   
-# **Rajkaran's React Masterclass**
+# Rajkaran's React Masterclass
 
 **Welcome to the Week 5 ReactJS Portfolio of Rajkaran Yadav!**  
 This directory contains 19 hands-on exercises covering the entire spectrum of React fundamentals — from component architecture to state management, routing, Context API, REST APIs, and automated testing.
@@ -37,6 +37,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 
+---
+
 ### 2. Ex 01 - First React App (Setup)
 ---
 
@@ -45,6 +47,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 <br/>
+
+---
 
 ### 3. Ex 01 - First React App (Demo)
 ---
@@ -55,6 +59,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 
+---
+
 ### 4. Ex 02 - Student Portal
 ---
 
@@ -63,6 +69,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 <br/>
+
+---
 
 ### 5. Ex 06 - Trainers App
 ---
@@ -73,6 +81,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 
+---
+
 ### 6. Ex 10 - Office Rental
 ---
 
@@ -81,6 +91,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 <br/>
+
+---
 
 ### 7. Ex 11 - Event Examples
 ---
@@ -91,6 +103,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 
+---
+
 ### 8. Ex 12 - Ticket Booking
 ---
 
@@ -99,6 +113,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 <br/>
+
+---
 
 ### 9. Ex 14 - Context Theme
 ---
@@ -109,6 +125,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 
+---
+
 ### 10. Ex 17 - Fetch User
 ---
 
@@ -118,6 +136,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 
+---
+
 ### 11. Ex 18 - Unit Testing
 ---
 
@@ -126,6 +146,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 <br/>
+
+---
 
 ### 12. Ex 19 - Mock Testing
 ---
@@ -137,6 +159,8 @@ This directory contains 19 hands-on exercises covering the entire spectrum of Re
 <br/>
 <br/>
 <br/>
+
+---
 
 ## Instructions to Run
 

@@ -86,16 +86,19 @@ These approaches allow independent deployment while maintaining loose coupling b
 
 ## 🏗 Inter-Service Communication
 
-<p align="center">
 ---
+
+
 <img src="output/user-order-arch.png" width="950">
+
 ---
-</p>
-<p align="center">
+
 ---
+
 <img src="output/user-order-out.png" width="950">
+
 ---
-</p>
+
 
 ---
 
@@ -123,31 +126,37 @@ Instead of hardcoding service URLs, microservices register themselves with the E
 
 ## ️ Service Discovery Architecture
 
-<p align="center">
 ---
+
+
 <img src="output/inventory-out.png" width="950">
+
 ---
-</p>
+
 
 ---
 
 ##  Eureka Running ans services registered
 
-<p align="center">
 ---
+
+
 <img src="output/inventory-arch.png" width="950">
+
 ---
-</p>
+
 
 ---
 
 ##  Configurations injected
 
-<p align="center">
 ---
+
+
 <img src="output/inventory-config-out.png" width="950">
+
 ---
-</p>
+
 
 ---
 
@@ -184,21 +193,25 @@ This architecture simplifies client interaction and centralizes request processi
 
 ##  API Gateway Architecture
 
-<p align="center">
 ---
+
+
 <img src="output/api-gateway-out.png" width="950">
+
 ---
-</p>
+
 
 ---
 
 ##  Postman Output
 
-<p align="center">
 ---
+
+
 <img src="output/api-gateway-arch.png" width="950">
+
 ---
-</p>
+
 
 ---
 
@@ -229,21 +242,25 @@ This pattern significantly improves the resilience and reliability of distribute
 
 ## ️ Circuit Breaker Flow
 
-<p align="center">
 ---
+
+
 <img src="output/circuit-breaker-out.png" width="950">
+
 ---
-</p>
+
 
 ---
 
 ##  Execution Output
 
-<p align="center">
 ---
+
+
 <img src="output/circuit-breaker-arch.png" width="950">
+
 ---
-</p>
+
 
 ---
 
@@ -269,9 +286,8 @@ exercise-4-circuit-breaker
 
 ---
 
-<div align="center">
 
 ###  Spring Boot 3 • Spring Cloud • Distributed Systems • Microservices 
 
-</div>
+
 

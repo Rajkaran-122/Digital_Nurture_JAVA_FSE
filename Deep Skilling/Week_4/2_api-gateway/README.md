@@ -8,11 +8,13 @@ A complete **Spring Boot 3** and **Java 21** implementation of the **Microservic
 
 Microservices architecture divides a large application into multiple small, independently deployable services. Each service owns its own business logic and database, while **Spring Cloud Gateway** provides centralized routing and **Eureka Discovery Server** enables dynamic service discovery.
 
-<p align="center">
 ---
+
+
     <img src="https://spring.io/img/extra/cloud-3-dark.svg" width="900" alt="Spring Cloud Microservices Architecture"/>
+
 ---
-</p>
+
 
 ---
 
@@ -454,7 +456,6 @@ All exercises from the **Microservices with API Gateway** hands-on document have
 
 ---
 
-<p align="center">
 <b>⭐ Spring Boot 3 • Java 21 • Spring Cloud • Eureka • API Gateway • Microservices ⭐</b>
-</p>
+
 

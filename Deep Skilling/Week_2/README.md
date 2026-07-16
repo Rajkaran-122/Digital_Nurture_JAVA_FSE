@@ -1,9 +1,28 @@
 # Deep Skilling: Week 2 - Spring Framework & Spring Boot
 
+---
+
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
+
+---
+
+---
+
 ![Maven](https://img.shields.io/badge/apache_maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+
+---
+
+---
+
 ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)
+
+---
+
+---
+
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+
+---
 
 Welcome to the **Week 2** module of the Cognizant Digital Nurture (Java FSE) program! This week transitions from foundational Java into enterprise application development using the powerful Spring ecosystem.
 
@@ -48,5 +67,6 @@ To view the detailed implementation, features, and visual output proofs of each 
 - **Build Tool:** Apache Maven
 - **Utilities:** Lombok, SLF4J (Logging)
 - **IDE:** IntelliJ IDEA
+
 
 

@@ -71,6 +71,8 @@ sayHello()
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
 
+---
+
 ![Hello API](../postman_output/hello_world_get.png)
 
 ---
@@ -97,6 +99,8 @@ GET http://localhost:8083/country
 ### Postman Output
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
+
+---
 
 ![Country API](../postman_output/country_get_india.png)
 
@@ -126,6 +130,8 @@ GET http://localhost:8083/countries
 ### Postman Output
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
+
+---
 
 ![All Countries API](../postman_output/countries_get_all.png)
 
@@ -162,6 +168,8 @@ GET http://localhost:8083/countries/in
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
 
+---
+
 ![Country By Code API](../postman_output/country_get_by_code.png)
 
 ---
@@ -197,6 +205,8 @@ springlearn.service.exception.CountryNotFoundException
 ### Postman Output
 
 *Screenshot demonstrating the 404 Not Found error (CountryNotFoundException).*
+
+---
 
 ![Country Exception API](../postman_output/country_not_found_exception.png)
 
@@ -248,6 +258,7 @@ http://localhost:8083
 * REST Controller
 * Service Layer
 * MockMvc Testing
+
 
 
 

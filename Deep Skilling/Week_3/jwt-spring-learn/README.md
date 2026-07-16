@@ -25,11 +25,15 @@ This project implements the JWT authentication hands-on using Spring Boot 3, Spr
 
 ## Project Structure
 
+---
+
 ![Project Structure](../postman_output/jwt_project_structure.png)
 
 ---
 
 ## Spring Boot Startup
+
+---
 
 ![Application Startup](../postman_output/jwt_application_startup.png)
 
@@ -42,6 +46,8 @@ This project implements the JWT authentication hands-on using Spring Boot 3, Spr
 ```text
 http://localhost:8090/countries
 ```
+
+---
 
 ![Unauthorized](../postman_output/jwt_unauthorized_no_auth.png)
 
@@ -63,6 +69,8 @@ Basic Auth
 Username : user
 Password : pwd
 ```
+
+---
 
 ![USER Access](../postman_output/jwt_basic_auth_user_success.png)
 
@@ -90,6 +98,8 @@ Expected:
 ```text
 403 Forbidden
 ```
+
+---
 
 ![ADMIN Forbidden](../postman_output/jwt_basic_auth_admin_forbidden.png)
 
@@ -120,6 +130,8 @@ Expected Response
 }
 ```
 
+---
+
 ![Generated JWT](../postman_output/jwt_generate_token.png)
 
 ---
@@ -133,6 +145,8 @@ https://jwt.io
 ```
 
 Paste the generated JWT token.
+
+---
 
 ![JWT Decoded](../postman_output/jwt_decode_token_jwtio.png)
 
@@ -153,6 +167,8 @@ Bearer Token
 
 <Generated JWT Token>
 ```
+
+---
 
 ![Bearer Token Success](../postman_output/jwt_bearer_token_success.png)
 
@@ -180,11 +196,15 @@ Expected:
 401 Unauthorized
 ```
 
+---
+
 ![Invalid JWT](../postman_output/jwt_invalid_token_rejected.png)
 
 ---
 
 ## SecurityConfig.java
+
+---
 
 ![SecurityConfig](../postman_output/jwt_security_config_code.png)
 
@@ -192,11 +212,15 @@ Expected:
 
 ## AuthenticationController.java
 
+---
+
 ![AuthenticationController](../postman_output/jwt_auth_controller_code.png)
 
 ---
 
 ## JwtAuthorizationFilter.java
+
+---
 
 ![JwtAuthorizationFilter](../postman_output/jwt_authorization_filter_code.png)
 
@@ -204,11 +228,15 @@ Expected:
 
 ## JwtUtil.java
 
+---
+
 ![JwtUtil](../postman_output/jwt_util_code.png)
 
 ---
 
 ## Final Output
+
+---
 
 ![Final Output](../postman_output/jwt_final_output.png)
 
@@ -342,6 +370,7 @@ Expected:
   "error": "Unauthorized"
 }
 ```
+
 
 
 

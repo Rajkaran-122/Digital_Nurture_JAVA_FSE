@@ -18,6 +18,9 @@ This project focuses on basic entity mapping for `Country`, `Employee`, `Departm
 - Created `Country` entity and mapped it to the database table.
 
 **Output:**  
+
+---
+
 ![Exercise 1 Output](images/exercise_1_output.png)
 
 ---
@@ -28,6 +31,9 @@ This project focuses on basic entity mapping for `Country`, `Employee`, `Departm
 - Used `findAll()` to retrieve all country records.
 
 **Output:**  
+
+---
+
 ![Exercise 2 Output](images/exercise_2_output.png)
 
 ---
@@ -38,6 +44,9 @@ This project focuses on basic entity mapping for `Country`, `Employee`, `Departm
 - Handled custom `CountryNotFoundException`.
 
 **Output:**  
+
+---
+
 ![Exercise 3 Output](images/exercise_3_output.png)
 
 ---
@@ -47,6 +56,9 @@ This project focuses on basic entity mapping for `Country`, `Employee`, `Departm
 - Used `save()` to insert a new country into the database.
 
 **Output:**  
+
+---
+
 ![Exercise 4 Output](images/exercise_4_output.png)
 
 ---
@@ -56,6 +68,9 @@ This project focuses on basic entity mapping for `Country`, `Employee`, `Departm
 - Retrieved a country by its ID, updated its name, and saved the changes.
 
 **Output:**  
+
+---
+
 ![Exercise 5 Output](images/exercise_5_output.png)
 
 ---
@@ -65,6 +80,9 @@ This project focuses on basic entity mapping for `Country`, `Employee`, `Departm
 - Used `deleteById()` to remove a country record from the database.
 
 **Output:**  
+
+---
+
 ![Exercise 6 Output](images/exercise_6_output.png)
 
 ---
@@ -75,6 +93,9 @@ This project focuses on basic entity mapping for `Country`, `Employee`, `Departm
 - Searched countries by name containing a string and ordered by name.
 
 **Output:**  
+
+---
+
 ![Exercise 7 Output](images/exercise_7_output.png)
 
 ---
@@ -84,6 +105,9 @@ This project focuses on basic entity mapping for `Country`, `Employee`, `Departm
 - Searched countries by name starting with a specific character.
 
 **Output:**  
+
+---
+
 ![Exercise 8 Output](images/exercise_8_output.png)
 
 ---
@@ -95,6 +119,9 @@ This project focuses on basic entity mapping for `Country`, `Employee`, `Departm
 - Fetched top 3 highest volume stock transactions.
 
 **Output:**  
+
+---
+
 ![Exercise 9 Output](images/exercise_9_output.png)
 
 ---
@@ -105,22 +132,42 @@ This project focuses on basic entity mapping for `Country`, `Employee`, `Departm
 - Fetched associated data seamlessly using Spring Data JPA.
 
 **Output:**  
+
+---
+
 ![Exercise 10 Output](images/exercise_10_output.png)  
+
+---
+
+---
+
 ![Exercise 10.1 Output](images/exercise_10_1output.png)
+
+---
 
 ### 2. `spring-data-jpa-handson_2`
 - Introduces the Service layer pattern.
 - Implements `EmployeeService`, `DepartmentService`, and `SkillService` for structured business logic over basic repository calls.
 
 **Output Logs:**
+
+---
+
 ![Exercise 12](images/_12_output.png)
+
+---
 
 ### 3. `spring-data-jpa-handson_3`
 - Explores complex relationships (One-to-Many, Many-to-Many) via a Quiz system (`Attempt`, `Question`, `User`).
 - Demonstrates advanced JPQL queries and projections.
 
 **Output Logs:**
+
+---
+
 ![Exercise 13](images/_13_output.png)
+
+---
 
 ### 4. `EmployeeManagementSystem` (Capstone)
 A complete, enterprise-ready REST API consolidating all ORM learnings.
@@ -137,19 +184,44 @@ To verify the robust implementation of the Employee Management System, an embedd
 ### Swagger UI API Documentation
 *Testing the full suite of CRUD operations seamlessly through the auto-generated OpenAPI spec.*
 
+---
+
 ![Swagger UI 1](images/swagger_ui_dashboard.png)  
+
+---
+
+---
+
 ![Swagger UI 2](images/swagger_ui_endpoints.png)
+
+---
 
 ### H2 Database Console
 *Proof of successful ORM mappings, table generation, and data persistence in memory.*
 
 *Login Screen:*  
+
+---
+
 ![H2 Console Login](images/h2_console_login.png)
 
+---
+
 *Connected & Exploring Schema:*  
+
+---
+
 ![H2 Console Connected](images/h2_console_connected.png)
 
+---
+
 *Successful Query Execution:*  
+
+---
+
 ![H2 Console Query Results](images/h2_console_query_results.png)
 
+
+
+---
 

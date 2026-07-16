@@ -44,18 +44,41 @@ This module covers the complete lifecycle of building, testing, and securing RES
 **Postman Output:**
 
 - **Testing `/hello` Endpoint:** Demonstrates a basic GET request returning text.  
+
+---
+
   ![Hello API](postman_output/hello_world_get.png)
 
+---
+
 - **Fetching Single Country:** Demonstrates returning a single JSON object.  
+
+---
+
   ![Country API](postman_output/country_get_india.png)
 
+---
+
 - **Fetching All Countries:** Demonstrates returning a JSON array of objects.  
+
+---
+
   ![All Countries](postman_output/countries_get_all.png)
 
+---
+
 - **Path Variable Matching:** Demonstrates case-insensitive fetching via `@PathVariable`.  
+
+---
+
   ![Country By Code](postman_output/country_get_by_code.png)
 
+---
+
 - **Exception Handling:** Demonstrates custom `CountryNotFoundException` triggering a 404 response.  
+
+---
+
   ![Country Exception](postman_output/country_not_found_exception.png)
 
 ---
@@ -73,9 +96,17 @@ This module covers the complete lifecycle of building, testing, and securing RES
 **Postman Output:**
 
 - **Aggregated Employee Data:** Demonstrates fetching the full list of employees, with their associated department and skill lists nested correctly in the JSON payload.  
+
+---
+
   ![Employees API](postman_output/employees_get_all.png)
 
+---
+
 - **Department Reference Data:** Demonstrates fetching the list of all available departments.  
+
+---
+
   ![Departments API](postman_output/departments_get_all.png)
 
 ---
@@ -114,22 +145,59 @@ This module covers the complete lifecycle of building, testing, and securing RES
 
 - **Create Operations:**
   - **Valid Request:** Successfully adds a new country to the list.  
+
+---
+
     ![Add Country](postman_output/crud_country_post_valid.png)
+
+---
+
   - **Validation Error (400 Bad Request):** Fails because the country code is only 1 character (requires exactly 2).  
+
+---
+
     ![Country Validation](postman_output/crud_country_post_validation_error.png)
+
+---
 
 - **Update Operations:**
   - **Successful Put:** Updates the employee with ID 1.  
+
+---
+
     ![Update Employee](postman_output/crud_employee_put_update.png)
+
+---
+
   - **Verification:** Re-fetching employees to prove the update was saved.  
+
+---
+
     ![Updated Employees](postman_output/crud_employee_put_verify.png)
+
+---
+
   - **Invalid Put (404 Not Found):** Attempting to update a non-existent ID.  
+
+---
+
     ![Employee Update Exception](postman_output/crud_employee_put_not_found.png)
+
+---
 
 - **Delete Operations:**
   - **Successful Deletion:** Deletes employee with ID 1.  
+
+---
+
     ![Delete Employee](postman_output/crud_employee_delete.png)
+
+---
+
   - **Verification:** Employee 1 is now missing from the fetch list.  
+
+---
+
     ![Employees After Delete](postman_output/crud_employee_delete_verify.png)
 
 ---
@@ -155,18 +223,57 @@ This module covers the complete lifecycle of building, testing, and securing RES
 **JWT Flow Visualization:**
 
 - **1. Access Denied (No Credentials):** Trying to hit `/countries` without any authentication triggers a 401 Unauthorized response.  
+
+---
+
   ![Unauthorized Access](postman_output/jwt_unauthorized_no_auth.png)
+
+---
+
 - **2. Successful Basic Auth (USER Role):** Passing credentials via standard Basic Auth header allows access.  
+
+---
+
   ![USER Basic Auth](postman_output/jwt_basic_auth_user_success.png)
+
+---
+
 - **3. Access Denied (ADMIN Role Missing Authorities):** The ADMIN user does not have permission to view countries, triggering a 403 Forbidden.  
+
+---
+
   ![ADMIN Forbidden](postman_output/jwt_basic_auth_admin_forbidden.png)
+
+---
+
 - **4. Generating JWT Token:** The `/authenticate` endpoint accepts Basic Auth and responds with a freshly minted JSON Web Token.  
+
+---
+
   ![Generate JWT Token](postman_output/jwt_generate_token.png)
+
+---
+
 - **5. Validating Token Structure:** Decoding the generated JWT on jwt.io proves it contains the correct roles and subject.  
+
+---
+
   ![Decode JWT on jwt.io](postman_output/jwt_decode_token_jwtio.png)
+
+---
+
 - **6. Successful Access using Bearer Token:** Passing the generated JWT in the `Authorization: Bearer <token>` header successfully unlocks the `/countries` endpoint.  
+
+---
+
   ![Bearer Token Success](postman_output/jwt_bearer_token_success.png)
+
+---
+
 - **7. Access Denied (Invalid JWT Signature):** Modifying even a single character of the token renders it invalid, triggering a 401.  
+
+---
+
   ![Invalid JWT](postman_output/jwt_invalid_token_rejected.png)
 
 ---
@@ -194,6 +301,7 @@ It contains all 23 API requests organized by session with proper descriptions an
 | Testing | JUnit 5, MockMvc, AssertJ |
 | Patterns | Builder (Lombok), Controller-Service-DAO |
 | Config | Spring XML Beans + `application.properties` |
+
 
 
 

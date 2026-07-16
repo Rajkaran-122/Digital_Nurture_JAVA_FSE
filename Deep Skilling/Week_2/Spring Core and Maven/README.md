@@ -14,6 +14,9 @@ This module focuses on the absolute fundamentals of the Spring Framework. By pro
 - `BookService`, `BookRepository`, and a Main class to load the Spring context.
 
 **Output:**  
+
+---
+
 ![Exercise 1 Output](images/exercise_1_output.png)
 
 ---
@@ -24,6 +27,9 @@ This module focuses on the absolute fundamentals of the Spring Framework. By pro
 - Demonstrating Dependency Injection using the Spring IoC Container.
 
 **Output:**  
+
+---
+
 ![Exercise 2 Output](images/exercise_2_output.png)
 
 ---
@@ -34,6 +40,9 @@ This module focuses on the absolute fundamentals of the Spring Framework. By pro
 - Created a `LoggingAspect` to intercept and log the execution time of method calls.
 
 **Output:**  
+
+---
+
 ![Exercise 3 Output](images/exercise_3_output.png)
 
 ---
@@ -44,6 +53,9 @@ This module focuses on the absolute fundamentals of the Spring Framework. By pro
 - Maven Compiler Plugin setup.
 
 **Output:**  
+
+---
+
 ![Exercise 4 Output](images/exercise_4_output.png)
 
 ---
@@ -53,6 +65,9 @@ This module focuses on the absolute fundamentals of the Spring Framework. By pro
 - Deep dive into XML Bean Configuration, IoC Container initialization, and Bean lifecycle.
 
 **Output:**  
+
+---
+
 ![Exercise 5 Output](images/exercise_5_output.png)
 
 ---
@@ -63,6 +78,9 @@ This module focuses on the absolute fundamentals of the Spring Framework. By pro
 - Transitioning away from XML to Annotation-based Bean Configuration.
 
 **Output:**  
+
+---
+
 ![Exercise 6 Output](images/exercise_6_output.png)
 
 ---
@@ -73,6 +91,9 @@ This module focuses on the absolute fundamentals of the Spring Framework. By pro
 - XML `<constructor-arg>` configuration.
 
 **Output:**  
+
+---
+
 ![Exercise 7 Output](images/exercise_7_output.png)
 
 ---
@@ -82,6 +103,9 @@ This module focuses on the absolute fundamentals of the Spring Framework. By pro
 - Utilizing `@Before`, `@After`, and `@Around` Advice in the Logging Aspect.
 
 **Output:**  
+
+---
+
 ![Exercise 8 Output](images/exercise_8_output.png)
 
 ---
@@ -93,6 +117,12 @@ This module focuses on the absolute fundamentals of the Spring Framework. By pro
 - Exposed CRUD Operations via a `BookController`.
 
 **Output:**  
+
+---
+
 ![Exercise 9 Output](images/exercise_9_output.png)
 
+
+
+---
 

@@ -80,6 +80,8 @@ POST http://localhost:8090/countries
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
 
+---
+
 ![Add Country](../postman_output/crud_country_post_valid.png)
 
 ---
@@ -122,6 +124,8 @@ private String code;
 ### Postman Output
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
+
+---
 
 ![Country Validation](../postman_output/crud_country_post_validation_error.png)
 
@@ -189,6 +193,8 @@ PUT http://localhost:8090/employees
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
 
+---
+
 ![Update Employee](../postman_output/crud_employee_put_update.png)
 
 ---
@@ -202,6 +208,8 @@ GET http://localhost:8090/employees
 ### Postman Output
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
+
+---
 
 ![Updated Employees](../postman_output/crud_employee_put_verify.png)
 
@@ -227,6 +235,8 @@ DELETE http://localhost:8090/employees/1
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
 
+---
+
 ![Delete Employee](../postman_output/crud_employee_delete.png)
 
 ---
@@ -240,6 +250,8 @@ GET http://localhost:8090/employees
 ### Postman Output
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
+
+---
 
 ![Employees After Delete](../postman_output/crud_employee_delete_verify.png)
 
@@ -269,6 +281,8 @@ PUT http://localhost:8090/employees
 
 *Screenshot demonstrating the 404 Not Found error when updating a non-existent employee.*
 
+---
+
 ![Employee Update Exception](../postman_output/crud_employee_put_not_found.png)
 
 ---
@@ -288,6 +302,8 @@ DELETE http://localhost:8090/employees/999
 ### Postman Output
 
 *Screenshot demonstrating the 404 Not Found error when deleting a non-existent employee.*
+
+---
 
 ![Employee Delete Exception](../postman_output/crud_employee_delete_exception.png)
 
@@ -320,6 +336,8 @@ mvn clean test
 GET http://localhost:8090/countries
 ```
 
+---
+
 ![Get Countries](../postman_output/crud_countries_get_all.png)
 
 ---
@@ -329,6 +347,8 @@ GET http://localhost:8090/countries
 ```http
 GET http://localhost:8090/countries/IN
 ```
+
+---
 
 ![Get Country By Code](../postman_output/crud_country_get_by_code.png)
 
@@ -346,6 +366,8 @@ POST http://localhost:8090/countries
   "name": "India"
 }
 ```
+
+---
 
 ![Add Country](../postman_output/crud_country_post_valid.png)
 
@@ -365,6 +387,9 @@ POST http://localhost:8090/countries
 ```
 
 *Demonstrates a 400 Bad Request (Validation Error) because the country code is only 1 character instead of exactly 2.*
+
+---
+
 ![Country Validation](../postman_output/crud_country_post_validation_error.png)
 
 ---
@@ -376,6 +401,8 @@ POST http://localhost:8090/countries
 ```http
 GET http://localhost:8090/employees
 ```
+
+---
 
 ![Employees](../postman_output/crud_employees_get_all.png)
 
@@ -411,6 +438,8 @@ PUT http://localhost:8090/employees
 }
 ```
 
+---
+
 ![Update Employee](../postman_output/crud_employee_put_update.png)
 
 ---
@@ -420,6 +449,8 @@ PUT http://localhost:8090/employees
 ```http
 GET http://localhost:8090/employees
 ```
+
+---
 
 ![Updated Employees](../postman_output/crud_employee_put_verify.png)
 
@@ -452,6 +483,9 @@ PUT http://localhost:8090/employees
 ```
 
 *Demonstrates a 404 Not Found error because the requested employee ID to update does not exist.*
+
+---
+
 ![Employee Update Exception](../postman_output/crud_employee_put_not_found.png)
 
 ---
@@ -462,6 +496,8 @@ PUT http://localhost:8090/employees
 DELETE http://localhost:8090/employees/1
 ```
 
+---
+
 ![Delete Employee](../postman_output/crud_employee_delete.png)
 
 ---
@@ -471,6 +507,8 @@ DELETE http://localhost:8090/employees/1
 ```http
 GET http://localhost:8090/employees
 ```
+
+---
 
 ![Employees After Delete](../postman_output/crud_employee_delete_verify.png)
 
@@ -483,6 +521,9 @@ DELETE http://localhost:8090/employees/999
 ```
 
 *Demonstrates a 404 Not Found (EmployeeNotFoundException) because the requested employee ID (999) does not exist.*
+
+---
+
 ![Delete Employee Exception](../postman_output/crud_employee_delete_exception.png)
 
 ---
@@ -495,9 +536,14 @@ DELETE http://localhost:8090/employees/999
 GET http://localhost:8090/departments
 ```
 
+---
+
 ![Departments](../postman_output/crud_departments_get_all.png)
 
 ---
+
+---
+
 
 
 

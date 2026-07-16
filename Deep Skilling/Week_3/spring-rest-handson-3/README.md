@@ -103,6 +103,8 @@ http://localhost:8083/employees
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
 
+---
+
 ![Employees API](../postman_output/employees_get_all.png)
 
 ---
@@ -149,6 +151,8 @@ http://localhost:8083/departments
 ### Postman Output
 
 *Screenshot demonstrating the successful execution and response of this endpoint.*
+
+---
 
 ![Departments API](../postman_output/departments_get_all.png)
 
@@ -207,6 +211,8 @@ GET http://localhost:8083/employees
 
 **Postman Output**
 
+---
+
 ![Employees API](../postman_output/employees_get_all.png)
 
 ---
@@ -218,6 +224,8 @@ GET http://localhost:8083/departments
 ```
 
 **Postman Output**
+
+---
 
 ![Departments API](../postman_output/departments_get_all.png)
 
@@ -234,6 +242,7 @@ MockMvc tests are included for:
 * Application context loading
 * `/employees`
 * `/departments`
+
 
 
 

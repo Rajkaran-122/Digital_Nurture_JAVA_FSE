@@ -108,7 +108,6 @@ This project focuses on basic entity mapping for `Country`, `Employee`, `Departm
 ![Exercise 10 Output](images/exercise_10_output.png)  
 ![Exercise 10.1 Output](images/exercise_10_1output.png)
 
-
 ### 2. `spring-data-jpa-handson_2`
 - Introduces the Service layer pattern.
 - Implements `EmployeeService`, `DepartmentService`, and `SkillService` for structured business logic over basic repository calls.
@@ -152,4 +151,5 @@ To verify the robust implementation of the Employee Management System, an embedd
 
 *Successful Query Execution:*  
 ![H2 Console Query Results](images/h2_console_query_results.png)
+
 

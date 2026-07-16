@@ -88,11 +88,11 @@ erDiagram
 
 The following schema is implemented for **Hands-on 3 - Fetch Quiz Attempt Details using HQL**.
 
-<p align="center">
 ---
+
 <img src="images/quiz-schema.png" width="900">
+
 ---
-</p>
 
 ---
 
@@ -471,3 +471,4 @@ Overall Concepts Covered
 - Repository Pattern
 
 This Spring Boot application demonstrates all the required hands-on implementations from the **Spring Data JPA with Hibernate - Hands-on 3** document using a single integrated project following the Cognizant Digital Nurture DeepSkilling curriculum.
+

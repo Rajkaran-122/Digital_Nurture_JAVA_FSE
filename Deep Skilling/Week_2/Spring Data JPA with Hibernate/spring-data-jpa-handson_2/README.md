@@ -220,3 +220,4 @@ Implemented relationships:
 - Employee to Department using `@ManyToOne`
 - Department to Employee using `@OneToMany`
 - Employee to Skill using `@ManyToMany`
+

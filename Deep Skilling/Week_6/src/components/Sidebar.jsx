@@ -3,46 +3,24 @@ import { useState } from 'react';
 
 const categories = [
   {
-    title: 'Basics',
+    title: 'Advanced',
     items: [
-      { num: '01', label: 'First React App', path: '/ex01' },
-      { num: '02', label: 'Student Portal', path: '/ex02' },
-      { num: '03', label: 'Score Calculator', path: '/ex03' },
+      { num: '14', label: 'Context Theme', path: '/ex14' },
     ],
   },
   {
-    title: 'Lifecycle & Styling',
+    title: 'Forms',
     items: [
-      { num: '04', label: 'Blog App', path: '/ex04' },
-      { num: '05', label: 'Cohort Dashboard', path: '/ex05' },
+      { num: '15', label: 'Ticket Raising', path: '/ex15' },
+      { num: '16', label: 'Mail Register', path: '/ex16' },
     ],
   },
   {
-    title: 'Routing',
+    title: 'APIs & Testing',
     items: [
-      { num: '06', label: 'Trainers App', path: '/ex06' },
-    ],
-  },
-  {
-    title: 'State & Props',
-    items: [
-      { num: '07', label: 'Shopping App', path: '/ex07' },
-      { num: '08', label: 'Counter App', path: '/ex08' },
-    ],
-  },
-  {
-    title: 'ES6 & JSX',
-    items: [
-      { num: '09', label: 'Cricket App', path: '/ex09' },
-      { num: '10', label: 'Office Rental', path: '/ex10' },
-    ],
-  },
-  {
-    title: 'Events & Rendering',
-    items: [
-      { num: '11', label: 'Event Examples', path: '/ex11' },
-      { num: '12', label: 'Ticket Booking', path: '/ex12' },
-      { num: '13', label: 'Blogger App', path: '/ex13' },
+      { num: '17', label: 'Fetch User', path: '/ex17' },
+      { num: '18', label: 'Unit Testing', path: '/ex18' },
+      { num: '19', label: 'Mock Testing', path: '/ex19' },
     ],
   },
 ];
@@ -66,7 +44,7 @@ export default function Sidebar({ isOpen, onClose }) {
             <img src="/rajkaran-logo.png" alt="Rajkaran Logo" className="sidebar-logo-img" />
             <div className="sidebar-logo-text">
               <h1>Rajkaran's Portfolio</h1>
-              <span>Week 5</span>
+              <span>Week 6</span>
             </div>
           </NavLink>
         </div>

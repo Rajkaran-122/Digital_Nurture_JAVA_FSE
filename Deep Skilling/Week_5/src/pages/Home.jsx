@@ -15,26 +15,20 @@ const exercises = [
   { num: '11', title: 'Event Examples', desc: 'Handle click events, synthetic events, and build a currency converter.', tag: 'Events', time: '90 min', path: '/ex11' },
   { num: '12', title: 'Ticket Booking', desc: 'Conditional rendering with login/logout flow for guest vs user views.', tag: 'Conditional', time: '60 min', path: '/ex12' },
   { num: '13', title: 'Blogger App', desc: 'Display Book, Blog & Course details using multiple conditional rendering ways.', tag: 'Lists & Keys', time: '60 min', path: '/ex13' },
-  { num: '14', title: 'Context Theme', desc: 'Use React Context API to share light/dark theme across nested components.', tag: 'Context API', time: '30 min', path: '/ex14' },
-  { num: '15', title: 'Ticket Raising', desc: 'Build a complaint registration form with reference number generation.', tag: 'Forms', time: '60 min', path: '/ex15' },
-  { num: '16', title: 'Mail Register', desc: 'Validate name, email & password fields with real-time form validation.', tag: 'Validation', time: '60 min', path: '/ex16' },
-  { num: '17', title: 'Fetch User', desc: 'Consume REST API to fetch and display a random user profile.', tag: 'REST API', time: '60 min', path: '/ex17' },
-  { num: '18', title: 'Unit Testing', desc: 'Write Jest + Enzyme unit tests for CohortDetails component.', tag: 'Testing', time: '90 min', path: '/ex18' },
-  { num: '19', title: 'Mock Testing', desc: 'Mock axios calls to test GitClient module with Jest spies.', tag: 'Mocking', time: '60 min', path: '/ex19' },
 ];
 
 export default function Home() {
   return (
     <div className="page-container">
       <div className="home-hero">
-        <h1>Rajkaran's React Masterclass</h1>
+        <h1>Week 5: React Masterclass</h1>
         <p>
-          19 hands-on exercises built by Rajkaran covering React fundamentals — from setup
-          to routing, state management, Context API, forms, REST APIs, and testing.
+          13 hands-on exercises built by Rajkaran covering React fundamentals — from setup
+          to routing, state management, and lists.
         </p>
         <div className="home-stats">
           <div className="home-stat">
-            <div className="stat-value">19</div>
+            <div className="stat-value">13</div>
             <div className="stat-label">Exercises</div>
           </div>
           <div className="home-stat">
@@ -42,7 +36,7 @@ export default function Home() {
             <div className="stat-label">Total Time</div>
           </div>
           <div className="home-stat">
-            <div className="stat-value">9</div>
+            <div className="stat-value">6</div>
             <div className="stat-label">Categories</div>
           </div>
           <div className="home-stat">

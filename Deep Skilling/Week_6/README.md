@@ -8,8 +8,8 @@
 
 </p>
 
-# Welcome to the Week 5 ReactJS Portfolio of Rajkaran Yadav!  
-This directory contains 13 hands-on exercises covering the entire spectrum of React fundamentals — from component architecture to state management, routing, and conditional rendering.
+# Welcome to the Week 6 ReactJS Portfolio of Rajkaran Yadav!  
+This directory contains 6 hands-on exercises covering advanced React fundamentals — from Context API, forms, REST APIs, to automated testing.
 
 ---
 
@@ -29,7 +29,7 @@ To run this masterclass portfolio locally on your machine, simply execute the fo
 
 ```bash
 # 1. Navigate to the project directory
-cd "Deep Skilling/Week_5"
+cd "Deep Skilling/Week_6"
 
 # 2. Install all dependencies
 npm install

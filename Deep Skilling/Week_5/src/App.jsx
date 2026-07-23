@@ -14,12 +14,6 @@ import Ex10 from './pages/Ex10_OfficeRental';
 import Ex11 from './pages/Ex11_EventExamples';
 import Ex12 from './pages/Ex12_TicketBooking';
 import Ex13 from './pages/Ex13_BloggerApp';
-import Ex14 from './pages/Ex14_ContextTheme';
-import Ex15 from './pages/Ex15_TicketRaising';
-import Ex16 from './pages/Ex16_MailRegister';
-import Ex17 from './pages/Ex17_FetchUser';
-import Ex18 from './pages/Ex18_UnitTesting';
-import Ex19 from './pages/Ex19_MockTesting';
 
 function App() {
   return (
@@ -40,12 +34,6 @@ function App() {
           <Route path="ex11" element={<Ex11 />} />
           <Route path="ex12" element={<Ex12 />} />
           <Route path="ex13" element={<Ex13 />} />
-          <Route path="ex14" element={<Ex14 />} />
-          <Route path="ex15" element={<Ex15 />} />
-          <Route path="ex16" element={<Ex16 />} />
-          <Route path="ex17" element={<Ex17 />} />
-          <Route path="ex18" element={<Ex18 />} />
-          <Route path="ex19" element={<Ex19 />} />
         </Route>
       </Routes>
     </BrowserRouter>

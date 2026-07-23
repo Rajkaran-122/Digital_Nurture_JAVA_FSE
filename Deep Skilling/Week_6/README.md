@@ -23,6 +23,78 @@ This directory contains 6 hands-on exercises covering advanced React fundamental
 
 ---
 
+# Portfolio Gallery
+
+*Below is a visual gallery showcasing the UI and functionality of my advanced React applications.*
+
+<br/>
+<br/>
+
+### 1. Masterclass Dashboard
+
+---
+
+<img src="public/assets/screenshot/01-dashboard.png" width="800">
+
+---
+
+<br/>
+<br/>
+<br/>
+
+### 2. Ex 14 - Context Theme
+
+---
+
+<img src="public/assets/screenshot/09-ex14-context-theme.png" width="800">
+
+---
+
+<br/>
+<br/>
+<br/>
+
+
+### 3. Ex 17 - Fetch User
+
+---
+
+<img src="public/assets/screenshot/10-ex17-fetch-user.png" width="800">
+
+---
+
+<br/>
+<br/>
+<br/>
+
+
+### 4. Ex 18 - Unit Testing
+
+---
+
+<img src="public/assets/screenshot/11-ex18-unit-testing.png" width="800">
+
+---
+
+<br/>
+<br/>
+<br/>
+
+
+### 5. Ex 19 - Mock Testing
+
+---
+
+<img src="public/assets/screenshot/12-ex19-mock-testing.png" width="800">
+
+---
+
+<br/>
+<br/>
+<br/>
+
+---
+
 ## Instructions to Run
 
 To run this masterclass portfolio locally on your machine, simply execute the following commands:

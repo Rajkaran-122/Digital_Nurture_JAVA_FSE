@@ -37,7 +37,8 @@ These modules provide hands-on experience with enterprise-grade Java development
 * [Week 2: Spring Core, Maven, and Spring Data JPA with Hibernate](Deep%20Skilling/Week_2/): Dependency injection, project management with Maven, and ORM integration.
 * [Week 3: Spring REST and JWT Authentication](Deep%20Skilling/Week_3/): Building scalable, secure RESTful web services with token-based authentication.
 * [Week 4: Microservices, API Gateway & Code Quality](Deep%20Skilling/Week_4/): Distributed systems with Spring Cloud, resilient architectures, and static code analysis using SonarQube.
-* [Week 5: ReactJS Masterclass](Deep%20Skilling/Week_5/): Comprehensive frontend development with 19 interactive React labs covering hooks, routing, context, and testing.
+* [Week 5: ReactJS Masterclass](Deep%20Skilling/Week_5/): Comprehensive frontend development with 13 interactive React labs covering hooks, routing, and state management.
+* [Week 6: Advanced ReactJS Masterclass](Deep%20Skilling/Week_6/): Advanced frontend development with 6 interactive React labs covering context API, forms, REST APIs, and testing.
 
 ---
 

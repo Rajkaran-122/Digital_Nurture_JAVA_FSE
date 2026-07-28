@@ -39,6 +39,7 @@ These modules provide hands-on experience with enterprise-grade Java development
 * [Week 4: Microservices, API Gateway & Code Quality](Deep%20Skilling/Week_4/): Distributed systems with Spring Cloud, resilient architectures, and static code analysis using SonarQube.
 * [Week 5: ReactJS Masterclass](Deep%20Skilling/Week_5/): Comprehensive frontend development with 13 interactive React labs covering hooks, routing, and state management.
 * [Week 6: Advanced ReactJS Masterclass](Deep%20Skilling/Week_6/): Advanced frontend development with 6 interactive React labs covering context API, forms, REST APIs, and testing.
+* [Week 7: DevOps, Cloud & Next-Gen Tech](Deep%20Skilling/Week_7/): Explored modern software delivery and cloud technologies through hands-on assignments covering DevOps, Docker containerization, cloud fundamentals, and Generative AI concepts including prompt engineering and AI integration.
 
 ---
 
@@ -52,3 +53,6 @@ These modules provide hands-on experience with enterprise-grade Java development
 > - **No Open Source**: This is NOT an open-source project.
 > - **Strictly Prohibited**: Any unauthorized copying, modification, distribution, reproduction, or commercial use of this material is strictly prohibited.
 
+
+
+[def]: Deep%20Skilling/Week_7/

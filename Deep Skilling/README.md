@@ -10,6 +10,7 @@ Welcome to the Deep Skilling modules for the Java Full Stack Engineering program
 * [Week 4: Microservices, API Gateway & Code Quality](Week_4/)
 * [Week 5: ReactJS Masterclass & Frontend Development](Week_5/)
 * [Week 6: Advanced ReactJS & Frontend Testing](Week_6/)
+** [Week 7:Agile Methodologies, Docker ,DevOps, CICD and Ge-Ai Fundamnentals](Week_7/)
 
 
 
